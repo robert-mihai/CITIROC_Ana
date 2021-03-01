@@ -509,7 +509,7 @@ int main (int argc, char **argv)
 	bool cat3_1 = FEB.hitTimeDif->at(hit1)> -3 && FEB.hitTimeDif->at(hit1) < 18 && FEB.hitLGAmpl->at(hit1) >=0 && FEB.hitLGAmpl->at(hit1) < 100;
 	bool cat3_2 = FEB.hitTimeDif->at(hit1)> -3 && FEB.hitTimeDif->at(hit1) < 18 && FEB.hitLGAmpl->at(hit1) >200 && FEB.hitLGAmpl->at(hit1) < 1000;
 	
-	
+	// Ihave added a random line to test Git
 	if (ToT_high && LG_low){
 	  LT_TT_1 -> Fill( FEB.hitLeadTime->at(hit1), FEB.hitTrailTime->at(hit1) - FEB.hitLeadTime->at(hit1));
 	  cat1 = true;
