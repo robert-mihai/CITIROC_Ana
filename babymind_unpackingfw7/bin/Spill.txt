@@ -1,0 +1,2633 @@
+This code was created only for Spill search.
+Please enter SpillTag number:
+Word number 525586  BM FEB Spill Header  BoardId: 86  Sid: 2  Spill Tag: 24899
+Word number 525587  BM FEB Unknown data word (ª)
+
+Word number 525588  BM FEB 
+Word number 525589  BM FEB Spill Header  BoardId: 71  Sid: 1  Spill Tag: 29676
+Word number 525590  BM FEB Channel: 26  HitId: 6  TagId: 2  Time (1, FE): 3382
+Word number 525591  BM FEB Unknown data word (d)
+
+Word number 525592  BM FEB Channel: 25  HitId: 1  TagId: 1  Amplitude Id: 2  Charge: 1300
+Word number 525593  BM FEB Channel: 86  HitId: 1  TagId: 2  Amplitude Id: 11  Charge: 2977
+Word number 525594  BM FEB Spill TimeID Spill time: 105190583
+Word number 525595  BM FEB Spill TimeID Spill time: 105229477
+Word number 525596  BM FEB 
+Word number 525597  BM FEB Unknown data word (i)
+
+Word number 525598  BM FEB Spill Trailer (1)  BoardId: 34  Sid: 2  Spill Tag: 60411
+Word number 525599  BM FEB Channel: 83  HitId: 3  TagId: 1  Amplitude Id: 13  Charge: 1007
+Word number 525600  BM FEB Unknown data word ()
+
+Word number 525601  BM FEB Spill Trailer (1)  BoardId: 47  Sid: 1  Temperature: 13698  Humidity: 237
+Word number 525602  BM FEB Board ID 42 L1HoldStop Time: 1878
+Word number 525603  BM FEB Unknown data word (ã)
+
+Word number 525604  BM FEB Channel: 69  HitId: 6  TagId: 2  Time (1, FE): 447
+Word number 525605  BM FEB Unknown data word (¸)
+
+Word number 525606  BM FEB Unknown data word ()
+
+Word number 525607  BM FEB Unknown data word (¡)
+
+Word number 525608  BM FEB Unknown data word ()
+
+Word number 525609  BM FEB Trigger Header  Gl. Trigger Tag: 148684912 (0)
+Word number 525610  BM FEB 
+Word number 525611  BM FEB Board ID 28 L1HoldStop Time: 1617
+Word number 525612  BM FEB Unknown data word (±)
+
+Word number 525613  BM FEB Unknown data word (ñ)
+
+Word number 525614  BM FEB Spill Header  BoardId: 106  Sid: 2  DAQ Type: 6  Spill time from GTrig: 665
+Word number 525615  BM FEB Channel: 24  HitId: 5  TagId: 2  Time (0, RE): 2446
+Word number 525616  BM FEB Spill Header  BoardId: 85  Sid: 0  Spill Tag: 38021
+Word number 525617  BM FEB Trigger Trailer (2)  Hit count: 5  Trigger Time: 456250
+Word number 525618  BM FEB Trigger Trailer (2)  Hit count: 8  Trigger Time: 781808
+Word number 525619  BM FEB Unknown data word (ê)
+
+Word number 525620  BM FEB Spill Header  BoardId: 120  Sid: 2  Spill Tag: 33630
+Word number 525621  BM FEB Channel: 36  HitId: 5  TagId: 0  Amplitude Id: 6  Charge: 1932
+Word number 525622  BM FEB Board ID 20 L1HoldStop Time: 1581
+Word number 525623  BM FEB Unknown data word (.)
+
+Word number 525624  BM FEB Board ID 125 L1HoldStop Time: 17
+Word number 525625  BM FEB Channel: 111  HitId: 7  TagId: 3  Amplitude Id: 9  Charge: 2584
+Word number 525626  BM FEB Channel: 112  HitId: 5  TagId: 0  Time (0, RE): 2819
+Word number 525627  BM FEB Unknown data word ()
+
+Word number 525628  BM FEB Trigger Trailer (2)  Hit count: 20  Trigger Time: 13417
+Word number 525629  BM FEB Unknown data word (ñ)
+
+Word number 525630  BM FEB Channel: 78  HitId: 0  TagId: 1  Amplitude Id: 6  Charge: 1682
+Word number 525631  BM FEB Channel: 85  HitId: 7  TagId: 1  Amplitude Id: 14  Charge: 1013
+Word number 525632  BM FEB Spill Header  BoardId: 75  Sid: 0  DAQ Type: 7  Spill time from GTrig: 1899
+Word number 525633  BM FEB Spill Header  BoardId: 42  Sid: 0  Spill Tag: 52134
+Word number 525634  BM FEB Channel: 86  HitId: 2  TagId: 2  Time (1, FE): 1895
+Word number 525635  BM FEB Board ID 95 L1HoldStop Time: 456
+Word number 525636  BM FEB Trigger Trailer (2)  Hit count: 27  Trigger Time: 761232
+Word number 525637  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 32594376
+Word number 525638  BM FEB Trigger Trailer (2)  Hit count: 14  Trigger Time: 631373
+Word number 525639  BM FEB Unknown data word (Ú)
+
+Word number 525640  BM FEB Unknown data word (ﬂ)
+
+Word number 525641  BM FEB Board ID 17 L1HoldStart Time: 1235
+Word number 525642  BM FEB Unknown data word (˜)
+
+Word number 525643  BM FEB Trigger Header  Gl. Trigger Tag: 47090878 (2)
+Word number 525644  BM FEB Spill TimeID Spill time: 157526237
+Word number 525645  BM FEB Spill TimeID Spill time: 3667792
+Word number 525646  BM FEB Trigger Trailer (2)  Hit count: 29  Trigger Time: 1047328
+Word number 525647  BM FEB Trigger Trailer (2)  Hit count: 0  Trigger Time: 881570
+Word number 525648  BM FEB Board ID 56 L1HoldStart Time: 123
+Word number 525649  BM FEB Spill Header  BoardId: 14  Sid: 0  Spill Tag: 34781
+Word number 525650  BM FEB Channel: 40  HitId: 3  TagId: 2  Amplitude Id: 7  Charge: 66
+Word number 525651  BM FEB Unknown data word (ù)
+
+Word number 525652  BM FEB TDM Start: 14 TDM Tag: 114
+Word number 525653  BM FEB Unknown data word (˛)
+
+Word number 525654  BM FEB Unknown data word (8)
+
+Word number 525655  BM FEB Trigger Trailer (2)  Hit count: 6  Trigger Time: 532505
+Word number 525656  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 60988039
+Word number 525657  BM FEB Trigger Header  Gl. Trigger Tag: 72205749 (1)
+Word number 525658  BM FEB Spill Trailer (1)  BoardId: 72  Sid: 1  Temperature: 5455  Humidity: 104
+Word number 525659  BM FEB Unknown data word (N)
+
+Word number 525660  BM FEB Unknown data word (Ì)
+
+Word number 525661  BM FEB Spill Trailer (1)  BoardId: 73  Sid: 0  Temperature: 12410  Humidity: 237
+Word number 525662  BM FEB Spill TimeID Spill time: 148382026
+Word number 525663  BM FEB Unknown data word (ƒ)
+
+Word number 525664  BM FEB Unknown data word (î)
+
+Word number 525665  BM FEB Trigger Header  Gl. Trigger Tag: 169330117 (1)
+Word number 525666  BM FEB Board ID 110 L1HoldStop Time: 1037
+Word number 525667  BM FEB Board ID 23 L1HoldStop Time: 70
+Word number 525668  BM FEB Spill Header  BoardId: 81  Sid: 3  Spill Tag: 59963
+Word number 525669  BM FEB Unknown data word (Æ)
+
+Word number 525670  BM FEB Channel: 45  HitId: 2  TagId: 1  Time (1, FE): 1374
+Word number 525671  BM FEB Unknown data word (¶)
+
+Word number 525672  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 168201476
+Word number 525673  BM FEB Unknown data word (z)
+
+Word number 525674  BM FEB Channel: 30  HitId: 6  TagId: 2  Time (0, RE): 2845
+Word number 525675  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 65521255
+Word number 525676  BM FEB Spill Header  BoardId: 101  Sid: 3  DAQ Type: 2  Spill time from GTrig: 1654
+Word number 525677  BM FEB Trigger Header  Gl. Trigger Tag: 173394745 (1)
+Word number 525678  BM FEB 
+Word number 525679  BM FEB SpecialWord: 
+Word number 525680  BM FEB Channel: 115  HitId: 6  TagId: 2  Amplitude Id: 12  Charge: 377
+Word number 525681  BM FEB Channel: 111  HitId: 3  TagId: 0  Amplitude Id: 8  Charge: 2077
+Word number 525682  BM FEB TDM Stop: 30 TDM sumL: 348 TDM sumH: 800
+Word number 525683  BM FEB Unknown data word (0)
+
+Word number 525684  BM FEB Unknown data word (˜)
+
+Word number 525685  BM FEB Trigger Header  Gl. Trigger Tag: 44280782 (2)
+Word number 525686  BM FEB Spill TimeID Spill time: 265810861
+Word number 525687  BM FEB Unknown data word (¶)
+
+Word number 525688  BM FEB Trigger Trailer (2)  Hit count: 17  Trigger Time: 27851
+Word number 525689  BM FEB Unknown data word ())
+
+Word number 525690  BM FEB Spill Trailer (1)  BoardId: 111  Sid: 1  Spill Tag: 12746
+Word number 525691  BM FEB SpecialWord: 
+Word number 525692  BM FEB Spill TimeID Spill time: 235827851
+Word number 525693  BM FEB Unknown data word (~)
+
+Word number 525694  BM FEB Unknown data word (&)
+
+Word number 525695  BM FEB TDM Stop: 0 TDM sumL: 1593 TDM sumH: 624
+Word number 525696  BM FEB SpecialWord: 
+Word number 525697  BM FEB Unknown data word (˝)
+
+Word number 525698  BM FEB Trigger Trailer (2)  Hit count: 4  Trigger Time: 438833
+Word number 525699  BM FEB Spill Header  BoardId: 58  Sid: 0  Spill Tag: 57095
+Word number 525700  BM FEB Trigger Header  Gl. Trigger Tag: 235219371 (3)
+Word number 525701  BM FEB Unknown data word (G)
+
+Word number 525702  BM FEB Unknown data word (€)
+
+Word number 525703  BM FEB Board ID 50 L1HoldStop Time: 251
+Word number 525704  BM FEB Spill Header  BoardId: 112  Sid: 0  Spill Tag: 24613
+Word number 525705  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 220505223
+Word number 525706  BM FEB Trigger Trailer (2)  Hit count: 18  Trigger Time: 934476
+Word number 525707  BM FEB Spill Header  BoardId: 92  Sid: 2  Spill Tag: 1717
+Word number 525708  BM FEB Channel: 64  HitId: 6  TagId: 2  Time (0, RE): 1427
+Word number 525709  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 20921254
+Word number 525710  BM FEB Spill Trailer (1)  BoardId: 11  Sid: 2  Temperature: 14655  Humidity: 243
+Word number 525711  BM FEB Spill Trailer (1)  BoardId: 96  Sid: 2  Spill Tag: 651
+Word number 525712  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 203449945
+Word number 525713  BM FEB Unknown data word (-)
+
+Word number 525714  BM FEB Spill TimeID Spill time: 108895592
+Word number 525715  BM FEB Trigger Trailer (2)  Hit count: 15  Trigger Time: 442751
+Word number 525716  BM FEB Trigger Trailer (2)  Hit count: 17  Trigger Time: 820013
+Word number 525717  BM FEB Channel: 25  HitId: 6  TagId: 1  Amplitude Id: 1  Charge: 2494
+Word number 525718  BM FEB Unknown data word (Œ)
+
+Word number 525719  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 19851705
+Word number 525720  BM FEB SpecialWord: 
+Word number 525721  BM FEB Spill TimeID Spill time: 148729544
+Word number 525722  BM FEB Trigger Header  Gl. Trigger Tag: 266747141 (1)
+Word number 525723  BM FEB Unknown data word (ê)
+
+Word number 525724  BM FEB TDM Stop: 3 TDM sumL: 1841 TDM sumH: 637
+Word number 525725  BM FEB Unknown data word (D)
+
+Word number 525726  BM FEB Unknown data word ()
+
+Word number 525727  BM FEB Channel: 127  HitId: 2  TagId: 3  Time (1, FE): 2984
+Word number 525728  BM FEB SpecialWord: 
+Word number 525729  BM FEB Channel: 106  HitId: 1  TagId: 2  Amplitude Id: 13  Charge: 3615
+Word number 525730  BM FEB Unknown data word (∞)
+
+Word number 525731  BM FEB Board ID 71 L1HoldStop Time: 57
+Word number 525732  BM FEB SpecialWord: 
+Word number 525733  BM FEB TDM Stop: 24 TDM sumL: 1124 TDM sumH: 434
+Word number 525734  BM FEB Spill TimeID Spill time: 230859688
+Word number 525735  BM FEB Channel: 17  HitId: 5  TagId: 2  Amplitude Id: 6  Charge: 1405
+Word number 525736  BM FEB Unknown data word (z)
+
+Word number 525737  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 122021006
+Word number 525738  BM FEB Unknown data word (d)
+
+Word number 525739  BM FEB Channel: 29  HitId: 2  TagId: 0  Time (0, RE): 1304
+Word number 525740  BM FEB Unknown data word (k)
+
+Word number 525741  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 174704139
+Word number 525742  BM FEB Unknown data word (˙)
+
+Word number 525743  BM FEB Trigger Header  Gl. Trigger Tag: 68484274 (2)
+Word number 525744  BM FEB Spill TimeID Spill time: 80755377
+Word number 525745  BM FEB Unknown data word (;)
+
+Word number 525746  BM FEB SpecialWord: 
+Word number 525747  BM FEB Unknown data word (N)
+
+Word number 525748  BM FEB Trigger Header  Gl. Trigger Tag: 111562381 (1)
+Word number 525749  BM FEB Unknown data word (Ø)
+
+Word number 525750  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 132999128
+Word number 525751  BM FEB Spill Header  BoardId: 2  Sid: 2  Spill Tag: 48445
+Word number 525752  BM FEB Unknown data word (Ÿ)
+
+Word number 525753  BM FEB SpecialWord: 
+Word number 525754  BM FEB Unknown data word (ù)
+
+Word number 525755  BM FEB Unknown data word (M)
+
+Word number 525756  BM FEB Board ID 89 L1HoldStart Time: 1990
+Word number 525757  BM FEB Spill Trailer (1)  BoardId: 114  Sid: 1  Spill Tag: 62711
+Word number 525758  BM FEB Unknown data word (›)
+
+Word number 525759  BM FEB Trigger Trailer (2)  Hit count: 25  Trigger Time: 499048
+Word number 525760  BM FEB Unknown data word ()
+
+Word number 525761  BM FEB Unknown data word ()
+
+Word number 525762  BM FEB Unknown data word (∑)
+
+Word number 525763  BM FEB Unknown data word (≤)
+
+Word number 525764  BM FEB Spill Trailer (1)  BoardId: 76  Sid: 2  Temperature: 7157  Humidity: 253
+Word number 525765  BM FEB Unknown data word (ú)
+
+Word number 525766  BM FEB Channel: 39  HitId: 0  TagId: 1  Amplitude Id: 15  Charge: 21
+Word number 525767  BM FEB Unknown data word ()
+
+Word number 525768  BM FEB Board ID 117 L1HoldStart Time: 1826
+Word number 525769  BM FEB Channel: 33  HitId: 7  TagId: 2  Amplitude Id: 8  Charge: 1742
+Word number 525770  BM FEB Channel: 82  HitId: 6  TagId: 0  Amplitude Id: 5  Charge: 3918
+Word number 525771  BM FEB SpecialWord: 
+Word number 525772  BM FEB Trigger Header  Gl. Trigger Tag: 62400085 (1)
+Word number 525773  BM FEB Channel: 84  HitId: 4  TagId: 2  Amplitude Id: 7  Charge: 1309
+Word number 525774  BM FEB Unknown data word (—)
+
+Word number 525775  BM FEB Board ID 15 L1HoldStop Time: 1189
+Word number 525776  BM FEB Unknown data word ()
+
+Word number 525777  BM FEB Channel: 28  HitId: 1  TagId: 0  Amplitude Id: 12  Charge: 820
+Word number 525778  BM FEB Board ID 92 L1HoldStart Time: 269
+Word number 525779  BM FEB Spill Trailer (1)  BoardId: 24  Sid: 2  Temperature: 6732  Humidity: 50
+Word number 525780  BM FEB Unknown data word (ú)
+
+Word number 525781  BM FEB Board ID 78 L1HoldStart Time: 121
+Word number 525782  BM FEB Channel: 64  HitId: 6  TagId: 2  Time (0, RE): 1391
+Word number 525783  BM FEB Unknown data word (¶)
+
+Word number 525784  BM FEB Unknown data word (˘)
+
+Word number 525785  BM FEB Trigger Header  Gl. Trigger Tag: 216611455 (3)
+Word number 525786  BM FEB Spill Header  BoardId: 93  Sid: 1  DAQ Type: 7  Spill time from GTrig: 364
+Word number 525787  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 200431980
+Word number 525788  BM FEB Spill Header  BoardId: 61  Sid: 3  Spill Tag: 23192
+Word number 525789  BM FEB Unknown data word (¥)
+
+Word number 525790  BM FEB Unknown data word (—)
+
+Word number 525791  BM FEB Channel: 29  HitId: 4  TagId: 2  Time (0, RE): 1532
+Word number 525792  BM FEB Board ID 23 L1HoldStart Time: 1150
+Word number 525793  BM FEB Unknown data word ()
+
+Word number 525794  BM FEB Unknown data word (ª)
+
+Word number 525795  BM FEB Unknown data word (8)
+
+Word number 525796  BM FEB Unknown data word (¯)
+
+Word number 525797  BM FEB Unknown data word (y)
+
+Word number 525798  BM FEB Spill TimeID Spill time: 127436530
+Word number 525799  BM FEB TDM Stop: 29 TDM sumL: 1775 TDM sumH: 58
+Word number 525800  BM FEB SpecialWord: 
+Word number 525801  BM FEB Spill Header  BoardId: 66  Sid: 3  DAQ Type: 5  Spill time from GTrig: 2014
+Word number 525802  BM FEB Trigger Header  Gl. Trigger Tag: 188127190 (2)
+Word number 525803  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 255126873
+Word number 525804  BM FEB SpecialWord: 
+Word number 525805  BM FEB Unknown data word (z)
+
+Word number 525806  BM FEB Spill TimeID Spill time: 28375124
+Word number 525807  BM FEB Trigger Header  Gl. Trigger Tag: 237768084 (0)
+Word number 525808  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 123441227
+Word number 525809  BM FEB SpecialWord: 
+Word number 525810  BM FEB Spill TimeID Spill time: 218995057
+Word number 525811  BM FEB Unknown data word (X)
+
+Word number 525812  BM FEB SpecialWord: 
+Word number 525813  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 113336061
+Word number 525814  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 160896838
+Word number 525815  BM FEB Channel: 95  HitId: 2  TagId: 3  Time (1, FE): 3306
+Word number 525816  BM FEB Channel: 82  HitId: 3  TagId: 1  Amplitude Id: 8  Charge: 375
+Word number 525817  BM FEB Channel: 104  HitId: 3  TagId: 3  Time (0, RE): 2069
+Word number 525818  BM FEB Spill TimeID Spill time: 208342942
+Word number 525819  BM FEB Trigger Header  Gl. Trigger Tag: 203818967 (3)
+Word number 525820  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 110297887
+Word number 525821  BM FEB Channel: 94  HitId: 2  TagId: 1  Time (1, FE): 238
+Word number 525822  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 173271949
+Word number 525823  BM FEB Channel: 69  HitId: 4  TagId: 2  Amplitude Id: 3  Charge: 3764
+Word number 525824  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 13739675
+Word number 525825  BM FEB Spill Header  BoardId: 4  Sid: 2  DAQ Type: 1  Spill time from GTrig: 1329
+Word number 525826  BM FEB Unknown data word (Õ)
+
+Word number 525827  BM FEB Unknown data word ()
+
+Word number 525828  BM FEB Unknown data word (ñ)
+
+Word number 525829  BM FEB Unknown data word (V)
+
+Word number 525830  BM FEB Spill TimeID Spill time: 79405780
+Word number 525831  BM FEB Spill Trailer (1)  BoardId: 62  Sid: 2  Temperature: 7126  Humidity: 137
+Word number 525832  BM FEB Trigger Trailer (2)  Hit count: 29  Trigger Time: 722362
+Word number 525833  BM FEB Unknown data word (È)
+
+Word number 525834  BM FEB Unknown data word (n)
+
+Word number 525835  BM FEB Board ID 25 L1HoldStop Time: 466
+Word number 525836  BM FEB Unknown data word (^)
+
+Word number 525837  BM FEB Spill TimeID Spill time: 71863835
+Word number 525838  BM FEB Spill TimeID Spill time: 133127251
+Word number 525839  BM FEB Spill Trailer (1)  BoardId: 119  Sid: 1  Temperature: 14168  Humidity: 214
+Word number 525840  BM FEB Unknown data word („)
+
+Word number 525841  BM FEB SpecialWord: 
+Word number 525842  BM FEB Channel: 118  HitId: 4  TagId: 2  Amplitude Id: 11  Charge: 3172
+Word number 525843  BM FEB Board ID 43 L1HoldStart Time: 1531
+Word number 525844  BM FEB Spill TimeID Spill time: 134119571
+Word number 525845  BM FEB Unknown data word (')
+
+Word number 525846  BM FEB Unknown data word (˚)
+
+Word number 525847  BM FEB Unknown data word ()
+
+Word number 525848  BM FEB 
+Word number 525849  BM FEB Spill Header  BoardId: 63  Sid: 3  DAQ Type: 3  Spill time from GTrig: 924
+Word number 525850  BM FEB Unknown data word (®)
+
+Word number 525851  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 185440545
+Word number 525852  BM FEB SpecialWord: 
+Word number 525853  BM FEB Channel: 17  HitId: 5  TagId: 2  Amplitude Id: 5  Charge: 438
+Word number 525854  BM FEB Spill Header  BoardId: 82  Sid: 2  Spill Tag: 43882
+Word number 525855  BM FEB Spill TimeID Spill time: 186120777
+Word number 525856  BM FEB Spill Trailer (1)  BoardId: 2  Sid: 0  Temperature: 4778  Humidity: 171
+Word number 525857  BM FEB Trigger Trailer (2)  Hit count: 0  Trigger Time: 668030
+Word number 525858  BM FEB Unknown data word (á)
+
+Word number 525859  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 263341833
+Word number 525860  BM FEB Unknown data word (Ÿ)
+
+Word number 525861  BM FEB Trigger Trailer (2)  Hit count: 1  Trigger Time: 789289
+Word number 525862  BM FEB Spill TimeID Spill time: 190723740
+Word number 525863  BM FEB Channel: 47  HitId: 0  TagId: 3  Amplitude Id: 7  Charge: 1491
+Word number 525864  BM FEB Unknown data word (7)
+
+Word number 525865  BM FEB Spill TimeID Spill time: 56396666
+Word number 525866  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 123915104
+Word number 525867  BM FEB Spill TimeID Spill time: 215050849
+Word number 525868  BM FEB Spill TimeID Spill time: 227149442
+Word number 525869  BM FEB Trigger Header  Gl. Trigger Tag: 236794566 (2)
+Word number 525870  BM FEB Board ID 105 L1HoldStop Time: 1237
+Word number 525871  BM FEB Spill TimeID Spill time: 92456914
+Word number 525872  BM FEB Board ID 29 L1HoldStart Time: 300
+Word number 525873  BM FEB Channel: 8  HitId: 1  TagId: 3  Time (0, RE): 1433
+Word number 525874  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 5519163
+Word number 525875  BM FEB Unknown data word (v)
+
+Word number 525876  BM FEB Spill Header  BoardId: 25  Sid: 1  DAQ Type: 5  Spill time from GTrig: 1772
+Word number 525877  BM FEB Unknown data word (Ÿ)
+
+Word number 525878  BM FEB Trigger Header  Gl. Trigger Tag: 154418668 (0)
+Word number 525879  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 5203929
+Word number 525880  BM FEB Unknown data word (V)
+
+Word number 525881  BM FEB SpecialWord: 
+Word number 525882  BM FEB SpecialWord: 
+Word number 525883  BM FEB Spill Header  BoardId: 27  Sid: 0  Spill Tag: 47200
+Word number 525884  BM FEB Board ID 65 L1HoldStart Time: 1627
+Word number 525885  BM FEB Unknown data word ()
+
+Word number 525886  BM FEB TDM Start: 6 TDM Tag: 154
+Word number 525887  BM FEB Spill Header  BoardId: 108  Sid: 0  Spill Tag: 56747
+Word number 525888  BM FEB TDM Start: 4 TDM Tag: 127
+Word number 525889  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 165065742
+Word number 525890  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 101140209
+Word number 525891  BM FEB Unknown data word (f)
+
+Word number 525892  BM FEB Channel: 63  HitId: 2  TagId: 3  Time (1, FE): 2009
+Word number 525893  BM FEB Spill Trailer (1)  BoardId: 73  Sid: 1  Spill Tag: 29923
+Word number 525894  BM FEB Unknown data word (E)
+
+Word number 525895  BM FEB Spill Header  BoardId: 72  Sid: 3  DAQ Type: 3  Spill time from GTrig: 1188
+Word number 525896  BM FEB Trigger Header  Gl. Trigger Tag: 172075461 (1)
+Word number 525897  BM FEB 
+Word number 525898  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 66583760
+Word number 525899  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 216292308
+Word number 525900  BM FEB Board ID 52 L1HoldStart Time: 1408
+Word number 525901  BM FEB Spill Header  BoardId: 14  Sid: 3  DAQ Type: 1  Spill time from GTrig: 1415
+Word number 525902  BM FEB Unknown data word (Ã)
+
+Word number 525903  BM FEB Spill TimeID Spill time: 245329030
+Word number 525904  BM FEB TDM Start: 21 TDM Tag: 23
+Word number 525905  BM FEB Unknown data word ()
+
+Word number 525906  BM FEB Spill TimeID Spill time: 93964410
+Word number 525907  BM FEB Unknown data word ()
+
+Word number 525908  BM FEB Unknown data word (á)
+
+Word number 525909  BM FEB Spill TimeID Spill time: 129704306
+Word number 525910  BM FEB Trigger Header  Gl. Trigger Tag: 67962181 (1)
+Word number 525911  BM FEB Unknown data word (è)
+
+Word number 525912  BM FEB Trigger Header  Gl. Trigger Tag: 175701749 (1)
+Word number 525913  BM FEB Spill Header  BoardId: 126  Sid: 2  DAQ Type: 5  Spill time from GTrig: 2009
+Word number 525914  BM FEB Unknown data word (Y)
+
+Word number 525915  BM FEB Unknown data word (Ã)
+
+Word number 525916  BM FEB Trigger Trailer (2)  Hit count: 0  Trigger Time: 792777
+Word number 525917  BM FEB Board ID 48 L1HoldStart Time: 551
+Word number 525918  BM FEB Spill Trailer (1)  BoardId: 6  Sid: 2  Temperature: 6485  Humidity: 244
+Word number 525919  BM FEB Trigger Header  Gl. Trigger Tag: 187827135 (3)
+Word number 525920  BM FEB Spill Header  BoardId: 49  Sid: 2  Spill Tag: 21098
+Word number 525921  BM FEB Spill Trailer (1)  BoardId: 101  Sid: 0  Spill Tag: 1375
+Word number 525922  BM FEB Unknown data word (x)
+
+Word number 525923  BM FEB Channel: 7  HitId: 1  TagId: 1  Time (0, RE): 1606
+Word number 525924  BM FEB Spill TimeID Spill time: 234816424
+Word number 525925  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 97528866
+Word number 525926  BM FEB Spill TimeID Spill time: 223513319
+Word number 525927  BM FEB Board ID 4 L1HoldStop Time: 1266
+Word number 525928  BM FEB Trigger Header  Gl. Trigger Tag: 172756095 (3)
+Word number 525929  BM FEB Unknown data word (Ù)
+
+Word number 525930  BM FEB Unknown data word (µ)
+
+Word number 525931  BM FEB Channel: 64  HitId: 6  TagId: 2  Time (0, RE): 1061
+Word number 525932  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 39501734
+Word number 525933  BM FEB Board ID 1 L1HoldStop Time: 1011
+Word number 525934  BM FEB Spill Trailer (1)  BoardId: 97  Sid: 3  Temperature: 15860  Humidity: 133
+Word number 525935  BM FEB Unknown data word (Y)
+
+Word number 525936  BM FEB Channel: 117  HitId: 7  TagId: 2  Time (0, RE): 1114
+Word number 525937  BM FEB SpecialWord: 
+Word number 525938  BM FEB Trigger Trailer (2)  Hit count: 15  Trigger Time: 442724
+Word number 525939  BM FEB Trigger Trailer (2)  Hit count: 17  Trigger Time: 819512
+Word number 525940  BM FEB Board ID 25 L1HoldStop Time: 988
+Word number 525941  BM FEB Unknown data word (é)
+
+Word number 525942  BM FEB Unknown data word ()
+
+Word number 525943  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 14397047
+Word number 525944  BM FEB Channel: 18  HitId: 2  TagId: 0  Amplitude Id: 6  Charge: 2512
+Word number 525945  BM FEB SpecialWord: 
+Word number 525946  BM FEB SpecialWord: 
+Word number 525947  BM FEB 
+Word number 525948  BM FEB Channel: 87  HitId: 6  TagId: 0  Amplitude Id: 13  Charge: 2297
+Word number 525949  BM FEB Unknown data word (ﬁ)
+
+Word number 525950  BM FEB Trigger Trailer (2)  Hit count: 30  Trigger Time: 635886
+Word number 525951  BM FEB Trigger Header  Gl. Trigger Tag: 257486159 (3)
+Word number 525952  BM FEB Channel: 12  HitId: 1  TagId: 0  Time (1, FE): 3827
+Word number 525953  BM FEB 
+Word number 525954  BM FEB Spill Trailer (1)  BoardId: 3  Sid: 3  Temperature: 15558  Humidity: 31
+Word number 525955  BM FEB Spill TimeID Spill time: 60630347
+Word number 525956  BM FEB Spill Header  BoardId: 106  Sid: 1  Spill Tag: 24496
+Word number 525957  BM FEB Board ID 17 L1HoldStart Time: 462
+Word number 525958  BM FEB Unknown data word (ï)
+
+Word number 525959  BM FEB SpecialWord: 
+Word number 525960  BM FEB Spill TimeID Spill time: 197368931
+Word number 525961  BM FEB Channel: 17  HitId: 5  TagId: 2  Amplitude Id: 5  Charge: 413
+Word number 525962  BM FEB Unknown data word (r)
+
+Word number 525963  BM FEB Spill TimeID Spill time: 185438966
+Word number 525964  BM FEB TDM Start: 20 TDM Tag: 102
+Word number 525965  BM FEB Trigger Trailer (2)  Hit count: 18  Trigger Time: 252927
+Word number 525966  BM FEB Trigger Trailer (2)  Hit count: 9  Trigger Time: 178405
+Word number 525967  BM FEB Spill Trailer (1)  BoardId: 83  Sid: 3  Temperature: 15767  Humidity: 31
+Word number 525968  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 239181046
+Word number 525969  BM FEB Trigger Trailer (2)  Hit count: 6  Trigger Time: 277754
+Word number 525970  BM FEB TDM Start: 20 TDM Tag: 166
+Word number 525971  BM FEB Board ID 83 L1HoldStart Time: 708
+Word number 525972  BM FEB Trigger Header  Gl. Trigger Tag: 261753212 (0)
+Word number 525973  BM FEB Trigger Trailer (2)  Hit count: 15  Trigger Time: 426324
+Word number 525974  BM FEB SpecialWord: 
+Word number 525975  BM FEB SpecialWord: 
+Word number 525976  BM FEB Unknown data word (™)
+
+Word number 525977  BM FEB Unknown data word (>)
+
+Word number 525978  BM FEB Channel: 117  HitId: 2  TagId: 0  Time (0, RE): 1958
+Word number 525979  BM FEB Unknown data word (X)
+
+Word number 525980  BM FEB SpecialWord: 
+Word number 525981  BM FEB Spill TimeID Spill time: 180304674
+Word number 525982  BM FEB Unknown data word (é)
+
+Word number 525983  BM FEB Unknown data word (ç)
+
+Word number 525984  BM FEB SpecialWord: 
+Word number 525985  BM FEB 
+Word number 525986  BM FEB SpecialWord: 
+Word number 525987  BM FEB Spill TimeID Spill time: 250123077
+Word number 525988  BM FEB Unknown data word (>)
+
+Word number 525989  BM FEB Unknown data word (´)
+
+Word number 525990  BM FEB Unknown data word (Ó)
+
+Word number 525991  BM FEB Unknown data word (I)
+
+Word number 525992  BM FEB Unknown data word (Ô)
+
+Word number 525993  BM FEB Spill TimeID Spill time: 117751270
+Word number 525994  BM FEB Unknown data word (™)
+
+Word number 525995  BM FEB SpecialWord: 
+Word number 525996  BM FEB Unknown data word (w)
+
+Word number 525997  BM FEB Board ID 65 L1HoldStart Time: 1503
+Word number 525998  BM FEB TDM Stop: 7 TDM sumL: 1843 TDM sumH: 307
+Word number 525999  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 172617627
+Word number 526000  BM FEB Trigger Header  Gl. Trigger Tag: 257215547 (3)
+Word number 526001  BM FEB Spill TimeID Spill time: 107642265
+Word number 526002  BM FEB Board ID 116 L1HoldStop Time: 1892
+Word number 526003  BM FEB Unknown data word (ì)
+
+Word number 526004  BM FEB TDM Start: 28 TDM Tag: 154
+Word number 526005  BM FEB Trigger Trailer (2)  Hit count: 0  Trigger Time: 289311
+Word number 526006  BM FEB Channel: 15  HitId: 6  TagId: 2  Time (1, FE): 1868
+Word number 526007  BM FEB Spill Header  BoardId: 107  Sid: 3  DAQ Type: 3  Spill time from GTrig: 1947
+Word number 526008  BM FEB Unknown data word (-)
+
+Word number 526009  BM FEB Spill Trailer (1)  BoardId: 78  Sid: 1  Spill Tag: 35535
+Word number 526010  BM FEB Trigger Header  Gl. Trigger Tag: 106582068 (0)
+Word number 526011  BM FEB Spill Trailer (1)  BoardId: 91  Sid: 3  Spill Tag: 35754
+Word number 526012  BM FEB Board ID 41 L1HoldStop Time: 88
+Word number 526013  BM FEB SpecialWord: 
+Word number 526014  BM FEB Unknown data word (©)
+
+Word number 526015  BM FEB Spill TimeID Spill time: 160231319
+Word number 526016  BM FEB Unknown data word (G)
+
+Word number 526017  BM FEB Unknown data word (¨)
+
+Word number 526018  BM FEB Unknown data word (Ÿ)
+
+Word number 526019  BM FEB Trigger Header  Gl. Trigger Tag: 134729117 (1)
+Word number 526020  BM FEB Unknown data word (~)
+
+Word number 526021  BM FEB Channel: 81  HitId: 4  TagId: 3  Amplitude Id: 13  Charge: 3771
+Word number 526022  BM FEB Spill Header  BoardId: 77  Sid: 0  Spill Tag: 57070
+Word number 526023  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 171724954
+Word number 526024  BM FEB SpecialWord: 
+Word number 526025  BM FEB Unknown data word (∞)
+
+Word number 526026  BM FEB 
+Word number 526027  BM FEB Board ID 87 L1HoldStart Time: 48
+Word number 526028  BM FEB Trigger Header  Gl. Trigger Tag: 147324479 (3)
+Word number 526029  BM FEB Unknown data word (º)
+
+Word number 526030  BM FEB Trigger Trailer (2)  Hit count: 11  Trigger Time: 472582
+Word number 526031  BM FEB Unknown data word (Ÿ)
+
+Word number 526032  BM FEB Unknown data word (2)
+
+Word number 526033  BM FEB Unknown data word ()
+
+Word number 526034  BM FEB Unknown data word (—)
+
+Word number 526035  BM FEB 
+Word number 526036  BM FEB Unknown data word ()
+
+Word number 526037  BM FEB SpecialWord: 
+Word number 526038  BM FEB Channel: 27  HitId: 0  TagId: 0  Time (1, FE): 2414
+Word number 526039  BM FEB Unknown data word (#)
+
+Word number 526040  BM FEB TDM Start: 21 TDM Tag: 185
+Word number 526041  BM FEB Unknown data word (V)
+
+Word number 526042  BM FEB Unknown data word (ã)
+
+Word number 526043  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 202990654
+Word number 526044  BM FEB Channel: 48  HitId: 6  TagId: 1  Time (0, RE): 3288
+Word number 526045  BM FEB Unknown data word (ı)
+
+Word number 526046  BM FEB Unknown data word (L)
+
+Word number 526047  BM FEB Trigger Header  Gl. Trigger Tag: 171263907 (3)
+Word number 526048  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 93038120
+Word number 526049  BM FEB Spill Header  BoardId: 91  Sid: 3  Spill Tag: 63905
+Word number 526050  BM FEB Trigger Trailer (2)  Hit count: 7  Trigger Time: 818392
+Word number 526051  BM FEB Channel: 35  HitId: 1  TagId: 3  Time (1, FE): 2408
+Word number 526052  BM FEB Unknown data word (l)
+
+Word number 526053  BM FEB 
+Word number 526054  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 263695634
+Word number 526055  BM FEB SpecialWord: 
+Word number 526056  BM FEB Trigger Header  Gl. Trigger Tag: 227662706 (2)
+Word number 526057  BM FEB Channel: 28  HitId: 4  TagId: 1  Amplitude Id: 3  Charge: 651
+Word number 526058  BM FEB Board ID 70 L1HoldStop Time: 1643
+Word number 526059  BM FEB Unknown data word (Ó)
+
+Word number 526060  BM FEB Trigger Trailer (2)  Hit count: 29  Trigger Time: 447392
+Word number 526061  BM FEB Unknown data word ()
+
+Word number 526062  BM FEB Unknown data word (ü)
+
+Word number 526063  BM FEB Unknown data word (=)
+
+Word number 526064  BM FEB Unknown data word (|)
+
+Word number 526065  BM FEB Spill Header  BoardId: 118  Sid: 1  DAQ Type: 3  Spill time from GTrig: 203
+Word number 526066  BM FEB SpecialWord: 
+Word number 526067  BM FEB Channel: 64  HitId: 6  TagId: 2  Time (0, RE): 1373
+Word number 526068  BM FEB Spill Trailer (1)  BoardId: 19  Sid: 1  Temperature: 14299  Humidity: 254
+Word number 526069  BM FEB Spill TimeID Spill time: 140867462
+Word number 526070  BM FEB Spill Header  BoardId: 54  Sid: 1  Spill Tag: 46959
+Word number 526071  BM FEB Spill Header  BoardId: 114  Sid: 0  Spill Tag: 5942
+Word number 526072  BM FEB TDM Start: 24 TDM Tag: 246
+Word number 526073  BM FEB Trigger Header  Gl. Trigger Tag: 224283164 (0)
+Word number 526074  BM FEB Unknown data word (Ö)
+
+Word number 526075  BM FEB TDM Stop: 21 TDM sumL: 108 TDM sumH: 895
+Word number 526076  BM FEB SpecialWord: 
+Word number 526077  BM FEB Spill Trailer (1)  BoardId: 49  Sid: 0  Spill Tag: 32943
+Word number 526078  BM FEB Unknown data word (∆)
+
+Word number 526079  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 193044351
+Word number 526080  BM FEB Spill TimeID Spill time: 84060117
+Word number 526081  BM FEB Unknown data word (¶)
+
+Word number 526082  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 204664496
+Word number 526083  BM FEB Unknown data word (Í)
+
+Word number 526084  BM FEB Unknown data word (å)
+
+Word number 526085  BM FEB Channel: 77  HitId: 0  TagId: 0  Time (0, RE): 3359
+Word number 526086  BM FEB Spill Trailer (1)  BoardId: 124  Sid: 2  Temperature: 6684  Humidity: 182
+Word number 526087  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 98934983
+Word number 526088  BM FEB Spill TimeID Spill time: 254990405
+Word number 526089  BM FEB Spill TimeID Spill time: 137186342
+Word number 526090  BM FEB Spill Trailer (1)  BoardId: 20  Sid: 0  Spill Tag: 41808
+Word number 526091  BM FEB Unknown data word (ü)
+
+Word number 526092  BM FEB Spill Header  BoardId: 37  Sid: 2  DAQ Type: 2  Spill time from GTrig: 756
+Word number 526093  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 85481707
+Word number 526094  BM FEB Trigger Header  Gl. Trigger Tag: 81374414 (2)
+Word number 526095  BM FEB Channel: 39  HitId: 1  TagId: 2  Amplitude Id: 11  Charge: 2521
+Word number 526096  BM FEB Spill TimeID Spill time: 258059186
+Word number 526097  BM FEB Spill Trailer (1)  BoardId: 41  Sid: 1  Temperature: 14327  Humidity: 100
+Word number 526098  BM FEB Spill Trailer (1)  BoardId: 104  Sid: 3  Temperature: 7997  Humidity: 144
+Word number 526099  BM FEB Board ID 0 L1HoldStop Time: 1606
+Word number 526100  BM FEB Spill TimeID Spill time: 128776995
+Word number 526101  BM FEB Spill Trailer (1)  BoardId: 81  Sid: 2  Spill Tag: 47653
+Word number 526102  BM FEB SpecialWord: 
+Word number 526103  BM FEB SpecialWord: 
+Word number 526104  BM FEB Unknown data word (Ô)
+
+Word number 526105  BM FEB Unknown data word ()
+
+Word number 526106  BM FEB Channel: 77  HitId: 7  TagId: 2  Amplitude Id: 12  Charge: 433
+Word number 526107  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 239737604
+Word number 526108  BM FEB Spill Header  BoardId: 92  Sid: 1  DAQ Type: 7  Spill time from GTrig: 37
+Word number 526109  BM FEB Unknown data word (u)
+
+Word number 526110  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 106409363
+Word number 526111  BM FEB SpecialWord: 
+Word number 526112  BM FEB Trigger Header  Gl. Trigger Tag: 187218402 (2)
+Word number 526113  BM FEB Unknown data word ()
+
+Word number 526114  BM FEB SpecialWord: 
+Word number 526115  BM FEB Unknown data word (À)
+
+Word number 526116  BM FEB Spill Header  BoardId: 43  Sid: 2  Spill Tag: 62606
+Word number 526117  BM FEB Unknown data word ()
+
+Word number 526118  BM FEB Unknown data word (I)
+
+Word number 526119  BM FEB Unknown data word (î)
+
+Word number 526120  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 110489080
+Word number 526121  BM FEB Unknown data word ()
+
+Word number 526122  BM FEB 
+Word number 526123  BM FEB Unknown data word (ç)
+
+Word number 526124  BM FEB Trigger Header  Gl. Trigger Tag: 191349516 (0)
+Word number 526125  BM FEB Unknown data word (`)
+
+Word number 526126  BM FEB Unknown data word (ï)
+
+Word number 526127  BM FEB TDM Stop: 7 TDM sumL: 1905 TDM sumH: 879
+Word number 526128  BM FEB Channel: 66  HitId: 3  TagId: 1  Time (0, RE): 2573
+Word number 526129  BM FEB Unknown data word (È)
+
+Word number 526130  BM FEB Unknown data word (w)
+
+Word number 526131  BM FEB Spill TimeID Spill time: 147020188
+Word number 526132  BM FEB Trigger Trailer (2)  Hit count: 21  Trigger Time: 714588
+Word number 526133  BM FEB SpecialWord: 
+Word number 526134  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 243079528
+Word number 526135  BM FEB Unknown data word (Ÿ)
+
+Word number 526136  BM FEB Channel: 85  HitId: 7  TagId: 3  Amplitude Id: 14  Charge: 2471
+Word number 526137  BM FEB Trigger Header  Gl. Trigger Tag: 255843819 (3)
+Word number 526138  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 2578393
+Word number 526139  BM FEB Unknown data word (ë)
+
+Word number 526140  BM FEB Spill Trailer (1)  BoardId: 106  Sid: 1  Temperature: 5748  Humidity: 15
+Word number 526141  BM FEB SpecialWord: 
+Word number 526142  BM FEB SpecialWord: 
+Word number 526143  BM FEB Spill Header  BoardId: 108  Sid: 2  DAQ Type: 2  Spill time from GTrig: 350
+Word number 526144  BM FEB Board ID 12 L1HoldStart Time: 1404
+Word number 526145  BM FEB Unknown data word (¡)
+
+Word number 526146  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 126085228
+Word number 526147  BM FEB Trigger Header  Gl. Trigger Tag: 10304554 (2)
+Word number 526148  BM FEB Trigger Header  Gl. Trigger Tag: 26947459 (3)
+Word number 526149  BM FEB Unknown data word (‘)
+
+Word number 526150  BM FEB Trigger Trailer (2)  Hit count: 31  Trigger Time: 411342
+Word number 526151  BM FEB Unknown data word (–)
+
+Word number 526152  BM FEB SpecialWord: 
+Word number 526153  BM FEB Unknown data word (ˇ)
+
+Word number 526154  BM FEB Trigger Header  Gl. Trigger Tag: 157667898 (2)
+Word number 526155  BM FEB Trigger Header  Gl. Trigger Tag: 20600908 (0)
+Word number 526156  BM FEB Trigger Header  Gl. Trigger Tag: 16413990 (2)
+Word number 526157  BM FEB Channel: 62  HitId: 4  TagId: 1  Time (1, FE): 126
+Word number 526158  BM FEB Trigger Trailer (2)  Hit count: 3  Trigger Time: 315391
+Word number 526159  BM FEB Trigger Header  Gl. Trigger Tag: 205977030 (2)
+Word number 526160  BM FEB Unknown data word (ô)
+
+Word number 526161  BM FEB Trigger Trailer (2)  Hit count: 24  Trigger Time: 735842
+Word number 526162  BM FEB Spill Header  BoardId: 89  Sid: 1  DAQ Type: 7  Spill time from GTrig: 1103
+Word number 526163  BM FEB Spill TimeID Spill time: 245259042
+Word number 526164  BM FEB Unknown data word ()
+
+Word number 526165  BM FEB Unknown data word (`)
+
+Word number 526166  BM FEB SpecialWord: 
+Word number 526167  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 226629540
+Word number 526168  BM FEB Unknown data word (/)
+
+Word number 526169  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 85041329
+Word number 526170  BM FEB SpecialWord: 
+Word number 526171  BM FEB Trigger Trailer (2)  Hit count: 14  Trigger Time: 706183
+Word number 526172  BM FEB Channel: 43  HitId: 5  TagId: 2  Amplitude Id: 4  Charge: 1911
+Word number 526173  BM FEB Trigger Trailer (2)  Hit count: 27  Trigger Time: 592760
+Word number 526174  BM FEB Board ID 87 L1HoldStart Time: 615
+Word number 526175  BM FEB Unknown data word ({)
+
+Word number 526176  BM FEB Unknown data word (=)
+
+Word number 526177  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 90044283
+Word number 526178  BM FEB Spill Header  BoardId: 93  Sid: 1  DAQ Type: 4  Spill time from GTrig: 1526
+Word number 526179  BM FEB Unknown data word ()
+
+Word number 526180  BM FEB Unknown data word (F)
+
+Word number 526181  BM FEB Trigger Header  Gl. Trigger Tag: 230766782 (2)
+Word number 526182  BM FEB SpecialWord: 
+Word number 526183  BM FEB 
+Word number 526184  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 226610740
+Word number 526185  BM FEB 
+Word number 526186  BM FEB Spill Header  BoardId: 108  Sid: 3  Spill Tag: 23027
+Word number 526187  BM FEB Spill Header  BoardId: 81  Sid: 1  DAQ Type: 6  Spill time from GTrig: 125
+Word number 526188  BM FEB Board ID 21 L1HoldStart Time: 511
+Word number 526189  BM FEB Unknown data word (a)
+
+Word number 526190  BM FEB Unknown data word (F)
+
+Word number 526191  BM FEB Unknown data word (ë)
+
+Word number 526192  BM FEB Channel: 127  HitId: 1  TagId: 1  Amplitude Id: 3  Charge: 1855
+Word number 526193  BM FEB Unknown data word (“)
+
+Word number 526194  BM FEB Unknown data word (°)
+
+Word number 526195  BM FEB TDM Stop: 3 TDM sumL: 360 TDM sumH: 184
+Word number 526196  BM FEB Spill Trailer (1)  BoardId: 7  Sid: 3  Spill Tag: 63140
+Word number 526197  BM FEB Trigger Trailer (2)  Hit count: 0  Trigger Time: 258250
+Word number 526198  BM FEB Unknown data word (¸)
+
+Word number 526199  BM FEB SpecialWord: 
+Word number 526200  BM FEB Trigger Header  Gl. Trigger Tag: 240784506 (2)
+Word number 526201  BM FEB Spill TimeID Spill time: 53315231
+Word number 526202  BM FEB SpecialWord: 
+Word number 526203  BM FEB Channel: 64  HitId: 6  TagId: 2  Time (0, RE): 2391
+Word number 526204  BM FEB Spill Trailer (1)  BoardId: 79  Sid: 0  Temperature: 13109  Humidity: 169
+Word number 526205  BM FEB Channel: 62  HitId: 4  TagId: 2  Time (0, RE): 3500
+Word number 526206  BM FEB SpecialWord: 
+Word number 526207  BM FEB SpecialWord: 
+Word number 526208  BM FEB Board ID 62 L1HoldStart Time: 1077
+Word number 526209  BM FEB Unknown data word (´)
+
+Word number 526210  BM FEB Spill TimeID Spill time: 123497415
+Word number 526211  BM FEB Spill TimeID Spill time: 85178750
+Word number 526212  BM FEB 
+Word number 526213  BM FEB Unknown data word (Ó)
+
+Word number 526214  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 122560317
+Word number 526215  BM FEB Unknown data word (ˆ)
+
+Word number 526216  BM FEB Unknown data word (Ï)
+
+Word number 526217  BM FEB Spill Trailer (1)  BoardId: 106  Sid: 1  Spill Tag: 14148
+Word number 526218  BM FEB Spill TimeID Spill time: 259331511
+Word number 526219  BM FEB SpecialWord: 
+Word number 526220  BM FEB 
+Word number 526221  BM FEB Channel: 34  HitId: 2  TagId: 3  Amplitude Id: 4  Charge: 3457
+Word number 526222  BM FEB Board ID 119 L1HoldStop Time: 54
+Word number 526223  BM FEB Channel: 0  HitId: 7  TagId: 3  Amplitude Id: 4  Charge: 864
+Word number 526224  BM FEB Spill TimeID Spill time: 85147620
+Word number 526225  BM FEB Unknown data word (6)
+
+Word number 526226  BM FEB Unknown data word (∆)
+
+Word number 526227  BM FEB Board ID 110 L1HoldStart Time: 521
+Word number 526228  BM FEB Channel: 80  HitId: 6  TagId: 0  Time (1, FE): 3570
+Word number 526229  BM FEB Unknown data word (P)
+
+Word number 526230  BM FEB 
+Word number 526231  BM FEB Unknown data word (”)
+
+Word number 526232  BM FEB Unknown data word (¸)
+
+Word number 526233  BM FEB Spill Header  BoardId: 11  Sid: 2  Spill Tag: 25904
+Word number 526234  BM FEB Unknown data word (()
+
+Word number 526235  BM FEB Unknown data word (—)
+
+Word number 526236  BM FEB Unknown data word (z)
+
+Word number 526237  BM FEB Channel: 101  HitId: 5  TagId: 3  Amplitude Id: 5  Charge: 146
+Word number 526238  BM FEB TDM Stop: 18 TDM sumL: 1770 TDM sumH: 864
+Word number 526239  BM FEB SpecialWord: 
+Word number 526240  BM FEB Unknown data word (=)
+
+Word number 526241  BM FEB Trigger Trailer (2)  Hit count: 0  Trigger Time: 669075
+Word number 526242  BM FEB Trigger Header  Gl. Trigger Tag: 227545639 (3)
+Word number 526243  BM FEB Unknown data word (Û)
+
+Word number 526244  BM FEB Unknown data word (¨)
+
+Word number 526245  BM FEB TDM Stop: 2 TDM sumL: 1529 TDM sumH: 972
+Word number 526246  BM FEB Channel: 80  HitId: 2  TagId: 1  Amplitude Id: 10  Charge: 3756
+Word number 526247  BM FEB Board ID 94 L1HoldStop Time: 1045
+Word number 526248  BM FEB Spill TimeID Spill time: 125148870
+Word number 526249  BM FEB Spill TimeID Spill time: 108027389
+Word number 526250  BM FEB Unknown data word (o)
+
+Word number 526251  BM FEB Unknown data word (”)
+
+Word number 526252  BM FEB Channel: 64  HitId: 7  TagId: 3  Time (1, FE): 3962
+Word number 526253  BM FEB SpecialWord: 
+Word number 526254  BM FEB Unknown data word (»)
+
+Word number 526255  BM FEB Spill TimeID Spill time: 134139473
+Word number 526256  BM FEB Unknown data word (V)
+
+Word number 526257  BM FEB Spill Trailer (1)  BoardId: 96  Sid: 3  Spill Tag: 39219
+Word number 526258  BM FEB Spill Header  BoardId: 54  Sid: 1  Spill Tag: 13562
+Word number 526259  BM FEB Unknown data word (’)
+
+Word number 526260  BM FEB Channel: 40  HitId: 3  TagId: 0  Amplitude Id: 2  Charge: 1659
+Word number 526261  BM FEB Spill Header  BoardId: 115  Sid: 0  DAQ Type: 5  Spill time from GTrig: 702
+Word number 526262  BM FEB Board ID 25 L1HoldStart Time: 1021
+Word number 526263  BM FEB Spill Trailer (1)  BoardId: 22  Sid: 0  Spill Tag: 15841
+Word number 526264  BM FEB Trigger Trailer (2)  Hit count: 26  Trigger Time: 468076
+Word number 526265  BM FEB Spill Trailer (1)  BoardId: 77  Sid: 3  Temperature: 16225  Humidity: 195
+Word number 526266  BM FEB Board ID 42 L1HoldStart Time: 404
+Word number 526267  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 55860976
+Word number 526268  BM FEB Channel: 60  HitId: 1  TagId: 0  Time (1, FE): 4041
+Word number 526269  BM FEB 
+Word number 526270  BM FEB Channel: 19  HitId: 5  TagId: 1  Amplitude Id: 3  Charge: 1235
+Word number 526271  BM FEB Trigger Header  Gl. Trigger Tag: 164494706 (2)
+Word number 526272  BM FEB Trigger Header  Gl. Trigger Tag: 196618544 (0)
+Word number 526273  BM FEB Unknown data word (¶)
+
+Word number 526274  BM FEB SpecialWord: 
+Word number 526275  BM FEB Unknown data word (Ï)
+
+Word number 526276  BM FEB Unknown data word (ò)
+
+Word number 526277  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 17743846
+Word number 526278  BM FEB Spill Trailer (1)  BoardId: 3  Sid: 2  Temperature: 14815  Humidity: 203
+Word number 526279  BM FEB Unknown data word (À)
+
+Word number 526280  BM FEB Unknown data word (Ê)
+
+Word number 526281  BM FEB Unknown data word (h)
+
+Word number 526282  BM FEB Unknown data word (i)
+
+Word number 526283  BM FEB Unknown data word (Í)
+
+Word number 526284  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 54068823
+Word number 526285  BM FEB Unknown data word (œ)
+
+Word number 526286  BM FEB Unknown data word (™)
+
+Word number 526287  BM FEB Spill Trailer (1)  BoardId: 61  Sid: 1  Spill Tag: 46318
+Word number 526288  BM FEB Spill TimeID Spill time: 123474155
+Word number 526289  BM FEB Unknown data word (Æ)
+
+Word number 526290  BM FEB Trigger Header  Gl. Trigger Tag: 171672761 (1)
+Word number 526291  BM FEB Trigger Header  Gl. Trigger Tag: 238214891 (3)
+Word number 526292  BM FEB Channel: 117  HitId: 1  TagId: 0  Time (1, FE): 985
+Word number 526293  BM FEB Spill Header  BoardId: 127  Sid: 3  Spill Tag: 30642
+Word number 526294  BM FEB Spill Header  BoardId: 66  Sid: 2  Spill Tag: 16072
+Word number 526295  BM FEB Spill Header  BoardId: 28  Sid: 1  DAQ Type: 6  Spill time from GTrig: 1369
+Word number 526296  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 227475417
+Word number 526297  BM FEB Board ID 63 L1HoldStart Time: 423
+Word number 526298  BM FEB Channel: 94  HitId: 0  TagId: 2  Amplitude Id: 8  Charge: 2108
+Word number 526299  BM FEB Board ID 1 L1HoldStop Time: 1291
+Word number 526300  BM FEB Unknown data word (Ò)
+
+Word number 526301  BM FEB Unknown data word (Ω)
+
+Word number 526302  BM FEB Unknown data word (©)
+
+Word number 526303  BM FEB Unknown data word ()
+
+Word number 526304  BM FEB Channel: 29  HitId: 2  TagId: 1  Time (1, FE): 3853
+Word number 526305  BM FEB Spill TimeID Spill time: 224498099
+Word number 526306  BM FEB 
+Word number 526307  BM FEB SpecialWord: 
+Word number 526308  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 11111921
+Word number 526309  BM FEB Unknown data word (ù)
+
+Word number 526310  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 263447305
+Word number 526311  BM FEB Channel: 72  HitId: 3  TagId: 1  Amplitude Id: 7  Charge: 2709
+Word number 526312  BM FEB Channel: 64  HitId: 6  TagId: 3  Time (0, RE): 101
+Word number 526313  BM FEB Trigger Header  Gl. Trigger Tag: 260103438 (2)
+Word number 526314  BM FEB Unknown data word (ø)
+
+Word number 526315  BM FEB Unknown data word (˛)
+
+Word number 526316  BM FEB Unknown data word (x)
+
+Word number 526317  BM FEB Board ID 16 L1HoldStop Time: 242
+Word number 526318  BM FEB Unknown data word (ı)
+
+Word number 526319  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 109868954
+Word number 526320  BM FEB Channel: 106  HitId: 4  TagId: 0  Time (1, FE): 2563
+Word number 526321  BM FEB Unknown data word (‰)
+
+Word number 526322  BM FEB Trigger Trailer (2)  Hit count: 25  Trigger Time: 482151
+Word number 526323  BM FEB Unknown data word (U)
+
+Word number 526324  BM FEB Unknown data word (¸)
+
+Word number 526325  BM FEB Board ID 89 L1HoldStart Time: 1835
+Word number 526326  BM FEB Trigger Header  Gl. Trigger Tag: 100511762 (2)
+Word number 526327  BM FEB Unknown data word (˜)
+
+Word number 526328  BM FEB Unknown data word (û)
+
+Word number 526329  BM FEB Unknown data word (x)
+
+Word number 526330  BM FEB Board ID 110 L1HoldStop Time: 75
+Word number 526331  BM FEB Unknown data word (≈)
+
+Word number 526332  BM FEB Unknown data word (|)
+
+Word number 526333  BM FEB Unknown data word (v)
+
+Word number 526334  BM FEB Spill Header  BoardId: 100  Sid: 0  DAQ Type: 3  Spill time from GTrig: 1887
+Word number 526335  BM FEB Spill Trailer (1)  BoardId: 99  Sid: 0  Spill Tag: 39151
+Word number 526336  BM FEB Unknown data word (`)
+
+Word number 526337  BM FEB Channel: 5  HitId: 6  TagId: 2  Time (1, FE): 1549
+Word number 526338  BM FEB SpecialWord: 
+Word number 526339  BM FEB Channel: 65  HitId: 3  TagId: 2  Time (0, RE): 2308
+Word number 526340  BM FEB Spill TimeID Spill time: 92477379
+Word number 526341  BM FEB Unknown data word (6)
+
+Word number 526342  BM FEB Spill Header  BoardId: 23  Sid: 3  DAQ Type: 6  Spill time from GTrig: 1798
+Word number 526343  BM FEB Spill Header  BoardId: 73  Sid: 2  Spill Tag: 49955
+Word number 526344  BM FEB Unknown data word ( )
+
+Word number 526345  BM FEB Unknown data word (ø)
+
+Word number 526346  BM FEB Unknown data word ({)
+
+Word number 526347  BM FEB Channel: 4  HitId: 6  TagId: 1  Amplitude Id: 6  Charge: 2355
+Word number 526348  BM FEB Channel: 6  HitId: 1  TagId: 3  Amplitude Id: 15  Charge: 1121
+Word number 526349  BM FEB Unknown data word (©)
+
+Word number 526350  BM FEB SpecialWord: 
+Word number 526351  BM FEB Channel: 64  HitId: 7  TagId: 0  Time (1, FE): 3240
+Word number 526352  BM FEB Unknown data word (~)
+
+Word number 526353  BM FEB Unknown data word (@)
+
+Word number 526354  BM FEB Unknown data word (É)
+
+Word number 526355  BM FEB 
+Word number 526356  BM FEB Spill TimeID Spill time: 174011970
+Word number 526357  BM FEB Trigger Header  Gl. Trigger Tag: 200748290 (2)
+Word number 526358  BM FEB Unknown data word (B)
+
+Word number 526359  BM FEB Unknown data word (a)
+
+Word number 526360  BM FEB SpecialWord: 
+Word number 526361  BM FEB Spill Trailer (1)  BoardId: 78  Sid: 2  Spill Tag: 61176
+Word number 526362  BM FEB TDM Stop: 22 TDM sumL: 1190 TDM sumH: 819
+Word number 526363  BM FEB Trigger Trailer (2)  Hit count: 29  Trigger Time: 965072
+Word number 526364  BM FEB Trigger Header  Gl. Trigger Tag: 224438450 (2)
+Word number 526365  BM FEB Spill Trailer (1)  BoardId: 99  Sid: 2  Spill Tag: 54899
+Word number 526366  BM FEB Unknown data word (¶)
+
+Word number 526367  BM FEB Unknown data word (Œ)
+
+Word number 526368  BM FEB Unknown data word (Ï)
+
+Word number 526369  BM FEB Trigger Header  Gl. Trigger Tag: 224190188 (0)
+Word number 526370  BM FEB Channel: 29  HitId: 3  TagId: 0  Time (1, FE): 985
+Word number 526371  BM FEB Channel: 23  HitId: 4  TagId: 3  Time (1, FE): 3963
+Word number 526372  BM FEB Trigger Trailer (2)  Hit count: 31  Trigger Time: 455419
+Word number 526373  BM FEB Unknown data word (ã)
+
+Word number 526374  BM FEB Spill Trailer (1)  BoardId: 91  Sid: 3  Spill Tag: 20503
+Word number 526375  BM FEB Trigger Header  Gl. Trigger Tag: 222325141 (1)
+Word number 526376  BM FEB Board ID 60 L1HoldStart Time: 924
+Word number 526377  BM FEB Spill Header  BoardId: 117  Sid: 1  Spill Tag: 41329
+Word number 526378  BM FEB Spill Header  BoardId: 57  Sid: 2  DAQ Type: 2  Spill time from GTrig: 1590
+Word number 526379  BM FEB Unknown data word ({)
+
+Word number 526380  BM FEB Spill Trailer (1)  BoardId: 22  Sid: 1  Spill Tag: 64464
+Word number 526381  BM FEB Channel: 68  HitId: 3  TagId: 1  Time (0, RE): 1520
+Word number 526382  BM FEB Trigger Trailer (2)  Hit count: 7  Trigger Time: 908827
+Word number 526383  BM FEB SpecialWord: 
+Word number 526384  BM FEB Trigger Trailer (2)  Hit count: 29  Trigger Time: 553162
+Word number 526385  BM FEB SpecialWord: 
+Word number 526386  BM FEB 
+Word number 526387  BM FEB Spill Trailer (1)  BoardId: 9  Sid: 0  Temperature: 12469  Humidity: 214
+Word number 526388  BM FEB Unknown data word (Ë)
+
+Word number 526389  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 174123226
+Word number 526390  BM FEB TDM Start: 22 TDM Tag: 239
+Word number 526391  BM FEB Unknown data word (†)
+
+Word number 526392  BM FEB SpecialWord: 
+Word number 526393  BM FEB Spill Header  BoardId: 104  Sid: 2  DAQ Type: 5  Spill time from GTrig: 453
+Word number 526394  BM FEB Trigger Header  Gl. Trigger Tag: 266193684 (0)
+Word number 526395  BM FEB Channel: 95  HitId: 0  TagId: 1  Amplitude Id: 8  Charge: 2912
+Word number 526396  BM FEB Unknown data word (Q)
+
+Word number 526397  BM FEB Unknown data word (È)
+
+Word number 526398  BM FEB Unknown data word (Ë)
+
+Word number 526399  BM FEB Trigger Header  Gl. Trigger Tag: 68500010 (2)
+Word number 526400  BM FEB Spill Header  BoardId: 37  Sid: 2  DAQ Type: 6  Spill time from GTrig: 2043
+Word number 526401  BM FEB Unknown data word (õ)
+
+Word number 526402  BM FEB Spill Header  BoardId: 39  Sid: 3  DAQ Type: 3  Spill time from GTrig: 236
+Word number 526403  BM FEB Trigger Header  Gl. Trigger Tag: 255160793 (1)
+Word number 526404  BM FEB Trigger Trailer (2)  Hit count: 10  Trigger Time: 240021
+Word number 526405  BM FEB Trigger Trailer (2)  Hit count: 25  Trigger Time: 959399
+Word number 526406  BM FEB TDM Stop: 27 TDM sumL: 209 TDM sumH: 674
+Word number 526407  BM FEB Channel: 93  HitId: 0  TagId: 0  Time (0, RE): 855
+Word number 526408  BM FEB Unknown data word (Ó)
+
+Word number 526409  BM FEB SpecialWord: 
+Word number 526410  BM FEB Channel: 38  HitId: 5  TagId: 0  Time (0, RE): 1828
+Word number 526411  BM FEB Unknown data word (Z)
+
+Word number 526412  BM FEB 
+Word number 526413  BM FEB TDM Stop: 3 TDM sumL: 39 TDM sumH: 345
+Word number 526414  BM FEB 
+Word number 526415  BM FEB Trigger Trailer (2)  Hit count: 30  Trigger Time: 499281
+Word number 526416  BM FEB Unknown data word (;)
+
+Word number 526417  BM FEB Spill Header  BoardId: 66  Sid: 3  Spill Tag: 24537
+Word number 526418  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 17988472
+Word number 526419  BM FEB Trigger Trailer (2)  Hit count: 19  Trigger Time: 225147
+Word number 526420  BM FEB Unknown data word (ù)
+
+Word number 526421  BM FEB Spill Trailer (1)  BoardId: 62  Sid: 0  Spill Tag: 57555
+Word number 526422  BM FEB SpecialWord: 
+Word number 526423  BM FEB Trigger Header  Gl. Trigger Tag: 262078720 (0)
+Word number 526424  BM FEB TDM Stop: 12 TDM sumL: 34 TDM sumH: 119
+Word number 526425  BM FEB Spill Trailer (1)  BoardId: 67  Sid: 1  Spill Tag: 27810
+Word number 526426  BM FEB SpecialWord: 
+Word number 526427  BM FEB Spill TimeID Spill time: 255695355
+Word number 526428  BM FEB Trigger Trailer (2)  Hit count: 0  Trigger Time: 666867
+Word number 526429  BM FEB Spill Header  BoardId: 78  Sid: 3  Spill Tag: 16103
+Word number 526430  BM FEB Unknown data word ()
+
+Word number 526431  BM FEB Spill Trailer (1)  BoardId: 12  Sid: 3  Temperature: 7513  Humidity: 73
+Word number 526432  BM FEB Trigger Trailer (2)  Hit count: 0  Trigger Time: 757578
+Word number 526433  BM FEB Spill Trailer (1)  BoardId: 89  Sid: 2  Temperature: 14896  Humidity: 28
+Word number 526434  BM FEB Board ID 17 L1HoldStart Time: 1018
+Word number 526435  BM FEB Spill Trailer (1)  BoardId: 67  Sid: 1  Temperature: 13634  Humidity: 249
+Word number 526436  BM FEB Unknown data word (π)
+
+Word number 526437  BM FEB Trigger Trailer (2)  Hit count: 7  Trigger Time: 476695
+Word number 526438  BM FEB Unknown data word (s)
+
+Word number 526439  BM FEB Channel: 81  HitId: 4  TagId: 2  Amplitude Id: 9  Charge: 3392
+Word number 526440  BM FEB Trigger Header  Gl. Trigger Tag: 159145618 (2)
+Word number 526441  BM FEB Unknown data word (≤)
+
+Word number 526442  BM FEB Trigger Trailer (2)  Hit count: 10  Trigger Time: 960084
+Word number 526443  BM FEB Trigger Trailer (2)  Hit count: 25  Trigger Time: 823097
+Word number 526444  BM FEB Trigger Header  Gl. Trigger Tag: 98109502 (2)
+Word number 526445  BM FEB Unknown data word (W)
+
+Word number 526446  BM FEB Unknown data word (Ω)
+
+Word number 526447  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 13123194
+Word number 526448  BM FEB Unknown data word (ˆ)
+
+Word number 526449  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 105853932
+Word number 526450  BM FEB Unknown data word (ˆ)
+
+Word number 526451  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 208036970
+Word number 526452  BM FEB Board ID 87 L1HoldStop Time: 1442
+Word number 526453  BM FEB Spill TimeID Spill time: 116433495
+Word number 526454  BM FEB Channel: 48  HitId: 1  TagId: 2  Amplitude Id: 12  Charge: 2722
+Word number 526455  BM FEB Spill Trailer (1)  BoardId: 6  Sid: 2  Temperature: 6551  Humidity: 12
+Word number 526456  BM FEB Channel: 51  HitId: 5  TagId: 0  Amplitude Id: 13  Charge: 4047
+Word number 526457  BM FEB Unknown data word (Ù)
+
+Word number 526458  BM FEB Channel: 48  HitId: 2  TagId: 2  Amplitude Id: 11  Charge: 3023
+Word number 526459  BM FEB Unknown data word (¸)
+
+Word number 526460  BM FEB Channel: 58  HitId: 6  TagId: 0  Time (0, RE): 59
+Word number 526461  BM FEB SpecialWord: 
+Word number 526462  BM FEB Spill Header  BoardId: 27  Sid: 0  Spill Tag: 57134
+Word number 526463  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 103524966
+Word number 526464  BM FEB Trigger Header  Gl. Trigger Tag: 150606375 (3)
+Word number 526465  BM FEB Unknown data word (ﬂ)
+
+Word number 526466  BM FEB Board ID 82 L1HoldStop Time: 1068
+Word number 526467  BM FEB Board ID 123 L1HoldStart Time: 277
+Word number 526468  BM FEB Channel: 10  HitId: 0  TagId: 0  Amplitude Id: 13  Charge: 418
+Word number 526469  BM FEB Unknown data word (˝)
+
+Word number 526470  BM FEB Unknown data word (œ)
+
+Word number 526471  BM FEB Unknown data word ([)
+
+Word number 526472  BM FEB Unknown data word (ê)
+
+Word number 526473  BM FEB Trigger Trailer (2)  Hit count: 25  Trigger Time: 312263
+Word number 526474  BM FEB 
+Word number 526475  BM FEB Channel: 87  HitId: 3  TagId: 0  Amplitude Id: 14  Charge: 1005
+Word number 526476  BM FEB Channel: 119  HitId: 3  TagId: 0  Time (0, RE): 3739
+Word number 526477  BM FEB Unknown data word (A)
+
+Word number 526478  BM FEB Unknown data word (±)
+
+Word number 526479  BM FEB Channel: 115  HitId: 5  TagId: 2  Time (0, RE): 980
+Word number 526480  BM FEB 
+Word number 526481  BM FEB Spill TimeID Spill time: 196227229
+Word number 526482  BM FEB Channel: 103  HitId: 1  TagId: 3  Amplitude Id: 11  Charge: 403
+Word number 526483  BM FEB Unknown data word (ç)
+
+Word number 526484  BM FEB Channel: 35  HitId: 2  TagId: 2  Amplitude Id: 1  Charge: 3901
+Word number 526485  BM FEB Unknown data word (P)
+
+Word number 526486  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 220419654
+Word number 526487  BM FEB SpecialWord: 
+Word number 526488  BM FEB SpecialWord: 
+Word number 526489  BM FEB Trigger Trailer (2)  Hit count: 23  Trigger Time: 977413
+Word number 526490  BM FEB Spill Header  BoardId: 122  Sid: 3  DAQ Type: 1  Spill time from GTrig: 807
+Word number 526491  BM FEB Board ID 21 L1HoldStart Time: 108
+Word number 526492  BM FEB Spill Trailer (1)  BoardId: 78  Sid: 1  Spill Tag: 40641
+Word number 526493  BM FEB Trigger Header  Gl. Trigger Tag: 265958665 (1)
+Word number 526494  BM FEB Trigger Trailer (2)  Hit count: 28  Trigger Time: 662755
+Word number 526495  BM FEB Board ID 124 L1HoldStart Time: 554
+Word number 526496  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 74230285
+Word number 526497  BM FEB Spill Trailer (1)  BoardId: 124  Sid: 0  Temperature: 4900  Humidity: 219
+Word number 526498  BM FEB Spill Trailer (1)  BoardId: 41  Sid: 0  Spill Tag: 41590
+Word number 526499  BM FEB Unknown data word (ö)
+
+Word number 526500  BM FEB Trigger Header  Gl. Trigger Tag: 163220093 (1)
+Word number 526501  BM FEB Unknown data word (Ø)
+
+Word number 526502  BM FEB Channel: 82  HitId: 4  TagId: 3  Amplitude Id: 13  Charge: 1118
+Word number 526503  BM FEB SpecialWord: 
+Word number 526504  BM FEB Spill Trailer (1)  BoardId: 80  Sid: 2  Temperature: 6480  Humidity: 19
+Word number 526505  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 182429314
+Word number 526506  BM FEB Unknown data word (@)
+
+Word number 526507  BM FEB Spill Header  BoardId: 99  Sid: 0  DAQ Type: 6  Spill time from GTrig: 720
+Word number 526508  BM FEB Unknown data word (¥)
+
+Word number 526509  BM FEB Unknown data word (—)
+
+Word number 526510  BM FEB Unknown data word (˘)
+
+Word number 526511  BM FEB Spill Trailer (1)  BoardId: 96  Sid: 1  Temperature: 6094  Humidity: 199
+Word number 526512  BM FEB Unknown data word (z)
+
+Word number 526513  BM FEB Channel: 2  HitId: 3  TagId: 3  Time (0, RE): 797
+Word number 526514  BM FEB Unknown data word (g)
+
+Word number 526515  BM FEB Spill Header  BoardId: 18  Sid: 1  DAQ Type: 4  Spill time from GTrig: 1260
+Word number 526516  BM FEB Channel: 107  HitId: 3  TagId: 3  Amplitude Id: 5  Charge: 1497
+Word number 526517  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 191069106
+Word number 526518  BM FEB Channel: 63  HitId: 6  TagId: 3  Amplitude Id: 12  Charge: 3940
+Word number 526519  BM FEB Unknown data word (ê)
+
+Word number 526520  BM FEB Unknown data word ( )
+
+Word number 526521  BM FEB Spill TimeID Spill time: 85697107
+Word number 526522  BM FEB Unknown data word (§)
+
+Word number 526523  BM FEB Trigger Trailer (2)  Hit count: 31  Trigger Time: 3041
+Word number 526524  BM FEB 
+Word number 526525  BM FEB Unknown data word (ø)
+
+Word number 526526  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 100641870
+Word number 526527  BM FEB Channel: 89  HitId: 7  TagId: 1  Time (1, FE): 871
+Word number 526528  BM FEB Trigger Trailer (2)  Hit count: 3  Trigger Time: 552041
+Word number 526529  BM FEB 
+Word number 526530  BM FEB SpecialWord: 
+Word number 526531  BM FEB Channel: 77  HitId: 0  TagId: 2  Amplitude Id: 3  Charge: 1653
+Word number 526532  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 248377909
+Word number 526533  BM FEB Spill Header  BoardId: 21  Sid: 0  Spill Tag: 52964
+Word number 526534  BM FEB SpecialWord: 
+Word number 526535  BM FEB Spill Trailer (1)  BoardId: 33  Sid: 2  Temperature: 14866  Humidity: 149
+Word number 526536  BM FEB Spill Trailer (1)  BoardId: 110  Sid: 2  Temperature: 6922  Humidity: 159
+Word number 526537  BM FEB Spill Header  BoardId: 33  Sid: 2  DAQ Type: 4  Spill time from GTrig: 980
+Word number 526538  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 165402785
+Word number 526539  BM FEB Board ID 53 L1HoldStart Time: 1507
+Word number 526540  BM FEB Trigger Trailer (2)  Hit count: 26  Trigger Time: 986485
+Word number 526541  BM FEB Channel: 115  HitId: 1  TagId: 3  Time (1, FE): 3337
+Word number 526542  BM FEB Channel: 93  HitId: 3  TagId: 2  Time (1, FE): 2386
+Word number 526543  BM FEB 
+Word number 526544  BM FEB Trigger Trailer (2)  Hit count: 5  Trigger Time: 123667
+Word number 526545  BM FEB Spill Trailer (1)  BoardId: 121  Sid: 0  Temperature: 12378  Humidity: 115
+Word number 526546  BM FEB Unknown data word ()
+
+Word number 526547  BM FEB Unknown data word (Ù)
+
+Word number 526548  BM FEB Spill Trailer (1)  BoardId: 29  Sid: 2  Spill Tag: 13085
+Word number 526549  BM FEB Channel: 109  HitId: 1  TagId: 1  Amplitude Id: 6  Charge: 1629
+Word number 526550  BM FEB Unknown data word (»)
+
+Word number 526551  BM FEB Spill TimeID Spill time: 232092329
+Word number 526552  BM FEB Channel: 6  HitId: 7  TagId: 2  Amplitude Id: 14  Charge: 3214
+Word number 526553  BM FEB SpecialWord: 
+Word number 526554  BM FEB Trigger Header  Gl. Trigger Tag: 67962003 (3)
+Word number 526555  BM FEB 
+Word number 526556  BM FEB Channel: 58  HitId: 6  TagId: 1  Amplitude Id: 10  Charge: 4012
+Word number 526557  BM FEB Channel: 81  HitId: 7  TagId: 0  Time (0, RE): 1380
+Word number 526558  BM FEB TDM Stop: 26 TDM sumL: 454 TDM sumH: 1019
+Word number 526559  BM FEB Unknown data word (X)
+
+Word number 526560  BM FEB SpecialWord: 
+Word number 526561  BM FEB SpecialWord: 
+Word number 526562  BM FEB SpecialWord: 
+Word number 526563  BM FEB Unknown data word (¯)
+
+Word number 526564  BM FEB Unknown data word ()
+
+Word number 526565  BM FEB Spill Header  BoardId: 108  Sid: 1  DAQ Type: 2  Spill time from GTrig: 1639
+Word number 526566  BM FEB Board ID 25 L1HoldStart Time: 751
+Word number 526567  BM FEB 
+Word number 526568  BM FEB SpecialWord: 
+Word number 526569  BM FEB TDM Start: 27 TDM Tag: 33
+Word number 526570  BM FEB Spill TimeID Spill time: 68850804
+Word number 526571  BM FEB Channel: 29  HitId: 2  TagId: 0  Time (0, RE): 1677
+Word number 526572  BM FEB Unknown data word (ı)
+
+Word number 526573  BM FEB Unknown data word ()
+
+Word number 526574  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 204255956
+Word number 526575  BM FEB Unknown data word (i)
+
+Word number 526576  BM FEB Channel: 35  HitId: 2  TagId: 0  Amplitude Id: 7  Charge: 751
+Word number 526577  BM FEB Unknown data word (P)
+
+Word number 526578  BM FEB Board ID 119 L1HoldStart Time: 832
+Word number 526579  BM FEB Trigger Header  Gl. Trigger Tag: 57504464 (0)
+Word number 526580  BM FEB Spill Header  BoardId: 109  Sid: 2  DAQ Type: 4  Spill time from GTrig: 1716
+Word number 526581  BM FEB Trigger Header  Gl. Trigger Tag: 122450771 (3)
+Word number 526582  BM FEB Unknown data word ()
+
+Word number 526583  BM FEB 
+Word number 526584  BM FEB 
+Word number 526585  BM FEB Channel: 72  HitId: 2  TagId: 1  Amplitude Id: 13  Charge: 408
+Word number 526586  BM FEB Spill Trailer (1)  BoardId: 34  Sid: 0  Spill Tag: 21171
+Word number 526587  BM FEB Unknown data word (Á)
+
+Word number 526588  BM FEB Channel: 4  HitId: 7  TagId: 3  Time (1, FE): 2734
+Word number 526589  BM FEB Unknown data word (ª)
+
+Word number 526590  BM FEB Spill Trailer (1)  BoardId: 79  Sid: 3  Spill Tag: 23076
+Word number 526591  BM FEB Channel: 81  HitId: 1  TagId: 3  Time (0, RE): 196
+Word number 526592  BM FEB Unknown data word (Û)
+
+Word number 526593  BM FEB TDM Start: 13 TDM Tag: 118
+Word number 526594  BM FEB Trigger Trailer (2)  Hit count: 31  Trigger Time: 639288
+Word number 526595  BM FEB SpecialWord: 
+Word number 526596  BM FEB TDM Stop: 25 TDM sumL: 2022 TDM sumH: 849
+Word number 526597  BM FEB Trigger Header  Gl. Trigger Tag: 175307456 (0)
+Word number 526598  BM FEB Trigger Trailer (2)  Hit count: 13  Trigger Time: 125979
+Word number 526599  BM FEB Unknown data word (∞)
+
+Word number 526600  BM FEB Spill TimeID Spill time: 120387844
+Word number 526601  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 183438740
+Word number 526602  BM FEB Unknown data word (W)
+
+Word number 526603  BM FEB Spill TimeID Spill time: 189346341
+Word number 526604  BM FEB Unknown data word (·)
+
+Word number 526605  BM FEB Trigger Trailer (2)  Hit count: 1  Trigger Time: 665468
+Word number 526606  BM FEB Channel: 107  HitId: 6  TagId: 1  Amplitude Id: 9  Charge: 3713
+Word number 526607  BM FEB Board ID 112 L1HoldStart Time: 1763
+Word number 526608  BM FEB Spill Header  BoardId: 90  Sid: 0  DAQ Type: 4  Spill time from GTrig: 552
+Word number 526609  BM FEB 
+Word number 526610  BM FEB Trigger Header  Gl. Trigger Tag: 214917762 (2)
+Word number 526611  BM FEB Channel: 71  HitId: 6  TagId: 1  Time (1, FE): 2664
+Word number 526612  BM FEB Spill Header  BoardId: 81  Sid: 2  Spill Tag: 40756
+Word number 526613  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 5986093
+Word number 526614  BM FEB Unknown data word (Î)
+
+Word number 526615  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 30509677
+Word number 526616  BM FEB TDM Stop: 0 TDM sumL: 731 TDM sumH: 414
+Word number 526617  BM FEB 
+Word number 526618  BM FEB Channel: 35  HitId: 2  TagId: 1  Amplitude Id: 0  Charge: 1955
+Word number 526619  BM FEB Unknown data word (†)
+
+Word number 526620  BM FEB 
+Word number 526621  BM FEB Channel: 24  HitId: 5  TagId: 1  Amplitude Id: 9  Charge: 2504
+Word number 526622  BM FEB Unknown data word (ê)
+
+Word number 526623  BM FEB SpecialWord: 
+Word number 526624  BM FEB Unknown data word (P)
+
+Word number 526625  BM FEB Unknown data word (Œ)
+
+Word number 526626  BM FEB Channel: 108  HitId: 4  TagId: 0  Amplitude Id: 1  Charge: 1003
+Word number 526627  BM FEB Spill TimeID Spill time: 186728265
+Word number 526628  BM FEB Spill Trailer (1)  BoardId: 114  Sid: 1  Spill Tag: 46455
+Word number 526629  BM FEB Spill TimeID Spill time: 219138131
+Word number 526630  BM FEB Unknown data word (¶)
+
+Word number 526631  BM FEB Unknown data word (°)
+
+Word number 526632  BM FEB Channel: 29  HitId: 3  TagId: 3  Time (1, FE): 2030
+Word number 526633  BM FEB Unknown data word («)
+
+Word number 526634  BM FEB Spill Trailer (1)  BoardId: 117  Sid: 0  Temperature: 12342  Humidity: 81
+Word number 526635  BM FEB Channel: 108  HitId: 0  TagId: 3  Amplitude Id: 6  Charge: 183
+Word number 526636  BM FEB Unknown data word (ä)
+
+Word number 526637  BM FEB Board ID 83 L1HoldStop Time: 726
+Word number 526638  BM FEB Channel: 94  HitId: 0  TagId: 3  Amplitude Id: 6  Charge: 858
+Word number 526639  BM FEB Channel: 17  HitId: 5  TagId: 2  Amplitude Id: 0  Charge: 2463
+Word number 526640  BM FEB Unknown data word (§)
+
+Word number 526641  BM FEB Unknown data word (y)
+
+Word number 526642  BM FEB Trigger Trailer (2)  Hit count: 2  Trigger Time: 813991
+Word number 526643  BM FEB Spill Header  BoardId: 65  Sid: 3  Spill Tag: 55210
+Word number 526644  BM FEB Spill Trailer (1)  BoardId: 12  Sid: 3  Spill Tag: 23571
+Word number 526645  BM FEB Spill Trailer (1)  BoardId: 14  Sid: 3  Temperature: 7591  Humidity: 210
+Word number 526646  BM FEB Unknown data word (ä)
+
+Word number 526647  BM FEB Unknown data word (≈)
+
+Word number 526648  BM FEB Unknown data word (
+)
+
+Word number 526649  BM FEB TDM Stop: 31 TDM sumL: 246 TDM sumH: 922
+Word number 526650  BM FEB Spill TimeID Spill time: 45705266
+Word number 526651  BM FEB Trigger Trailer (2)  Hit count: 12  Trigger Time: 1006110
+Word number 526652  BM FEB Channel: 106  HitId: 4  TagId: 2  Amplitude Id: 10  Charge: 2432
+Word number 526653  BM FEB Trigger Trailer (2)  Hit count: 0  Trigger Time: 335720
+Word number 526654  BM FEB Trigger Trailer (2)  Hit count: 29  Trigger Time: 170914
+Word number 526655  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 149720100
+Word number 526656  BM FEB Spill TimeID Spill time: 108242554
+Word number 526657  BM FEB Unknown data word (L)
+
+Word number 526658  BM FEB Unknown data word ({)
+
+Word number 526659  BM FEB Channel: 56  HitId: 5  TagId: 3  Amplitude Id: 3  Charge: 2758
+Word number 526660  BM FEB Channel: 118  HitId: 5  TagId: 1  Amplitude Id: 7  Charge: 1605
+Word number 526661  BM FEB Unknown data word (ç)
+
+Word number 526662  BM FEB Trigger Trailer (2)  Hit count: 9  Trigger Time: 252191
+Word number 526663  BM FEB Spill TimeID Spill time: 62642438
+Word number 526664  BM FEB Spill Trailer (1)  BoardId: 31  Sid: 3  Spill Tag: 45619
+Word number 526665  BM FEB 
+Word number 526666  BM FEB SpecialWord: 
+Word number 526667  BM FEB TDM Start: 1 TDM Tag: 215
+Word number 526668  BM FEB Channel: 49  HitId: 4  TagId: 1  Amplitude Id: 5  Charge: 717
+Word number 526669  BM FEB Spill Trailer (1)  BoardId: 40  Sid: 2  Temperature: 6190  Humidity: 176
+Word number 526670  BM FEB Unknown data word (É)
+
+Word number 526671  BM FEB Spill TimeID Spill time: 33707632
+Word number 526672  BM FEB Unknown data word (()
+
+Word number 526673  BM FEB Trigger Header  Gl. Trigger Tag: 114619449 (1)
+Word number 526674  BM FEB Trigger Header  Gl. Trigger Tag: 121357155 (3)
+Word number 526675  BM FEB TDM Start: 6 TDM Tag: 70
+Word number 526676  BM FEB Unknown data word (€)
+
+Word number 526677  BM FEB Trigger Header  Gl. Trigger Tag: 241116472 (0)
+Word number 526678  BM FEB Unknown data word (°)
+
+Word number 526679  BM FEB Trigger Header  Gl. Trigger Tag: 202574506 (2)
+Word number 526680  BM FEB Board ID 71 L1HoldStop Time: 86
+Word number 526681  BM FEB Channel: 51  HitId: 2  TagId: 2  Amplitude Id: 4  Charge: 3074
+Word number 526682  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 184067615
+Word number 526683  BM FEB Trigger Header  Gl. Trigger Tag: 258715968 (0)
+Word number 526684  BM FEB Spill Header  BoardId: 87  Sid: 2  DAQ Type: 1  Spill time from GTrig: 1332
+Word number 526685  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 52711322
+Word number 526686  BM FEB Trigger Header  Gl. Trigger Tag: 173991371 (3)
+Word number 526687  BM FEB SpecialWord: 
+Word number 526688  BM FEB 
+Word number 526689  BM FEB Trigger Trailer (2)  Hit count: 10  Trigger Time: 1009677
+Word number 526690  BM FEB Spill TimeID Spill time: 175826754
+Word number 526691  BM FEB Spill TimeID Spill time: 92409313
+Word number 526692  BM FEB Unknown data word (L)
+
+Word number 526693  BM FEB Board ID 17 L1HoldStart Time: 1625
+Word number 526694  BM FEB Unknown data word (3)
+
+Word number 526695  BM FEB Board ID 16 L1HoldStop Time: 853
+Word number 526696  BM FEB Unknown data word (˚)
+
+Word number 526697  BM FEB Trigger Header  Gl. Trigger Tag: 247892285 (1)
+Word number 526698  BM FEB Trigger Trailer (2)  Hit count: 15  Trigger Time: 585456
+Word number 526699  BM FEB Channel: 115  HitId: 7  TagId: 2  Amplitude Id: 14  Charge: 2195
+Word number 526700  BM FEB Unknown data word (≈)
+
+Word number 526701  BM FEB SpecialWord: 
+Word number 526702  BM FEB Unknown data word (k)
+
+Word number 526703  BM FEB TDM Start: 4 TDM Tag: 127
+Word number 526704  BM FEB Spill Header  BoardId: 21  Sid: 2  DAQ Type: 5  Spill time from GTrig: 249
+Word number 526705  BM FEB Unknown data word ()
+
+Word number 526706  BM FEB Trigger Header  Gl. Trigger Tag: 96772531 (3)
+Word number 526707  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 150109210
+Word number 526708  BM FEB Unknown data word (∞)
+
+Word number 526709  BM FEB Trigger Trailer (2)  Hit count: 9  Trigger Time: 60936
+Word number 526710  BM FEB SpecialWord: 
+Word number 526711  BM FEB SpecialWord: 
+Word number 526712  BM FEB Unknown data word (¶)
+
+Word number 526713  BM FEB Trigger Trailer (2)  Hit count: 12  Trigger Time: 984530
+Word number 526714  BM FEB Spill TimeID Spill time: 228536148
+Word number 526715  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 19749466
+Word number 526716  BM FEB Unknown data word (N)
+
+Word number 526717  BM FEB Spill Trailer (1)  BoardId: 8  Sid: 3  Spill Tag: 40489
+Word number 526718  BM FEB Trigger Header  Gl. Trigger Tag: 70237523 (3)
+Word number 526719  BM FEB Spill TimeID Spill time: 80764219
+Word number 526720  BM FEB Trigger Header  Gl. Trigger Tag: 255081072 (0)
+Word number 526721  BM FEB Channel: 114  HitId: 6  TagId: 2  Time (0, RE): 1531
+Word number 526722  BM FEB Board ID 31 L1HoldStart Time: 793
+Word number 526723  BM FEB Channel: 124  HitId: 4  TagId: 0  Amplitude Id: 3  Charge: 1998
+Word number 526724  BM FEB Trigger Trailer (2)  Hit count: 20  Trigger Time: 752875
+Word number 526725  BM FEB Spill Trailer (1)  BoardId: 104  Sid: 0  Spill Tag: 32239
+Word number 526726  BM FEB Trigger Header  Gl. Trigger Tag: 258487599 (3)
+Word number 526727  BM FEB Unknown data word (È)
+
+Word number 526728  BM FEB Board ID 16 L1HoldStart Time: 94
+Word number 526729  BM FEB TDM Stop: 3 TDM sumL: 611 TDM sumH: 413
+Word number 526730  BM FEB Unknown data word (Ã)
+
+Word number 526731  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 16681885
+Word number 526732  BM FEB SpecialWord: 
+Word number 526733  BM FEB Board ID 61 L1HoldStart Time: 932
+Word number 526734  BM FEB Unknown data word ()
+
+Word number 526735  BM FEB Unknown data word (˜)
+
+Word number 526736  BM FEB Board ID 72 L1HoldStart Time: 1911
+Word number 526737  BM FEB Trigger Header  Gl. Trigger Tag: 169063245 (1)
+Word number 526738  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 200843111
+Word number 526739  BM FEB Trigger Trailer (2)  Hit count: 29  Trigger Time: 54631
+Word number 526740  BM FEB Channel: 118  HitId: 5  TagId: 3  Time (1, FE): 1433
+Word number 526741  BM FEB Spill TimeID Spill time: 204964630
+Word number 526742  BM FEB Unknown data word (Q)
+
+Word number 526743  BM FEB Spill TimeID Spill time: 101553466
+Word number 526744  BM FEB Unknown data word ({)
+
+Word number 526745  BM FEB SpecialWord: 
+Word number 526746  BM FEB Trigger Header  Gl. Trigger Tag: 187227337 (1)
+Word number 526747  BM FEB Board ID 2 L1HoldStop Time: 478
+Word number 526748  BM FEB Spill Header  BoardId: 76  Sid: 3  Spill Tag: 49553
+Word number 526749  BM FEB Unknown data word (Ó)
+
+Word number 526750  BM FEB Trigger Trailer (2)  Hit count: 14  Trigger Time: 688529
+Word number 526751  BM FEB Spill Header  BoardId: 85  Sid: 1  Spill Tag: 60052
+Word number 526752  BM FEB Board ID 9 L1HoldStop Time: 707
+Word number 526753  BM FEB SpecialWord: 
+Word number 526754  BM FEB 
+Word number 526755  BM FEB Spill Trailer (1)  BoardId: 87  Sid: 0  Spill Tag: 39037
+Word number 526756  BM FEB Spill TimeID Spill time: 121095435
+Word number 526757  BM FEB Unknown data word (4)
+
+Word number 526758  BM FEB Spill TimeID Spill time: 54716959
+Word number 526759  BM FEB Unknown data word (')
+
+Word number 526760  BM FEB Trigger Trailer (2)  Hit count: 16  Trigger Time: 832528
+Word number 526761  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 242724100
+Word number 526762  BM FEB Unknown data word (A)
+
+Word number 526763  BM FEB Unknown data word (a)
+
+Word number 526764  BM FEB Board ID 31 L1HoldStop Time: 1210
+Word number 526765  BM FEB Unknown data word (è)
+
+Word number 526766  BM FEB Channel: 4  HitId: 7  TagId: 3  Time (0, RE): 756
+Word number 526767  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 39626299
+Word number 526768  BM FEB Spill Trailer (1)  BoardId: 77  Sid: 1  Spill Tag: 11470
+Word number 526769  BM FEB Unknown data word (\)
+
+Word number 526770  BM FEB Unknown data word (B)
+
+Word number 526771  BM FEB Spill TimeID Spill time: 124014310
+Word number 526772  BM FEB Spill TimeID Spill time: 108022898
+Word number 526773  BM FEB Trigger Header  Gl. Trigger Tag: 22951343 (3)
+Word number 526774  BM FEB Unknown data word (O)
+
+Word number 526775  BM FEB Trigger Trailer (2)  Hit count: 28  Trigger Time: 114555
+Word number 526776  BM FEB Unknown data word ()
+
+Word number 526777  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 47908524
+Word number 526778  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 44936575
+Word number 526779  BM FEB Trigger Header  Gl. Trigger Tag: 201258402 (2)
+Word number 526780  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 216926329
+Word number 526781  BM FEB Board ID 88 L1HoldStart Time: 1722
+Word number 526782  BM FEB Unknown data word (-)
+
+Word number 526783  BM FEB SpecialWord: 
+Word number 526784  BM FEB Trigger Header  Gl. Trigger Tag: 186164196 (0)
+Word number 526785  BM FEB Unknown data word (ﬁ)
+
+Word number 526786  BM FEB Trigger Trailer (2)  Hit count: 11  Trigger Time: 853574
+Word number 526787  BM FEB 
+Word number 526788  BM FEB Unknown data word (ü)
+
+Word number 526789  BM FEB Trigger Trailer (2)  Hit count: 23  Trigger Time: 1003443
+Word number 526790  BM FEB Spill Header  BoardId: 73  Sid: 2  Spill Tag: 8508
+Word number 526791  BM FEB Channel: 39  HitId: 5  TagId: 0  Time (1, FE): 806
+Word number 526792  BM FEB Unknown data word (5)
+
+Word number 526793  BM FEB Unknown data word (í)
+
+Word number 526794  BM FEB Spill Trailer (1)  BoardId: 77  Sid: 0  Spill Tag: 9197
+Word number 526795  BM FEB SpecialWord: 
+Word number 526796  BM FEB Unknown data word (˝)
+
+Word number 526797  BM FEB Unknown data word (í)
+
+Word number 526798  BM FEB Unknown data word (È)
+
+Word number 526799  BM FEB Unknown data word ()
+
+Word number 526800  BM FEB Unknown data word (u)
+
+Word number 526801  BM FEB Trigger Trailer (2)  Hit count: 18  Trigger Time: 113591
+Word number 526802  BM FEB Unknown data word (R)
+
+Word number 526803  BM FEB SpecialWord: 
+Word number 526804  BM FEB TDM Start: 15 TDM Tag: 255
+Word number 526805  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 262042639
+Word number 526806  BM FEB Board ID 2 L1HoldStop Time: 47
+Word number 526807  BM FEB Unknown data word (é)
+
+Word number 526808  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 41903513
+Word number 526809  BM FEB Unknown data word (v)
+
+Word number 526810  BM FEB Trigger Header  Gl. Trigger Tag: 127511276 (0)
+Word number 526811  BM FEB 
+Word number 526812  BM FEB Trigger Trailer (2)  Hit count: 5  Trigger Time: 883592
+Word number 526813  BM FEB Trigger Header  Gl. Trigger Tag: 84753876 (0)
+Word number 526814  BM FEB SpecialWord: 
+Word number 526815  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 77239073
+Word number 526816  BM FEB Spill TimeID Spill time: 249422735
+Word number 526817  BM FEB Unknown data word ()
+
+Word number 526818  BM FEB Spill Header  BoardId: 106  Sid: 2  DAQ Type: 3  Spill time from GTrig: 320
+Word number 526819  BM FEB Unknown data word ()
+
+Word number 526820  BM FEB SpecialWord: 
+Word number 526821  BM FEB Unknown data word (_)
+
+Word number 526822  BM FEB Spill Header  BoardId: 35  Sid: 1  Spill Tag: 56000
+Word number 526823  BM FEB Unknown data word (w)
+
+Word number 526824  BM FEB Trigger Trailer (2)  Hit count: 6  Trigger Time: 507149
+Word number 526825  BM FEB Spill Header  BoardId: 69  Sid: 3  Spill Tag: 36739
+Word number 526826  BM FEB Unknown data word (6)
+
+Word number 526827  BM FEB Unknown data word (‡)
+
+Word number 526828  BM FEB 
+Word number 526829  BM FEB Board ID 31 L1HoldStart Time: 991
+Word number 526830  BM FEB Spill TimeID Spill time: 179218201
+Word number 526831  BM FEB SpecialWord: 
+Word number 526832  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 212603617
+Word number 526833  BM FEB Unknown data word (˙)
+
+Word number 526834  BM FEB Trigger Header  Gl. Trigger Tag: 70123154 (2)
+Word number 526835  BM FEB Channel: 35  HitId: 2  TagId: 3  Amplitude Id: 12  Charge: 2779
+Word number 526836  BM FEB Trigger Header  Gl. Trigger Tag: 217795664 (0)
+Word number 526837  BM FEB Channel: 38  HitId: 6  TagId: 3  Time (1, FE): 3280
+Word number 526838  BM FEB Spill Header  BoardId: 67  Sid: 1  DAQ Type: 6  Spill time from GTrig: 360
+Word number 526839  BM FEB Unknown data word (Z)
+
+Word number 526840  BM FEB Unknown data word (°)
+
+Word number 526841  BM FEB Spill Header  BoardId: 62  Sid: 2  DAQ Type: 1  Spill time from GTrig: 1768
+Word number 526842  BM FEB Channel: 118  HitId: 7  TagId: 1  Amplitude Id: 4  Charge: 286
+Word number 526843  BM FEB Trigger Trailer (2)  Hit count: 29  Trigger Time: 541692
+Word number 526844  BM FEB Unknown data word (‡)
+
+Word number 526845  BM FEB Channel: 28  HitId: 4  TagId: 0  Amplitude Id: 15  Charge: 3529
+Word number 526846  BM FEB Spill TimeID Spill time: 104961739
+Word number 526847  BM FEB Channel: 72  HitId: 6  TagId: 2  Amplitude Id: 15  Charge: 2094
+Word number 526848  BM FEB 
+Word number 526849  BM FEB Unknown data word (™)
+
+Word number 526850  BM FEB Board ID 94 L1HoldStop Time: 701
+Word number 526851  BM FEB Unknown data word (û)
+
+Word number 526852  BM FEB Spill Header  BoardId: 87  Sid: 2  Spill Tag: 56253
+Word number 526853  BM FEB Trigger Trailer (2)  Hit count: 28  Trigger Time: 862234
+Word number 526854  BM FEB Unknown data word (ˇ)
+
+Word number 526855  BM FEB Spill Header  BoardId: 53  Sid: 3  Spill Tag: 41023
+Word number 526856  BM FEB SpecialWord: 
+Word number 526857  BM FEB SpecialWord: 
+Word number 526858  BM FEB Spill Header  BoardId: 54  Sid: 2  Spill Tag: 11706
+Word number 526859  BM FEB Unknown data word (÷)
+
+Word number 526860  BM FEB Channel: 22  HitId: 6  TagId: 3  Amplitude Id: 13  Charge: 1888
+Word number 526861  BM FEB Channel: 41  HitId: 3  TagId: 3  Time (0, RE): 2587
+Word number 526862  BM FEB Unknown data word ()
+
+Word number 526863  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 242213298
+Word number 526864  BM FEB Trigger Trailer (2)  Hit count: 0  Trigger Time: 289962
+Word number 526865  BM FEB Unknown data word ()
+
+Word number 526866  BM FEB Trigger Trailer (2)  Hit count: 18  Trigger Time: 523964
+Word number 526867  BM FEB Unknown data word (˘)
+
+Word number 526868  BM FEB Trigger Trailer (2)  Hit count: 14  Trigger Time: 829248
+Word number 526869  BM FEB SpecialWord: 
+Word number 526870  BM FEB SpecialWord: 
+Word number 526871  BM FEB Spill Header  BoardId: 112  Sid: 0  Spill Tag: 29883
+Word number 526872  BM FEB Unknown data word ()
+
+Word number 526873  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 256933190
+Word number 526874  BM FEB Unknown data word (I)
+
+Word number 526875  BM FEB Board ID 38 L1HoldStop Time: 1430
+Word number 526876  BM FEB Channel: 31  HitId: 1  TagId: 2  Time (1, FE): 2263
+Word number 526877  BM FEB Channel: 65  HitId: 2  TagId: 2  Time (0, RE): 1205
+Word number 526878  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 15117261
+Word number 526879  BM FEB Unknown data word (›)
+
+Word number 526880  BM FEB Trigger Header  Gl. Trigger Tag: 254917996 (0)
+Word number 526881  BM FEB Unknown data word (⁄)
+
+Word number 526882  BM FEB Board ID 13 L1HoldStop Time: 779
+Word number 526883  BM FEB 
+Word number 526884  BM FEB Unknown data word ()
+
+Word number 526885  BM FEB Unknown data word (c)
+
+Word number 526886  BM FEB Channel: 31  HitId: 4  TagId: 1  Time (1, FE): 1638
+Word number 526887  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 46131003
+Word number 526888  BM FEB Trigger Header  Gl. Trigger Tag: 255704438 (2)
+Word number 526889  BM FEB Unknown data word (Ÿ)
+
+Word number 526890  BM FEB Unknown data word (ë)
+
+Word number 526891  BM FEB Unknown data word (Ë)
+
+Word number 526892  BM FEB Unknown data word (ˇ)
+
+Word number 526893  BM FEB Unknown data word (…)
+
+Word number 526894  BM FEB Unknown data word (?)
+
+Word number 526895  BM FEB Board ID 80 L1HoldStart Time: 1389
+Word number 526896  BM FEB Unknown data word ()
+
+Word number 526897  BM FEB Spill Header  BoardId: 89  Sid: 0  Spill Tag: 27313
+Word number 526898  BM FEB Unknown data word (Ÿ)
+
+Word number 526899  BM FEB Spill TimeID Spill time: 264569678
+Word number 526900  BM FEB Spill Header  BoardId: 54  Sid: 1  Spill Tag: 37357
+Word number 526901  BM FEB Spill Trailer (1)  BoardId: 96  Sid: 0  Temperature: 4918  Humidity: 214
+Word number 526902  BM FEB Unknown data word (∞)
+
+Word number 526903  BM FEB Unknown data word (:)
+
+Word number 526904  BM FEB Unknown data word ()
+
+Word number 526905  BM FEB Channel: 47  HitId: 5  TagId: 1  Amplitude Id: 12  Charge: 1986
+Word number 526906  BM FEB Trigger Header  Gl. Trigger Tag: 13499446 (2)
+Word number 526907  BM FEB SpecialWord: 
+Word number 526908  BM FEB Spill Trailer (1)  BoardId: 29  Sid: 2  Spill Tag: 8978
+Word number 526909  BM FEB Trigger Trailer (2)  Hit count: 15  Trigger Time: 769535
+Word number 526910  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 151341691
+Word number 526911  BM FEB Spill Header  BoardId: 29  Sid: 0  DAQ Type: 5  Spill time from GTrig: 1705
+Word number 526912  BM FEB Spill Header  BoardId: 76  Sid: 2  DAQ Type: 0  Spill time from GTrig: 76
+Word number 526913  BM FEB Spill Header  BoardId: 98  Sid: 2  DAQ Type: 7  Spill time from GTrig: 1683
+Word number 526914  BM FEB Unknown data word (S)
+
+Word number 526915  BM FEB Spill TimeID Spill time: 166835042
+Word number 526916  BM FEB Trigger Trailer (2)  Hit count: 1  Trigger Time: 914631
+Word number 526917  BM FEB Trigger Trailer (2)  Hit count: 27  Trigger Time: 127844
+Word number 526918  BM FEB Spill Header  BoardId: 79  Sid: 2  DAQ Type: 4  Spill time from GTrig: 720
+Word number 526919  BM FEB Spill Header  BoardId: 67  Sid: 3  Spill Tag: 24244
+Word number 526920  BM FEB Unknown data word (m)
+
+Word number 526921  BM FEB Spill Trailer (1)  BoardId: 67  Sid: 0  Spill Tag: 59604
+Word number 526922  BM FEB Unknown data word ()
+
+Word number 526923  BM FEB Unknown data word (Á)
+
+Word number 526924  BM FEB Spill TimeID Spill time: 207895168
+Word number 526925  BM FEB Board ID 105 L1HoldStart Time: 558
+Word number 526926  BM FEB Unknown data word ()
+
+Word number 526927  BM FEB Trigger Trailer (2)  Hit count: 11  Trigger Time: 881570
+Word number 526928  BM FEB Unknown data word (˝)
+
+Word number 526929  BM FEB SpecialWord: 
+Word number 526930  BM FEB 
+Word number 526931  BM FEB Unknown data word (›)
+
+Word number 526932  BM FEB Trigger Trailer (2)  Hit count: 18  Trigger Time: 500215
+Word number 526933  BM FEB Channel: 42  HitId: 5  TagId: 0  Time (1, FE): 4085
+Word number 526934  BM FEB Spill Trailer (1)  BoardId: 77  Sid: 3  Spill Tag: 59226
+Word number 526935  BM FEB Board ID 77 L1HoldStop Time: 405
+Word number 526936  BM FEB TDM Stop: 21 TDM sumL: 1585 TDM sumH: 518
+Word number 526937  BM FEB Spill TimeID Spill time: 101553274
+Word number 526938  BM FEB Trigger Trailer (2)  Hit count: 1  Trigger Time: 535661
+Word number 526939  BM FEB Spill TimeID Spill time: 151310787
+Word number 526940  BM FEB Trigger Header  Gl. Trigger Tag: 252486328 (0)
+Word number 526941  BM FEB SpecialWord: 
+Word number 526942  BM FEB Channel: 49  HitId: 5  TagId: 0  Amplitude Id: 3  Charge: 1335
+Word number 526943  BM FEB Channel: 5  HitId: 1  TagId: 3  Time (1, FE): 50
+Word number 526944  BM FEB Unknown data word (ﬂ)
+
+Word number 526945  BM FEB Unknown data word (R)
+
+Word number 526946  BM FEB Channel: 48  HitId: 6  TagId: 3  Time (1, FE): 632
+Word number 526947  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 159755716
+Word number 526948  BM FEB Channel: 76  HitId: 0  TagId: 2  Time (0, RE): 4085
+Word number 526949  BM FEB Spill Trailer (1)  BoardId: 98  Sid: 0  Temperature: 4137  Humidity: 159
+Word number 526950  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 13741370
+Word number 526951  BM FEB Unknown data word (1)
+
+Word number 526952  BM FEB Board ID 33 L1HoldStop Time: 2041
+Word number 526953  BM FEB Unknown data word (ú)
+
+Word number 526954  BM FEB Board ID 52 L1HoldStart Time: 1879
+Word number 526955  BM FEB Spill TimeID Spill time: 228669767
+Word number 526956  BM FEB Unknown data word (h)
+
+Word number 526957  BM FEB Unknown data word (ı)
+
+Word number 526958  BM FEB Board ID 81 L1HoldStart Time: 398
+Word number 526959  BM FEB Spill Trailer (1)  BoardId: 41  Sid: 3  Spill Tag: 53072
+Word number 526960  BM FEB Unknown data word (t)
+
+Word number 526961  BM FEB TDM Stop: 25 TDM sumL: 1720 TDM sumH: 775
+Word number 526962  BM FEB Trigger Trailer (2)  Hit count: 11  Trigger Time: 870221
+Word number 526963  BM FEB Spill TimeID Spill time: 195356893
+Word number 526964  BM FEB Unknown data word (’)
+
+Word number 526965  BM FEB Spill TimeID Spill time: 177114487
+Word number 526966  BM FEB SpecialWord: 
+Word number 526967  BM FEB Unknown data word (5)
+
+Word number 526968  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 201150797
+Word number 526969  BM FEB TDM Start: 26 TDM Tag: 116
+Word number 526970  BM FEB Spill Header  BoardId: 77  Sid: 3  Spill Tag: 1726
+Word number 526971  BM FEB 
+Word number 526972  BM FEB Spill Trailer (1)  BoardId: 43  Sid: 2  Spill Tag: 7306
+Word number 526973  BM FEB Spill Trailer (1)  BoardId: 88  Sid: 0  Spill Tag: 63324
+Word number 526974  BM FEB Trigger Header  Gl. Trigger Tag: 246990374 (2)
+Word number 526975  BM FEB Unknown data word (Ï)
+
+Word number 526976  BM FEB Unknown data word (Ü)
+
+Word number 526977  BM FEB Unknown data word ()
+
+Word number 526978  BM FEB Channel: 15  HitId: 7  TagId: 3  Amplitude Id: 6  Charge: 3853
+Word number 526979  BM FEB Unknown data word (∆)
+
+Word number 526980  BM FEB Unknown data word (ã)
+
+Word number 526981  BM FEB Unknown data word ()
+
+Word number 526982  BM FEB Spill TimeID Spill time: 264016981
+Word number 526983  BM FEB SpecialWord: 
+Word number 526984  BM FEB Spill Header  BoardId: 74  Sid: 3  Spill Tag: 14528
+Word number 526985  BM FEB 
+Word number 526986  BM FEB Trigger Trailer (2)  Hit count: 6  Trigger Time: 819081
+Word number 526987  BM FEB Spill Trailer (1)  BoardId: 20  Sid: 0  Spill Tag: 30618
+Word number 526988  BM FEB Unknown data word (c)
+
+Word number 526989  BM FEB SpecialWord: 
+Word number 526990  BM FEB Unknown data word (”)
+
+Word number 526991  BM FEB SpecialWord: 
+Word number 526992  BM FEB Trigger Header  Gl. Trigger Tag: 249173911 (3)
+Word number 526993  BM FEB Unknown data word (Œ)
+
+Word number 526994  BM FEB Spill TimeID Spill time: 83992765
+Word number 526995  BM FEB Channel: 86  HitId: 3  TagId: 2  Amplitude Id: 10  Charge: 3876
+Word number 526996  BM FEB Spill Trailer (1)  BoardId: 96  Sid: 0  Temperature: 4908  Humidity: 38
+Word number 526997  BM FEB Unknown data word (f)
+
+Word number 526998  BM FEB Board ID 17 L1HoldStop Time: 1849
+Word number 526999  BM FEB Spill Trailer (1)  BoardId: 34  Sid: 0  Spill Tag: 55979
+Word number 527000  BM FEB Unknown data word (˜)
+
+Word number 527001  BM FEB Unknown data word (û)
+
+Word number 527002  BM FEB Unknown data word (ﬁ)
+
+Word number 527003  BM FEB Unknown data word (æ)
+
+Word number 527004  BM FEB SpecialWord: 
+Word number 527005  BM FEB Unknown data word (Õ)
+
+Word number 527006  BM FEB Board ID 106 L1HoldStop Time: 1356
+Word number 527007  BM FEB Channel: 44  HitId: 0  TagId: 1  Amplitude Id: 11  Charge: 418
+Word number 527008  BM FEB Spill TimeID Spill time: 101548681
+Word number 527009  BM FEB Channel: 30  HitId: 4  TagId: 0  Amplitude Id: 4  Charge: 3609
+Word number 527010  BM FEB Spill Header  BoardId: 116  Sid: 2  DAQ Type: 7  Spill time from GTrig: 111
+Word number 527011  BM FEB Trigger Header  Gl. Trigger Tag: 186304799 (3)
+Word number 527012  BM FEB Board ID 2 L1HoldStop Time: 1758
+Word number 527013  BM FEB Unknown data word (ë)
+
+Word number 527014  BM FEB Spill TimeID Spill time: 152385759
+Word number 527015  BM FEB Spill Header  BoardId: 77  Sid: 1  Spill Tag: 16079
+Word number 527016  BM FEB Board ID 21 L1HoldStop Time: 1658
+Word number 527017  BM FEB 
+Word number 527018  BM FEB Channel: 42  HitId: 3  TagId: 2  Amplitude Id: 15  Charge: 339
+Word number 527019  BM FEB Unknown data word (‘)
+
+Word number 527020  BM FEB Board ID 100 L1HoldStart Time: 1285
+Word number 527021  BM FEB Spill TimeID Spill time: 221490970
+Word number 527022  BM FEB Unknown data word (´)
+
+Word number 527023  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 240887937
+Word number 527024  BM FEB Unknown data word (l)
+
+Word number 527025  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 32350223
+Word number 527026  BM FEB Unknown data word (<)
+
+Word number 527027  BM FEB SpecialWord: 
+Word number 527028  BM FEB Unknown data word (ﬁ)
+
+Word number 527029  BM FEB SpecialWord: 
+Word number 527030  BM FEB Trigger Header  Gl. Trigger Tag: 209146231 (3)
+Word number 527031  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 13869145
+Word number 527032  BM FEB 
+Word number 527033  BM FEB Spill TimeID Spill time: 182249253
+Word number 527034  BM FEB Spill Trailer (1)  BoardId: 27  Sid: 1  Spill Tag: 48040
+Word number 527035  BM FEB Unknown data word (O)
+
+Word number 527036  BM FEB Channel: 72  HitId: 2  TagId: 1  Amplitude Id: 3  Charge: 3473
+Word number 527037  BM FEB 
+Word number 527038  BM FEB 
+Word number 527039  BM FEB Trigger Trailer (2)  Hit count: 18  Trigger Time: 63819
+Word number 527040  BM FEB Unknown data word (U)
+
+Word number 527041  BM FEB Unknown data word (˝)
+
+Word number 527042  BM FEB Trigger Header  Gl. Trigger Tag: 146336496 (0)
+Word number 527043  BM FEB Channel: 19  HitId: 7  TagId: 1  Amplitude Id: 5  Charge: 2075
+Word number 527044  BM FEB Unknown data word ( )
+
+Word number 527045  BM FEB Unknown data word (Q)
+
+Word number 527046  BM FEB Spill TimeID Spill time: 201077438
+Word number 527047  BM FEB Spill Trailer (1)  BoardId: 120  Sid: 3  Spill Tag: 35967
+Word number 527048  BM FEB Channel: 27  HitId: 1  TagId: 1  Time (0, RE): 1327
+Word number 527049  BM FEB Unknown data word ()
+
+Word number 527050  BM FEB Spill Trailer (1)  BoardId: 39  Sid: 3  Temperature: 16060  Humidity: 78
+Word number 527051  BM FEB 
+Word number 527052  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 244838739
+Word number 527053  BM FEB SpecialWord: 
+Word number 527054  BM FEB Unknown data word (ã)
+
+Word number 527055  BM FEB Channel: 58  HitId: 6  TagId: 2  Time (1, FE): 418
+Word number 527056  BM FEB Unknown data word (‡)
+
+Word number 527057  BM FEB Trigger Trailer (2)  Hit count: 17  Trigger Time: 693099
+Word number 527058  BM FEB SpecialWord: 
+Word number 527059  BM FEB Unknown data word (^)
+
+Word number 527060  BM FEB Unknown data word (”)
+
+Word number 527061  BM FEB TDM Stop: 20 TDM sumL: 1654 TDM sumH: 227
+Word number 527062  BM FEB Unknown data word ()
+
+Word number 527063  BM FEB Trigger Trailer (2)  Hit count: 29  Trigger Time: 273265
+Word number 527064  BM FEB SpecialWord: 
+Word number 527065  BM FEB Board ID 3 L1HoldStop Time: 758
+Word number 527066  BM FEB Unknown data word (Æ)
+
+Word number 527067  BM FEB Unknown data word (>)
+
+Word number 527068  BM FEB Trigger Trailer (2)  Hit count: 30  Trigger Time: 249677
+Word number 527069  BM FEB Trigger Header  Gl. Trigger Tag: 267488944 (0)
+Word number 527070  BM FEB Channel: 68  HitId: 5  TagId: 2  Amplitude Id: 6  Charge: 1824
+Word number 527071  BM FEB Unknown data word (Å)
+
+Word number 527072  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 196797259
+Word number 527073  BM FEB Trigger Trailer (2)  Hit count: 29  Trigger Time: 819502
+Word number 527074  BM FEB Trigger Header  Gl. Trigger Tag: 64560817 (1)
+Word number 527075  BM FEB Unknown data word (ﬂ)
+
+Word number 527076  BM FEB Channel: 3  HitId: 3  TagId: 3  Time (1, FE): 3993
+Word number 527077  BM FEB Channel: 6  HitId: 1  TagId: 3  Time (1, FE): 763
+Word number 527078  BM FEB Unknown data word (´)
+
+Word number 527079  BM FEB Channel: 125  HitId: 5  TagId: 3  Time (1, FE): 3819
+Word number 527080  BM FEB Trigger Trailer (2)  Hit count: 21  Trigger Time: 1044128
+Word number 527081  BM FEB Unknown data word (_)
+
+Word number 527082  BM FEB Spill Trailer (1)  BoardId: 58  Sid: 0  Temperature: 4162  Humidity: 30
+Word number 527083  BM FEB Board ID 29 L1HoldStart Time: 1850
+Word number 527084  BM FEB Channel: 36  HitId: 5  TagId: 1  Amplitude Id: 0  Charge: 1697
+Word number 527085  BM FEB Unknown data word (¯)
+
+Word number 527086  BM FEB Channel: 55  HitId: 6  TagId: 3  Time (0, RE): 3853
+Word number 527087  BM FEB Trigger Trailer (2)  Hit count: 13  Trigger Time: 292614
+Word number 527088  BM FEB SpecialWord: 
+Word number 527089  BM FEB SpecialWord: 
+Word number 527090  BM FEB Spill TimeID Spill time: 167737338
+Word number 527091  BM FEB Spill Header  BoardId: 21  Sid: 0  Spill Tag: 44087
+Word number 527092  BM FEB Spill Trailer (1)  BoardId: 40  Sid: 2  Spill Tag: 38381
+Word number 527093  BM FEB Trigger Trailer (2)  Hit count: 7  Trigger Time: 608
+Word number 527094  BM FEB Spill TimeID Spill time: 34583378
+Word number 527095  BM FEB Spill Header  BoardId: 101  Sid: 1  DAQ Type: 6  Spill time from GTrig: 1994
+Word number 527096  BM FEB TDM Start: 20 TDM Tag: 15
+Word number 527097  BM FEB Board ID 38 L1HoldStop Time: 1707
+Word number 527098  BM FEB SpecialWord: 
+Word number 527099  BM FEB Unknown data word (∞)
+
+Word number 527100  BM FEB Unknown data word (^)
+
+Word number 527101  BM FEB Spill Trailer (1)  BoardId: 119  Sid: 3  Spill Tag: 41365
+Word number 527102  BM FEB Board ID 48 L1HoldStart Time: 1046
+Word number 527103  BM FEB Unknown data word (h)
+
+Word number 527104  BM FEB Spill TimeID Spill time: 67272627
+Word number 527105  BM FEB Spill TimeID Spill time: 4338044
+Word number 527106  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 223423694
+Word number 527107  BM FEB SpecialWord: 
+Word number 527108  BM FEB Spill TimeID Spill time: 178961184
+Word number 527109  BM FEB Spill Trailer (1)  BoardId: 88  Sid: 1  Temperature: 5597  Humidity: 144
+Word number 527110  BM FEB Channel: 123  HitId: 5  TagId: 3  Time (0, RE): 3178
+Word number 527111  BM FEB Channel: 61  HitId: 6  TagId: 2  Time (1, FE): 3711
+Word number 527112  BM FEB Unknown data word (n)
+
+Word number 527113  BM FEB Unknown data word (˜)
+
+Word number 527114  BM FEB 
+Word number 527115  BM FEB Unknown data word (ﬁ)
+
+Word number 527116  BM FEB Channel: 14  HitId: 7  TagId: 3  Amplitude Id: 8  Charge: 1007
+Word number 527117  BM FEB Spill Trailer (1)  BoardId: 44  Sid: 3  Spill Tag: 43695
+Word number 527118  BM FEB Spill TimeID Spill time: 266858121
+Word number 527119  BM FEB SpecialWord: 
+Word number 527120  BM FEB Spill Header  BoardId: 54  Sid: 2  Spill Tag: 11381
+Word number 527121  BM FEB TDM Start: 10 TDM Tag: 86
+Word number 527122  BM FEB Trigger Header  Gl. Trigger Tag: 184882095 (3)
+Word number 527123  BM FEB Unknown data word (Ù)
+
+Word number 527124  BM FEB Unknown data word (ù)
+
+Word number 527125  BM FEB 
+Word number 527126  BM FEB Trigger Header  Gl. Trigger Tag: 174256112 (0)
+Word number 527127  BM FEB Trigger Header  Gl. Trigger Tag: 65461787 (3)
+Word number 527128  BM FEB Spill TimeID Spill time: 99869804
+Word number 527129  BM FEB Board ID 127 L1HoldStart Time: 1284
+Word number 527130  BM FEB Spill TimeID Spill time: 127214463
+Word number 527131  BM FEB Unknown data word (Æ)
+
+Word number 527132  BM FEB Channel: 0  HitId: 7  TagId: 2  Amplitude Id: 14  Charge: 2522
+Word number 527133  BM FEB Unknown data word (°)
+
+Word number 527134  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 205094228
+Word number 527135  BM FEB Trigger Header  Gl. Trigger Tag: 69382393 (1)
+Word number 527136  BM FEB Channel: 35  HitId: 2  TagId: 2  Amplitude Id: 0  Charge: 3691
+Word number 527137  BM FEB TDM Stop: 6 TDM sumL: 1104 TDM sumH: 1001
+Word number 527138  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 218359426
+Word number 527139  BM FEB SpecialWord: 
+Word number 527140  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 238230224
+Word number 527141  BM FEB Trigger Trailer (2)  Hit count: 27  Trigger Time: 454033
+Word number 527142  BM FEB Trigger Header  Gl. Trigger Tag: 161545060 (0)
+Word number 527143  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 61398290
+Word number 527144  BM FEB TDM Start: 24 TDM Tag: 13
+Word number 527145  BM FEB Trigger Header  Gl. Trigger Tag: 107421838 (2)
+Word number 527146  BM FEB Unknown data word (Ô)
+
+Word number 527147  BM FEB Trigger Trailer (2)  Hit count: 11  Trigger Time: 591965
+Word number 527148  BM FEB Spill TimeID Spill time: 196220261
+Word number 527149  BM FEB SpecialWord: 
+Word number 527150  BM FEB Unknown data word (Œ)
+
+Word number 527151  BM FEB Trigger Header  Gl. Trigger Tag: 84234132 (0)
+Word number 527152  BM FEB Unknown data word ()
+
+Word number 527153  BM FEB Unknown data word (®)
+
+Word number 527154  BM FEB Channel: 95  HitId: 2  TagId: 2  Amplitude Id: 11  Charge: 2690
+Word number 527155  BM FEB Channel: 91  HitId: 7  TagId: 3  Amplitude Id: 14  Charge: 3207
+Word number 527156  BM FEB Unknown data word (.)
+
+Word number 527157  BM FEB Unknown data word (ˇ)
+
+Word number 527158  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 142179341
+Word number 527159  BM FEB Unknown data word (f)
+
+Word number 527160  BM FEB SpecialWord: 
+Word number 527161  BM FEB Spill TimeID Spill time: 16273846
+Word number 527162  BM FEB Board ID 60 L1HoldStart Time: 683
+Word number 527163  BM FEB Unknown data word (Â)
+
+Word number 527164  BM FEB Unknown data word (Á)
+
+Word number 527165  BM FEB Unknown data word (ˆ)
+
+Word number 527166  BM FEB 
+Word number 527167  BM FEB Unknown data word (F)
+
+Word number 527168  BM FEB Unknown data word (±)
+
+Word number 527169  BM FEB Unknown data word (†)
+
+Word number 527170  BM FEB Spill TimeID Spill time: 31398570
+Word number 527171  BM FEB Unknown data word (J)
+
+Word number 527172  BM FEB Spill Trailer (1)  BoardId: 58  Sid: 1  Spill Tag: 54665
+Word number 527173  BM FEB Spill Trailer (1)  BoardId: 7  Sid: 1  Spill Tag: 56140
+Word number 527174  BM FEB Trigger Header  Gl. Trigger Tag: 99645853 (1)
+Word number 527175  BM FEB Unknown data word (√)
+
+Word number 527176  BM FEB Trigger Trailer (2)  Hit count: 27  Trigger Time: 227301
+Word number 527177  BM FEB Unknown data word (‘)
+
+Word number 527178  BM FEB Channel: 26  HitId: 6  TagId: 3  Time (1, FE): 1563
+Word number 527179  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 262183476
+Word number 527180  BM FEB Channel: 51  HitId: 5  TagId: 1  Amplitude Id: 14  Charge: 1902
+Word number 527181  BM FEB Unknown data word (=)
+
+Word number 527182  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 5621306
+Word number 527183  BM FEB Trigger Header  Gl. Trigger Tag: 230042830 (2)
+Word number 527184  BM FEB Spill Header  BoardId: 25  Sid: 2  Spill Tag: 14809
+Word number 527185  BM FEB Channel: 15  HitId: 6  TagId: 1  Time (0, RE): 1497
+Word number 527186  BM FEB Spill Trailer (1)  BoardId: 38  Sid: 2  Temperature: 6523  Humidity: 178
+Word number 527187  BM FEB Spill Header  BoardId: 73  Sid: 2  DAQ Type: 7  Spill time from GTrig: 1892
+Word number 527188  BM FEB Channel: 124  HitId: 3  TagId: 1  Amplitude Id: 13  Charge: 3784
+Word number 527189  BM FEB Unknown data word (i)
+
+Word number 527190  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 20822231
+Word number 527191  BM FEB Spill TimeID Spill time: 14636631
+Word number 527192  BM FEB SpecialWord: 
+Word number 527193  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 201321614
+Word number 527194  BM FEB Board ID 112 L1HoldStart Time: 470
+Word number 527195  BM FEB Unknown data word (Ï)
+
+Word number 527196  BM FEB Trigger Trailer (2)  Hit count: 24  Trigger Time: 375630
+Word number 527197  BM FEB 
+Word number 527198  BM FEB Trigger Header  Gl. Trigger Tag: 222863639 (3)
+Word number 527199  BM FEB Spill Trailer (1)  BoardId: 58  Sid: 2  Temperature: 6872  Humidity: 121
+Word number 527200  BM FEB Spill Trailer (1)  BoardId: 90  Sid: 1  Temperature: 5979  Humidity: 195
+Word number 527201  BM FEB Spill Header  BoardId: 68  Sid: 3  DAQ Type: 5  Spill time from GTrig: 1670
+Word number 527202  BM FEB TDM Start: 24 TDM Tag: 159
+Word number 527203  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 218097948
+Word number 527204  BM FEB Unknown data word (ê)
+
+Word number 527205  BM FEB Spill TimeID Spill time: 116614559
+Word number 527206  BM FEB 
+Word number 527207  BM FEB Unknown data word (H)
+
+Word number 527208  BM FEB Unknown data word (Î)
+
+Word number 527209  BM FEB Spill Header  BoardId: 94  Sid: 0  DAQ Type: 5  Spill time from GTrig: 304
+Word number 527210  BM FEB Spill TimeID Spill time: 125760152
+Word number 527211  BM FEB Unknown data word (()
+
+Word number 527212  BM FEB Unknown data word (¶)
+
+Word number 527213  BM FEB Unknown data word (¸)
+
+Word number 527214  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 53251674
+Word number 527215  BM FEB Spill Header  BoardId: 121  Sid: 3  DAQ Type: 3  Spill time from GTrig: 1718
+Word number 527216  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 2832237
+Word number 527217  BM FEB Trigger Header  Gl. Trigger Tag: 175816955 (3)
+Word number 527218  BM FEB Unknown data word ()
+
+Word number 527219  BM FEB Unknown data word (∆)
+
+Word number 527220  BM FEB Trigger Header  Gl. Trigger Tag: 104042886 (2)
+Word number 527221  BM FEB Unknown data word (ç)
+
+Word number 527222  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 18295897
+Word number 527223  BM FEB Trigger Trailer (2)  Hit count: 8  Trigger Time: 420007
+Word number 527224  BM FEB Unknown data word (c)
+
+Word number 527225  BM FEB Unknown data word (")
+
+Word number 527226  BM FEB 
+Word number 527227  BM FEB Trigger Trailer (2)  Hit count: 17  Trigger Time: 912527
+Word number 527228  BM FEB SpecialWord: 
+Word number 527229  BM FEB Unknown data word (Ω)
+
+Word number 527230  BM FEB Trigger Trailer (2)  Hit count: 2  Trigger Time: 704170
+Word number 527231  BM FEB Unknown data word (÷)
+
+Word number 527232  BM FEB Unknown data word (
+)
+
+Word number 527233  BM FEB Unknown data word (Ÿ)
+
+Word number 527234  BM FEB Trigger Trailer (2)  Hit count: 7  Trigger Time: 27746
+Word number 527235  BM FEB Unknown data word (0)
+
+Word number 527236  BM FEB SpecialWord: 
+Word number 527237  BM FEB Spill Trailer (1)  BoardId: 15  Sid: 0  Temperature: 12386  Humidity: 15
+Word number 527238  BM FEB Unknown data word ()
+
+Word number 527239  BM FEB Unknown data word (æ)
+
+Word number 527240  BM FEB Unknown data word (l)
+
+Word number 527241  BM FEB Trigger Header  Gl. Trigger Tag: 76833151 (3)
+Word number 527242  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 211197039
+Word number 527243  BM FEB Trigger Trailer (2)  Hit count: 15  Trigger Time: 264857
+Word number 527244  BM FEB SpecialWord: 
+Word number 527245  BM FEB Trigger Trailer (2)  Hit count: 9  Trigger Time: 545967
+Word number 527246  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 155981473
+Word number 527247  BM FEB Unknown data word (ú)
+
+Word number 527248  BM FEB SpecialWord: 
+Word number 527249  BM FEB Unknown data word ({)
+
+Word number 527250  BM FEB Unknown data word (˘)
+
+Word number 527251  BM FEB Unknown data word (Â)
+
+Word number 527252  BM FEB Spill Trailer (1)  BoardId: 65  Sid: 3  Spill Tag: 19701
+Word number 527253  BM FEB Unknown data word (ª)
+
+Word number 527254  BM FEB Trigger Header  Gl. Trigger Tag: 35058695 (3)
+Word number 527255  BM FEB Trigger Trailer (2)  Hit count: 19  Trigger Time: 1002413
+Word number 527256  BM FEB Spill Trailer (1)  BoardId: 24  Sid: 3  Temperature: 7527  Humidity: 66
+Word number 527257  BM FEB Trigger Header  Gl. Trigger Tag: 107421750 (2)
+Word number 527258  BM FEB Unknown data word (m)
+
+Word number 527259  BM FEB Trigger Trailer (2)  Hit count: 11  Trigger Time: 594801
+Word number 527260  BM FEB Unknown data word (i)
+
+Word number 527261  BM FEB SpecialWord: 
+Word number 527262  BM FEB Unknown data word (ı)
+
+Word number 527263  BM FEB SpecialWord: 
+Word number 527264  BM FEB Unknown data word (S)
+
+Word number 527265  BM FEB Spill Trailer (1)  BoardId: 81  Sid: 2  Temperature: 15096  Humidity: 200
+Word number 527266  BM FEB SpecialWord: 
+Word number 527267  BM FEB Unknown data word (Í)
+
+Word number 527268  BM FEB Unknown data word (˚)
+
+Word number 527269  BM FEB Trigger Header  Gl. Trigger Tag: 229294296 (0)
+Word number 527270  BM FEB Trigger Header  Gl. Trigger Tag: 85782018 (2)
+Word number 527271  BM FEB Spill Header  BoardId: 84  Sid: 3  DAQ Type: 3  Spill time from GTrig: 867
+Word number 527272  BM FEB Unknown data word ()
+
+Word number 527273  BM FEB Unknown data word ()
+
+Word number 527274  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 127332568
+Word number 527275  BM FEB Spill Trailer (1)  BoardId: 127  Sid: 2  Spill Tag: 6962
+Word number 527276  BM FEB 
+Word number 527277  BM FEB Trigger Trailer (2)  Hit count: 3  Trigger Time: 692105
+Word number 527278  BM FEB TDM Start: 31 TDM Tag: 65
+Word number 527279  BM FEB Spill TimeID Spill time: 229990573
+Word number 527280  BM FEB Board ID 31 L1HoldStop Time: 135
+Word number 527281  BM FEB Unknown data word (≠)
+
+Word number 527282  BM FEB Channel: 65  HitId: 5  TagId: 0  Amplitude Id: 10  Charge: 1565
+Word number 527283  BM FEB Spill Trailer (1)  BoardId: 24  Sid: 2  Spill Tag: 50432
+Word number 527284  BM FEB Spill TimeID Spill time: 113154287
+Word number 527285  BM FEB 
+Word number 527286  BM FEB Spill Header  BoardId: 44  Sid: 3  Spill Tag: 31152
+Word number 527287  BM FEB Unknown data word ()
+
+Word number 527288  BM FEB Trigger Trailer (2)  Hit count: 22  Trigger Time: 180015
+Word number 527289  BM FEB Unknown data word (O)
+
+Word number 527290  BM FEB Spill Trailer (1)  BoardId: 32  Sid: 0  Temperature: 5101  Humidity: 118
+Word number 527291  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 205187067
+Word number 527292  BM FEB Spill Trailer (1)  BoardId: 70  Sid: 1  Temperature: 5601  Humidity: 207
+Word number 527293  BM FEB Unknown data word (†)
+
+Word number 527294  BM FEB Unknown data word ()
+
+Word number 527295  BM FEB Unknown data word (Ω)
+
+Word number 527296  BM FEB TDM Stop: 27 TDM sumL: 364 TDM sumH: 696
+Word number 527297  BM FEB Spill TimeID Spill time: 94184588
+Word number 527298  BM FEB Unknown data word (U)
+
+Word number 527299  BM FEB Board ID 16 L1HoldStop Time: 1213
+Word number 527300  BM FEB Unknown data word (ß)
+
+Word number 527301  BM FEB Unknown data word (ﬁ)
+
+Word number 527302  BM FEB Unknown data word (})
+
+Word number 527303  BM FEB Unknown data word (j)
+
+Word number 527304  BM FEB Unknown data word (D)
+
+Word number 527305  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 183552758
+Word number 527306  BM FEB Trigger Trailer (2)  Hit count: 16  Trigger Time: 727217
+Word number 527307  BM FEB Unknown data word (Â)
+
+Word number 527308  BM FEB Trigger Header  Gl. Trigger Tag: 184871822 (2)
+Word number 527309  BM FEB Unknown data word (J)
+
+Word number 527310  BM FEB Unknown data word ()
+
+Word number 527311  BM FEB Trigger Header  Gl. Trigger Tag: 179934960 (0)
+Word number 527312  BM FEB Trigger Trailer (2)  Hit count: 26  Trigger Time: 518427
+Word number 527313  BM FEB Unknown data word (ê)
+
+Word number 527314  BM FEB Unknown data word (ü)
+
+Word number 527315  BM FEB Unknown data word (1)
+
+Word number 527316  BM FEB Channel: 9  HitId: 5  TagId: 0  Time (1, FE): 2294
+Word number 527317  BM FEB Trigger Header  Gl. Trigger Tag: 125825321 (1)
+Word number 527318  BM FEB Spill Header  BoardId: 53  Sid: 1  Spill Tag: 18822
+Word number 527319  BM FEB SpecialWord: 
+Word number 527320  BM FEB Trigger Trailer (2)  Hit count: 21  Trigger Time: 732240
+Word number 527321  BM FEB Unknown data word (£)
+
+Word number 527322  BM FEB SpecialWord: 
+Word number 527323  BM FEB Unknown data word (‘)
+
+Word number 527324  BM FEB Channel: 58  HitId: 1  TagId: 1  Amplitude Id: 11  Charge: 67
+Word number 527325  BM FEB Trigger Trailer (2)  Hit count: 25  Trigger Time: 963611
+Word number 527326  BM FEB Channel: 101  HitId: 3  TagId: 1  Amplitude Id: 5  Charge: 2820
+Word number 527327  BM FEB Unknown data word ()
+
+Word number 527328  BM FEB Spill Header  BoardId: 94  Sid: 3  Spill Tag: 63106
+Word number 527329  BM FEB Channel: 126  HitId: 7  TagId: 1  Amplitude Id: 1  Charge: 746
+Word number 527330  BM FEB Trigger Trailer (2)  Hit count: 16  Trigger Time: 350813
+Word number 527331  BM FEB Channel: 34  HitId: 3  TagId: 3  Amplitude Id: 14  Charge: 2247
+Word number 527332  BM FEB Channel: 46  HitId: 2  TagId: 0  Time (1, FE): 822
+Word number 527333  BM FEB Trigger Trailer (2)  Hit count: 26  Trigger Time: 80514
+Word number 527334  BM FEB Channel: 34  HitId: 5  TagId: 1  Amplitude Id: 7  Charge: 1603
+Word number 527335  BM FEB Board ID 98 L1HoldStop Time: 1594
+Word number 527336  BM FEB Unknown data word ()
+
+Word number 527337  BM FEB Unknown data word (Ë)
+
+Word number 527338  BM FEB Unknown data word (c)
+
+Word number 527339  BM FEB Spill Trailer (1)  BoardId: 109  Sid: 2  Spill Tag: 2801
+Word number 527340  BM FEB Unknown data word ( )
+
+Word number 527341  BM FEB Channel: 109  HitId: 3  TagId: 1  Time (0, RE): 4047
+Word number 527342  BM FEB Trigger Trailer (2)  Hit count: 23  Trigger Time: 786154
+Word number 527343  BM FEB Unknown data word ()
+
+Word number 527344  BM FEB Channel: 19  HitId: 5  TagId: 3  Time (0, RE): 1084
+Word number 527345  BM FEB Trigger Header  Gl. Trigger Tag: 42388029 (1)
+Word number 527346  BM FEB SpecialWord: 
+Word number 527347  BM FEB Spill Trailer (1)  BoardId: 120  Sid: 3  Spill Tag: 39293
+Word number 527348  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 113649913
+Word number 527349  BM FEB Unknown data word (˙)
+
+Word number 527350  BM FEB Unknown data word (‘)
+
+Word number 527351  BM FEB Unknown data word (u)
+
+Word number 527352  BM FEB Spill Trailer (1)  BoardId: 124  Sid: 3  Spill Tag: 40194
+Word number 527353  BM FEB Channel: 95  HitId: 6  TagId: 0  Amplitude Id: 12  Charge: 378
+Word number 527354  BM FEB Spill TimeID Spill time: 196111402
+Word number 527355  BM FEB Board ID 113 L1HoldStart Time: 1054
+Word number 527356  BM FEB Trigger Trailer (2)  Hit count: 11  Trigger Time: 304642
+Word number 527357  BM FEB Unknown data word (2)
+
+Word number 527358  BM FEB Unknown data word (b)
+
+Word number 527359  BM FEB Unknown data word (6)
+
+Word number 527360  BM FEB TDM Stop: 20 TDM sumL: 1590 TDM sumH: 77
+Word number 527361  BM FEB Unknown data word (o)
+
+Word number 527362  BM FEB SpecialWord: 
+Word number 527363  BM FEB Trigger Trailer (2)  Hit count: 27  Trigger Time: 266855
+Word number 527364  BM FEB SpecialWord: 
+Word number 527365  BM FEB Channel: 64  HitId: 6  TagId: 2  Time (0, RE): 1075
+Word number 527366  BM FEB 
+Word number 527367  BM FEB Spill Trailer (1)  BoardId: 38  Sid: 1  Temperature: 5219  Humidity: 143
+Word number 527368  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 145963457
+Word number 527369  BM FEB Unknown data word (º)
+
+Word number 527370  BM FEB Unknown data word (˝)
+
+Word number 527371  BM FEB SpecialWord: 
+Word number 527372  BM FEB Spill TimeID Spill time: 196224609
+Word number 527373  BM FEB Unknown data word (q)
+
+Word number 527374  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 259327802
+Word number 527375  BM FEB Board ID 94 L1HoldStop Time: 1517
+Word number 527376  BM FEB Unknown data word (N)
+
+Word number 527377  BM FEB SpecialWord: 
+Word number 527378  BM FEB Spill TimeID Spill time: 170235630
+Word number 527379  BM FEB Unknown data word ()
+
+Word number 527380  BM FEB Board ID 45 L1HoldStop Time: 49
+Word number 527381  BM FEB Unknown data word (∆)
+
+Word number 527382  BM FEB Unknown data word ()
+
+Word number 527383  BM FEB SpecialWord: 
+Word number 527384  BM FEB Unknown data word (©)
+
+Word number 527385  BM FEB Channel: 31  HitId: 6  TagId: 3  Amplitude Id: 12  Charge: 655
+Word number 527386  BM FEB SpecialWord: 
+Word number 527387  BM FEB SpecialWord: 
+Word number 527388  BM FEB Trigger Trailer (2)  Hit count: 9  Trigger Time: 919826
+Word number 527389  BM FEB Spill TimeID Spill time: 143555574
+Word number 527390  BM FEB Trigger Trailer (2)  Hit count: 14  Trigger Time: 565688
+Word number 527391  BM FEB Spill TimeID Spill time: 265895060
+Word number 527392  BM FEB SpecialWord: 
+Word number 527393  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 196462831
+Word number 527394  BM FEB SpecialWord: 
+Word number 527395  BM FEB Unknown data word (⁄)
+
+Word number 527396  BM FEB Unknown data word (∑)
+
+Word number 527397  BM FEB Board ID 10 L1HoldStart Time: 1978
+Word number 527398  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 13739576
+Word number 527399  BM FEB Board ID 13 L1HoldStop Time: 249
+Word number 527400  BM FEB Channel: 95  HitId: 2  TagId: 3  Time (0, RE): 3303
+Word number 527401  BM FEB Spill Trailer (1)  BoardId: 43  Sid: 1  Temperature: 14235  Humidity: 34
+Word number 527402  BM FEB Trigger Trailer (2)  Hit count: 7  Trigger Time: 1035074
+Word number 527403  BM FEB Unknown data word (†)
+
+Word number 527404  BM FEB Trigger Header  Gl. Trigger Tag: 255424208 (0)
+Word number 527405  BM FEB Channel: 98  HitId: 6  TagId: 3  Time (1, FE): 1972
+Word number 527406  BM FEB Unknown data word (—)
+
+Word number 527407  BM FEB SpecialWord: 
+Word number 527408  BM FEB TDM Start: 11 TDM Tag: 12
+Word number 527409  BM FEB Spill Trailer (1)  BoardId: 78  Sid: 3  Spill Tag: 51454
+Word number 527410  BM FEB TDM Stop: 10 TDM sumL: 357 TDM sumH: 946
+Word number 527411  BM FEB Unknown data word (7)
+
+Word number 527412  BM FEB Trigger Trailer (2)  Hit count: 21  Trigger Time: 968809
+Word number 527413  BM FEB Channel: 9  HitId: 7  TagId: 1  Time (1, FE): 375
+Word number 527414  BM FEB Board ID 123 L1HoldStop Time: 1251
+Word number 527415  BM FEB Channel: 125  HitId: 6  TagId: 2  Time (1, FE): 154
+Word number 527416  BM FEB Unknown data word (±)
+
+Word number 527417  BM FEB Channel: 12  HitId: 0  TagId: 3  Amplitude Id: 7  Charge: 2722
+Word number 527418  BM FEB Unknown data word (÷)
+
+Word number 527419  BM FEB Channel: 80  HitId: 7  TagId: 0  Time (1, FE): 1505
+Word number 527420  BM FEB Channel: 84  HitId: 6  TagId: 1  Time (0, RE): 2075
+Word number 527421  BM FEB Spill Header  BoardId: 88  Sid: 3  Spill Tag: 49587
+Word number 527422  BM FEB SpecialWord: 
+Word number 527423  BM FEB Spill Trailer (1)  BoardId: 126  Sid: 3  Temperature: 7700  Humidity: 118
+Word number 527424  BM FEB Unknown data word (¢)
+
+Word number 527425  BM FEB Unknown data word (_)
+
+Word number 527426  BM FEB SpecialWord: 
+Word number 527427  BM FEB Unknown data word (∆)
+
+Word number 527428  BM FEB Unknown data word (Â)
+
+Word number 527429  BM FEB Spill Header  BoardId: 117  Sid: 3  Spill Tag: 46141
+Word number 527430  BM FEB Spill Header  BoardId: 82  Sid: 1  DAQ Type: 1  Spill time from GTrig: 1932
+Word number 527431  BM FEB Unknown data word (&)
+
+Word number 527432  BM FEB Unknown data word (ø)
+
+Word number 527433  BM FEB Spill Header  BoardId: 106  Sid: 1  Spill Tag: 22791
+Word number 527434  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 74276685
+Word number 527435  BM FEB Spill Header  BoardId: 86  Sid: 2  DAQ Type: 0  Spill time from GTrig: 1278
+Word number 527436  BM FEB Spill TimeID Spill time: 160040589
+Word number 527437  BM FEB Unknown data word («)
+
+Word number 527438  BM FEB Spill TimeID Spill time: 181459649
+Word number 527439  BM FEB Trigger Header  Gl. Trigger Tag: 124583980 (0)
+Word number 527440  BM FEB Unknown data word ()
+
+Word number 527441  BM FEB Unknown data word (õ)
+
+Word number 527442  BM FEB Spill Header  BoardId: 86  Sid: 1  Spill Tag: 32692
+Word number 527443  BM FEB Unknown data word (÷)
+
+Word number 527444  BM FEB Unknown data word (Œ)
+
+Word number 527445  BM FEB Trigger Trailer (2)  Hit count: 9  Trigger Time: 481319
+Word number 527446  BM FEB Unknown data word (?)
+
+Word number 527447  BM FEB Unknown data word (+)
+
+Word number 527448  BM FEB Trigger Trailer (2)  Hit count: 21  Trigger Time: 968953
+Word number 527449  BM FEB Board ID 46 L1HoldStop Time: 201
+Word number 527450  BM FEB Unknown data word (')
+
+Word number 527451  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 233561849
+Word number 527452  BM FEB Spill Header  BoardId: 64  Sid: 2  Spill Tag: 1904
+Word number 527453  BM FEB Channel: 11  HitId: 1  TagId: 3  Time (0, RE): 4054
+Word number 527454  BM FEB Unknown data word (˚)
+
+Word number 527455  BM FEB Channel: 98  HitId: 5  TagId: 2  Amplitude Id: 0  Charge: 1849
+Word number 527456  BM FEB Unknown data word (“)
+
+Word number 527457  BM FEB Unknown data word (f)
+
+Word number 527458  BM FEB Spill TimeID Spill time: 197665615
+Word number 527459  BM FEB Board ID 39 L1HoldStop Time: 1047
+Word number 527460  BM FEB Spill Trailer (1)  BoardId: 5  Sid: 3  Spill Tag: 38579
+Word number 527461  BM FEB Channel: 31  HitId: 2  TagId: 3  Time (1, FE): 3011
+Word number 527462  BM FEB TDM Start: 8 TDM Tag: 71
+Word number 527463  BM FEB Unknown data word (¸)
+
+Word number 527464  BM FEB Unknown data word (‰)
+
+Word number 527465  BM FEB Board ID 124 L1HoldStop Time: 522
+Word number 527466  BM FEB Spill Trailer (1)  BoardId: 106  Sid: 2  Temperature: 6227  Humidity: 206
+Word number 527467  BM FEB Spill TimeID Spill time: 253255893
+Word number 527468  BM FEB Channel: 82  HitId: 3  TagId: 0  Time (0, RE): 950
+Word number 527469  BM FEB Spill TimeID Spill time: 155979504
+Word number 527470  BM FEB Unknown data word (€)
+
+Word number 527471  BM FEB Trigger Header  Gl. Trigger Tag: 85607074 (2)
+Word number 527472  BM FEB Channel: 26  HitId: 6  TagId: 2  Amplitude Id: 13  Charge: 788
+Word number 527473  BM FEB Unknown data word (Í)
+
+Word number 527474  BM FEB 
+Word number 527475  BM FEB SpecialWord: 
+Word number 527476  BM FEB Channel: 33  HitId: 3  TagId: 2  Amplitude Id: 13  Charge: 2564
+Word number 527477  BM FEB Unknown data word (Ñ)
+
+Word number 527478  BM FEB SpecialWord: 
+Word number 527479  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 73642536
+Word number 527480  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 46982263
+Word number 527481  BM FEB Trigger Trailer (2)  Hit count: 7  Trigger Time: 889157
+Word number 527482  BM FEB Unknown data word (÷)
+
+Word number 527483  BM FEB Channel: 123  HitId: 5  TagId: 2  Time (0, RE): 181
+Word number 527484  BM FEB Unknown data word (º)
+
+Word number 527485  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 76442232
+Word number 527486  BM FEB Unknown data word (ˆ)
+
+Word number 527487  BM FEB Trigger Header  Gl. Trigger Tag: 123299548 (0)
+Word number 527488  BM FEB Unknown data word (ù)
+
+Word number 527489  BM FEB Spill TimeID Spill time: 178790113
+Word number 527490  BM FEB SpecialWord: 
+Word number 527491  BM FEB TDM Start: 10 TDM Tag: 171
+Word number 527492  BM FEB Spill Header  BoardId: 54  Sid: 3  Spill Tag: 43813
+Word number 527493  BM FEB Unknown data word (V)
+
+Word number 527494  BM FEB Channel: 51  HitId: 5  TagId: 1  Amplitude Id: 4  Charge: 1939
+Word number 527495  BM FEB Unknown data word (ÿ)
+
+Word number 527496  BM FEB Trigger Trailer (2)  Hit count: 12  Trigger Time: 509197
+Word number 527497  BM FEB Channel: 22  HitId: 4  TagId: 1  Amplitude Id: 11  Charge: 3553
+Word number 527498  BM FEB Trigger Trailer (2)  Hit count: 17  Trigger Time: 720411
+Word number 527499  BM FEB Unknown data word (å)
+
+Word number 527500  BM FEB TDM Stop: 5 TDM sumL: 1297 TDM sumH: 1008
+Word number 527501  BM FEB Channel: 94  HitId: 7  TagId: 0  Time (1, FE): 3940
+Word number 527502  BM FEB Spill TimeID Spill time: 188791003
+Word number 527503  BM FEB Unknown data word (e)
+
+Word number 527504  BM FEB Unknown data word («)
+
+Word number 527505  BM FEB Unknown data word (ì)
+
+Word number 527506  BM FEB Unknown data word ()
+
+Word number 527507  BM FEB Channel: 64  HitId: 6  TagId: 1  Time (0, RE): 1908
+Word number 527508  BM FEB Trigger Header  Gl. Trigger Tag: 171262998 (2)
+Word number 527509  BM FEB Unknown data word (()
+
+Word number 527510  BM FEB Trigger Header  Gl. Trigger Tag: 159087009 (1)
+Word number 527511  BM FEB Unknown data word (h)
+
+Word number 527512  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 63430614
+Word number 527513  BM FEB Unknown data word (€)
+
+Word number 527514  BM FEB Channel: 10  HitId: 4  TagId: 0  Time (1, FE): 4029
+Word number 527515  BM FEB Unknown data word (—)
+
+Word number 527516  BM FEB Channel: 14  HitId: 5  TagId: 2  Amplitude Id: 7  Charge: 1109
+Word number 527517  BM FEB Spill Trailer (1)  BoardId: 51  Sid: 0  Temperature: 12823  Humidity: 124
+Word number 527518  BM FEB Spill TimeID Spill time: 62003009
+Word number 527519  BM FEB Trigger Trailer (2)  Hit count: 14  Trigger Time: 267250
+Word number 527520  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 77261273
+Word number 527521  BM FEB Spill Header  BoardId: 108  Sid: 1  Spill Tag: 61171
+Word number 527522  BM FEB Unknown data word (	)
+
+Word number 527523  BM FEB Spill Trailer (1)  BoardId: 93  Sid: 3  Temperature: 15761  Humidity: 95
+Word number 527524  BM FEB Board ID 23 L1HoldStop Time: 826
+Word number 527525  BM FEB 
+Word number 527526  BM FEB Unknown data word (q)
+
+Word number 527527  BM FEB Unknown data word (.)
+
+Word number 527528  BM FEB Unknown data word (¯)
+
+Word number 527529  BM FEB Channel: 8  HitId: 2  TagId: 2  Time (1, FE): 216
+Word number 527530  BM FEB Channel: 70  HitId: 0  TagId: 3  Amplitude Id: 6  Charge: 216
+Word number 527531  BM FEB Spill Header  BoardId: 49  Sid: 1  Spill Tag: 32130
+Word number 527532  BM FEB Spill Header  BoardId: 114  Sid: 0  Spill Tag: 20443
+Word number 527533  BM FEB Channel: 78  HitId: 5  TagId: 1  Amplitude Id: 9  Charge: 3525
+Word number 527534  BM FEB Unknown data word (á)
+
+Word number 527535  BM FEB Spill Header  BoardId: 15  Sid: 2  Spill Tag: 63596
+Word number 527536  BM FEB SpecialWord: 
+Word number 527537  BM FEB Unknown data word (c)
+
+Word number 527538  BM FEB Unknown data word (º)
+
+Word number 527539  BM FEB Channel: 30  HitId: 7  TagId: 2  Time (1, FE): 3347
+Word number 527540  BM FEB Spill Header  BoardId: 38  Sid: 0  DAQ Type: 3  Spill time from GTrig: 523
+Word number 527541  BM FEB Spill Trailer (1)  BoardId: 119  Sid: 3  Temperature: 15639  Humidity: 189
+Word number 527542  BM FEB Trigger Trailer (2)  Hit count: 25  Trigger Time: 324412
+Word number 527543  BM FEB TDM Stop: 10 TDM sumL: 538 TDM sumH: 334
+Word number 527544  BM FEB Spill Trailer (1)  BoardId: 126  Sid: 3  Spill Tag: 20679
+Word number 527545  BM FEB Spill TimeID Spill time: 106908932
+Word number 527546  BM FEB Spill Trailer (1)  BoardId: 93  Sid: 3  Spill Tag: 59015
+Word number 527547  BM FEB Unknown data word (°)
+
+Word number 527548  BM FEB Spill TimeID Spill time: 89914064
+Word number 527549  BM FEB Unknown data word (h)
+
+Word number 527550  BM FEB Channel: 58  HitId: 1  TagId: 2  Time (1, FE): 3830
+Word number 527551  BM FEB Unknown data word (”)
+
+Word number 527552  BM FEB Unknown data word (Q)
+
+Word number 527553  BM FEB Spill Header  BoardId: 22  Sid: 3  Spill Tag: 62735
+Word number 527554  BM FEB Unknown data word (À)
+
+Word number 527555  BM FEB Unknown data word ()
+
+Word number 527556  BM FEB Unknown data word (´)
+
+Word number 527557  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 67901370
+Word number 527558  BM FEB Spill Header  BoardId: 97  Sid: 3  Spill Tag: 8054
+Word number 527559  BM FEB Unknown data word (=)
+
+Word number 527560  BM FEB Spill Header  BoardId: 109  Sid: 3  DAQ Type: 2  Spill time from GTrig: 1518
+Word number 527561  BM FEB Spill Header  BoardId: 25  Sid: 0  Spill Tag: 55257
+Word number 527562  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 217935193
+Word number 527563  BM FEB SpecialWord: 
+Word number 527564  BM FEB SpecialWord: 
+Word number 527565  BM FEB Board ID 97 L1HoldStop Time: 1707
+Word number 527566  BM FEB Channel: 78  HitId: 1  TagId: 2  Amplitude Id: 3  Charge: 824
+Word number 527567  BM FEB Unknown data word (∞)
+
+Word number 527568  BM FEB Trigger Header  Gl. Trigger Tag: 72332813 (1)
+Word number 527569  BM FEB Channel: 67  HitId: 3  TagId: 2  Amplitude Id: 2  Charge: 2156
+Word number 527570  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 234741313
+Word number 527571  BM FEB Unknown data word (g)
+
+Word number 527572  BM FEB Unknown data word ()
+
+Word number 527573  BM FEB Unknown data word (U)
+
+Word number 527574  BM FEB Trigger Trailer (2)  Hit count: 9  Trigger Time: 618906
+Word number 527575  BM FEB Trigger Trailer (1)  Gl. Trigger Tag: 187809184
+Word number 527576  BM FEB Trigger Header  Gl. Trigger Tag: 188739971 (3)
+Word number 527577  BM FEB SpecialWord: 
+Word number 527578  BM FEB Spill Trailer (1)  BoardId: 73  Sid: 1  Spill Tag: 58378
+Word number 527579  BM FEB Trigger Trailer (2)  Hit count: 17  Trigger Time: 609293
+Word number 527580  BM FEB Unknown data word ()
+
+Word number 527581  BM FEB 
+Word number 527582  BM FEB Trigger Header  Gl. Trigger Tag: 68491855 (3)
+Word number 527583  BM FEB Unknown data word (”)
+
+Word number 527584  BM FEB Unknown data word (º)
+
+Word number 527585  BM FEB Unknown data word (Ω)
+
+Word number 527586  BM FEB SpecialWord: 

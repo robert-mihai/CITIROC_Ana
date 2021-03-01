@@ -1,0 +1,20 @@
+#!/bin/bash
+DATAFILE=$1
+ls $DATAFILE
+
+for f in $DATAFILE/*.daq
+ do
+ echo  "$f" 
+ ./TDMunpack -f $f
+ done  
+
+ ls -1 $DATAFILE/*Slot* > febs_files_list.list
+ 
+ ./unpack -f d
+ #./Amplitude_matching
+ #./HG_reconstructed
+ #./GetHits $DATAFILE/*reconstructed.root;
+ #./Get2DClusters $DATAFILE/*NewStructure.root
+ #./Get2DTracks $DATAFILE/*cluster.root
+ #./EventPreSelection $DATAFILE/*track.root
+
