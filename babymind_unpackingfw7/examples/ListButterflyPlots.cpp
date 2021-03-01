@@ -1,0 +1,1128 @@
+#include <stdio.h>
+#include <string.h>
+#include <string>
+#include <exception>
+#include <fstream>
+#include <vector>
+#include "TFile.h"
+#include "TDirectory.h"
+#include "TSystem.h"
+#include "TMacro.h"
+#include <TTree.h>
+#include <iostream>
+#include "TClonesArray.h"
+#include "TObject.h"
+#include "Rtypes.h"
+#include "TH1D.h"
+#include "THStack.h"
+#include "TH2D.h"
+#include "TF1.h"
+#include "TCanvas.h"
+#include "TStyle.h"
+
+
+
+using namespace std;
+
+//Function to get the directory of the input file in order to create output file in same directory
+string GetLocation(string str)
+{
+  int i = str.rfind("_all");
+  string way = str.substr(0,i);
+  return way;
+}
+
+//Function to get the directory of the input file in order to create output files in same directory
+string GetDir(string str)
+{
+  int i = str.rfind("/");
+  string way = str.substr(0,i);
+  return way;
+}
+
+//Function to check that the input file is indeed a _all_reconstructed.root file
+bool CheckFile(string str)
+{
+  if (str.find("_all.root") != string::npos) return 0;
+  return 1;
+}
+
+struct vectorsTree
+{
+  vector<double> *FEBSN;
+  vector<double> *SpillTag;
+  vector<double> *GTrigTag;
+  vector<double> *GTrigTime;
+  vector<double> *hitsChannel;
+  vector<double> *hitAmpl;
+  vector<double> *hitLGAmpl;
+  vector<double> *hitLeadTime;
+  vector<double> *hitTrailTime;
+  vector<double> *hitTimeDif;
+  vector<double> *SpillTime;
+  vector<double> *SpillTimeGTrig;
+  vector<double> *hitTimefromSpill;
+  vector<double> *SpillTrailTime;
+  vector<double> *AsicTemperature;
+  vector<double> *FPGATemperature;
+  vector<double> *GlobalHV;
+  vector<double> *BoardTemperature;
+  vector<double> *BoardHumidity;
+
+};
+
+//../data/MCB_v7/100msP_30msW_1kHz/5_3/set0/test_MCR_0_Run0_2020_10_14_14_50_20_all.root
+int main (int argc, char **argv)
+{
+  //if (argc != 2) { printf("Enter source _all.root file    ./ButterflyPlots inputfile \n"); return EXIT_FAILURE; }
+  //string sFileName(argv[1]);
+  string sFileName ;
+  vector<string> vFileNames;
+  vector<int> rep_bin;
+  rep_bin.push_back(525);
+  rep_bin.push_back(925);
+  rep_bin.push_back(1325);
+  rep_bin.push_back(1725);
+  rep_bin.push_back(2125);
+  rep_bin.push_back(2525);
+  rep_bin.push_back(2925);
+  //925.  1325. 1725.  2125.   2525.  2925.);
+  //for all the files below see metadata on evernote://
+  
+  //  ifstream fList("all_root.list");
+
+  /*
+  ifstream fList("100msP_30msW_10kHz_6.list");
+  double width = 30;//ms - data acquisition width
+  double freq = 10;  //kHz - laser frequency
+  */
+
+  /*
+  ifstream fList("100msP_30msW_100_6.list");
+  double width = 30;//ms - data acquisition width
+  double freq = 0.1;  //kHz - laser frequency
+*/
+  /*
+  ifstream fList("65HG_65LG_0L1ADC_1850_2850_5_3.list");
+  double width = 30;//ms - data acquisition width
+  double freq = 1;  //kHz - laser frequency
+  */
+  
+  ifstream fList("100msP_30msW_1kHz_5_3.list");
+  double width = 30;//ms - data acquisition width
+  double freq = 1;  //kHz - laser frequency
+  
+  /*
+  ifstream fList("all_root_5_3.list");
+  double width = 30;//ms - data acquisition width
+  double freq = 1;  //kHz - laser frequency
+  */
+
+
+  /*
+  ifstream fList("test.list");
+  double width = 10;//ms - data acquisition width
+  double freq = 1;  //kHz - laser frequency
+  */
+
+  const  int LaserCh = 65;
+  
+  while (!fList.eof()) {
+    fList >> sFileName;
+    cout << "sFileName: " <<sFileName << endl;
+    vFileNames.push_back(sFileName);
+  }
+  
+  
+  
+  //      vFileNames.pop_back();
+
+  for ( unsigned int i = 0; i< vFileNames.size();i++){
+    cout << " The File order: " << vFileNames.at(i)<<endl;
+  }
+
+  //if (CheckFile(sFileName) == 1) { printf("Source must be an _all.root file \n"); return EXIT_FAILURE; }
+
+  // Creating Histograms and Canvases_________________________________________________________________
+  
+  TH1 * spill_hit = new TH1F("spill_hit", "Hits per spill (65th channel) only works for ONE file;", 100,0.5, 67636.5);
+  //TH1D *proximity = new TH1D("prox","",63,-31,32);
+  
+  TH1D *proximity_norm = new TH1D("prox","",32,0,32);
+  proximity_norm->SetTitle("channel proximity;Channel distance to monitor hit;Counts");
+
+  
+  
+  TH2D * bl_LGAmplitude = new TH2D("bl_LGAmplitude","N baseline noise vs monitor hit Amplitude;Monitor hit LG Amplitude;N baseline noise",100,0,4000,100,0,100);
+
+  TH2D *LGAmplitude_proximity = new TH2D("LGAmplitude_proximity","",60,-30,30,100,0,1);
+  LGAmplitude_proximity->SetTitle("LG Amplitude ratio vs channel proximity;Channel distance to monitor hit; LG Amplitude ratio");
+  //TH2D *time_proximity = new TH2D("T_prox","",63,-31,32,200,-100,100);
+  
+  TH2D *Ch0_behaviour = new TH2D("Ch0","",200,-100,100,300,0,300);
+  Ch0_behaviour->SetTitle("Monitor Hit ch behaviour; Hit time delay; Amplitude [2.5 ns]" );
+
+  TH2D *Channels = new TH2D("Channel_map","",96,0,96,96,0,96);
+  Channels->SetTitle("Channel Map; Monitor hit channel; Noise hit channel" );
+  TH2D * LT_TT_1 = new TH2D("LT_TT_1","Trail - Lead Time vs Lead Time;  Lead Time [2.5 ns];Trail - Lead Time [2.5 ns] ", 100,0,4000,100,0,50);
+  TH2D * LT_TT_2 = new TH2D("LT_TT_2","Trail - Lead Time vs Trail Time; Lead  Time [2.5 ns]; Trail - Lead Time [2.5 ns] ", 100,0,4000,100,0,50);
+  TH2D * LT_TT_3 = new TH2D("LT_TT_3","Trail - Lead Time vs Trail Time; Lead Time [2.5 ns];Trail - Lead Time [2.5 ns] ", 100,0,4000,100,0,50);
+  TH2D * LT_TT_4 = new TH2D("LT_TT_4","Trail - Lead Time vs Trail Time; Lead Time [2.5 ns];Trail - Lead Time [2.5 ns] ", 100,0,4000,100,0,50);
+  //----------------
+  //the set of 4 amplitude plots - monitor hit
+  //----------------
+    
+  TH2D * ToT_LG = new TH2D("hToT_LG","", 100,0,4000,100,0,100);
+  ToT_LG->SetTitle("ToT vs LG Amplitude; LG Amplitude; ToT [2.5 ns]");
+  TH2D * ToT_HG = new TH2D("hToT_HG","", 100,0,4000,100,0,100);
+  ToT_HG->SetTitle("ToT vs HG Amplitude; HG Amplitude; ToT [2.5 ns]");
+  TH1D *LG_Amplitude = new TH1D ("Ch_LG","",100,0,4000);
+  LG_Amplitude->SetTitle(" Amplitude of monitor hit LG ; Amplitude ; Counts");
+  TH1D *HG_Amplitude = new TH1D ("Ch_HG","",100,0,4000);
+  HG_Amplitude->SetTitle(" Amplitude of monitor hit HG ; Amplitude ; Counts");
+
+  //----------------
+  //the set of 4 amplitude plots - secondary hit
+  //----------------
+    
+  TH2D * ToT_LG_sec = new TH2D("hToT_LG_sec","", 100,0,4000,100,0,100);
+  ToT_LG_sec->SetTitle("ToT vs LG Amplitude All Hits; LG Amplitude; ToT [2.5 ns]");
+  TH2D * ToT_HG_sec = new TH2D("hToT_HG_sec","", 100,0,4000,100,0,100);
+  ToT_HG_sec->SetTitle("ToT vs HG Amplitude All Hits; HG Amplitude; ToT [2.5 ns]");
+  TH1D *LG_Amplitude_sec = new TH1D ("Ch_LG_sec","",100,0,4000);
+  LG_Amplitude_sec->SetTitle(" Amplitude of all hits LG ; Amplitude ; Counts");
+  TH1D *HG_Amplitude_sec = new TH1D ("Ch_HG_sec","",100,0,4000);
+  HG_Amplitude_sec->SetTitle(" Amplitude of all hits HG; Amplitude ; Counts");
+
+    
+    //----------------
+  //the set of 6 butterfly plots
+  //----------------
+  
+  TH2D *Amplitude_proximity = new TH2D("Ch_prox","",61,-30.5,30.5,100,0,1);
+  Amplitude_proximity->SetTitle(" Amplitude ratio vs channel proximity;Channel distance to monitor hit; ToT Amplitude ratio");
+  TH2D *  time_proximity= new TH2D("T_prox","",61,-30.5,30.5,100,0,100);
+  time_proximity->SetTitle("time delay vs channel proximity;Channel distance to monitor hit;Hit time delay [#times 2.5 ns]");
+  TH1D *proximity = new TH1D("prox","",61,-30.5,30.5);
+  proximity->SetTitle("channel proximity;Channel distance to monitor hit;Counts");
+  TH1D *Amplitude = new TH1D ("Ch","",100,0,100);
+  Amplitude->SetTitle(" Amplitude of monitor hit (ToT) ; Amplitude [2.5 ns]; Counts");
+  TH1D * baseline = new TH1D ("NBaseline_noise","",100,0,100);
+  baseline->SetTitle("N baseline noise per monitor hit; N baseline noise per monitor hit;Counts");
+  TH2D * bl_Amplitude = new TH2D("NB_Ch","",100,0,50,100,0,100);
+  bl_Amplitude->SetTitle("N baseline noise vs monitor hit Amplitude;Monitor hit ToT [2.5 ns];N baseline noise");
+
+
+  //----------------------- cat1 butterfly
+  TH2D *Amplitude_proximity_cat1 = new TH2D("Ch_prox_cat1","",61,-30.5,30.5,100,0,1);
+  Amplitude_proximity_cat1->SetTitle(" Amplitude ratio vs channel proximity;Channel distance to monitor hit; ToT Amplitude ratio");
+  TH2D *  time_proximity_cat1= new TH2D("T_prox_cat1","",61,-30.5,30.5,100,0,100);
+  time_proximity_cat1->SetTitle("time delay vs channel proximity;Channel distance to monitor hit;Hit time delay [#times 2.5 ns]");
+  TH1D *proximity_cat1 = new TH1D("prox_cat1","",61, -30.5,30.5);
+  proximity_cat1->SetTitle("channel proximity;Channel distance to monitor hit;Counts");
+  TH1D *Amplitude_cat1 = new TH1D ("Ch_cat1","",100,0,100);
+  Amplitude_cat1->SetTitle(" Amplitude of monitor hit (ToT) ; Amplitude [2.5 ns]; Counts");
+  TH1D * baseline_cat1 = new TH1D ("NBaseline_noise_cat1","",100,0,100);
+  baseline_cat1->SetTitle("N baseline noise per monitor hit; N baseline noise per monitor hit;Counts");
+  TH2D * bl_Amplitude_cat1 = new TH2D("NB_Ch_cat1","",100,0,50,100,0,100);
+  bl_Amplitude_cat1->SetTitle("N baseline noise vs monitor hit Amplitude;Monitor hit ToT [2.5 ns];N baseline noise");
+
+
+
+  //------------------------cat2 butterfly
+  TH2D *Amplitude_proximity_cat2 = new TH2D("Ch_prox_cat2","",61, -30.5,30.5,100,0,1);
+  Amplitude_proximity_cat2->SetTitle(" Amplitude ratio vs channel proximity;Channel distance to monitor hit; ToT Amplitude ratio");
+  TH2D *  time_proximity_cat2= new TH2D("T_prox_cat2","",61, -30.5,30.5,100,0,100);
+  time_proximity_cat2->SetTitle("time delay vs channel proximity;Channel distance to monitor hit;Hit time delay [#times 2.5 ns]");
+  TH1D *proximity_cat2 = new TH1D("prox_cat2","",61, -30.5,30.5);
+  proximity_cat2->SetTitle("channel proximity;Channel distance to monitor hit;Counts");
+  TH1D *Amplitude_cat2 = new TH1D ("Ch_cat2","",100,0,100);
+  Amplitude_cat2->SetTitle(" Amplitude of monitor hit (ToT) ; Amplitude [2.5 ns]; Counts");
+  TH1D * baseline_cat2 = new TH1D ("NBaseline_noise_cat2","",100,0,100);
+  baseline_cat2->SetTitle("N baseline noise per monitor hit; N baseline noise per monitor hit;Counts");
+  TH2D * bl_Amplitude_cat2 = new TH2D("NB_Ch_cat2","",100,0,50,100,0,100);
+  bl_Amplitude_cat2->SetTitle("N baseline noise vs monitor hit Amplitude;Monitor hit ToT [2.5 ns];N baseline noise");
+
+  //------------------------cat3 butterfly
+  TH2D *Amplitude_proximity_cat3 = new TH2D("Ch_prox_cat3","",61, -30.5,30.5,100,0,1);
+  Amplitude_proximity_cat3->SetTitle(" Amplitude ratio vs channel proximity;Channel distance to monitor hit; ToT Amplitude ratio");
+  TH2D *  time_proximity_cat3= new TH2D("T_prox_cat3","",61, -30.5,30.5,100,0,100);
+  time_proximity_cat3->SetTitle("time delay vs channel proximity;Channel distance to monitor hit;Hit time delay [#times 2.5 ns]");
+  TH1D *proximity_cat3 = new TH1D("prox_cat3","",61, -30.5,30.5);
+  proximity_cat3->SetTitle("channel proximity;Channel distance to monitor hit;Counts");
+  TH1D *Amplitude_cat3 = new TH1D ("Ch_cat3","",100,0,100);
+  Amplitude_cat3->SetTitle(" Amplitude of monitor hit (ToT) ; Amplitude [2.5 ns]; Counts");
+  TH1D * baseline_cat3 = new TH1D ("NBaseline_noise_cat3","",100,0,100);
+  baseline_cat3->SetTitle("N baseline noise per monitor hit; N baseline noise per monitor hit;Counts");
+  TH2D * bl_Amplitude_cat3 = new TH2D("NB_Ch_cat3","",100,0,50,100,0,100);
+  bl_Amplitude_cat3->SetTitle("N baseline noise vs monitor hit Amplitude;Monitor hit ToT [2.5 ns];N baseline noise");
+
+  //------------------------cat4 butterfly
+  TH2D *Amplitude_proximity_cat4 = new TH2D("Ch_prox_cat4","",61, -30.5,30.5,100,0,1);
+  Amplitude_proximity_cat4->SetTitle(" Amplitude ratio vs channel proximity;Channel distance to monitor hit; ToT Amplitude ratio");
+  TH2D *  time_proximity_cat4= new TH2D("T_prox_cat4","",61, -30.5,30.5,100,0,100);
+  time_proximity_cat4->SetTitle("time delay vs channel proximity;Channel distance to monitor hit;Hit time delay [#times 2.5 ns]");
+  TH1D *proximity_cat4 = new TH1D("prox_cat4","",61, -30.5,30.5);
+  proximity_cat4->SetTitle("channel proximity;Channel distance to monitor hit;Counts");
+  TH1D *Amplitude_cat4 = new TH1D ("Ch_cat4","",100,0,100);
+  Amplitude_cat4->SetTitle(" Amplitude of monitor hit (ToT) ; Amplitude [2.5 ns]; Counts");
+  TH1D * baseline_cat4 = new TH1D ("NBaseline_noise_cat4","",100,0,100);
+  baseline_cat4->SetTitle("N baseline noise per monitor hit; N baseline noise per monitor hit;Counts");
+  TH2D * bl_Amplitude_cat4 = new TH2D("NB_Ch_cat4","",100,0,50,100,0,100);
+  bl_Amplitude_cat4->SetTitle("N baseline noise vs monitor hit Amplitude;Monitor hit ToT [2.5 ns];N baseline noise");
+
+  //----------------------------
+  // cat 1,2,3,4 GTrigTime
+  //----------------------------
+  
+  TH1D *GTrigTime_Mon = new TH1D("GTrigTime_Mon","GTrigTime of monitor hits; Time from Spill [10 us];  ",101,-0.5,5000.5);
+  TH1D *GTrigTime_sec = new TH1D("GTrigTime_all","GTrigTime of mon+secondary hits; Time from Spill [10 us];  ",100,0,5000);
+  TH1D *GTrigTime_cat1 = new TH1D("GTrigTime_cat1","GTrigTime of monitor hits; Time from Spill [10 us];  ",100,0,5000);
+  TH1D *GTrigTime_cat1_1 = new TH1D("GTrigTime_cat1_1","GTrigTime of monitor hits; Time from Spill [10 us];  ",100,0,5000);
+  TH1D *GTrigTime_Aft = new TH1D("GTrigTime_Aft","GTrigTime of hits happening at less than 50#mus from monitor; Time from Spill [10 us];  ",100,0,5000);
+  TH1D *GTrigTime_cat1_2 = new TH1D("GTrigTime_cat1_2","GTrigTime of monitor hits; Time from Spill [10 us];  ",100,0,5000);
+  TH1D *GTrigTime_cat2 = new TH1D("GTrigTime_cat2","GTrigTime of monitor hits; Time from Spill [10 us];",100,0,5000);
+  TH1D *GTrigTime_cat3 = new TH1D("GTrigTime_cat3","GTrigTime of monitor hits; Time from Spill [10 us];",100,0,5000);
+  TH1D *GTrigTime_cat3_1 = new TH1D("GTrigTime_cat3_1","GTrigTime of monitor hits; Time from Spill [10 us];",100,0,5000);
+  TH1D *GTrigTime_cat3_2 = new TH1D("GTrigTime_cat3_2","GTrigTime of monitor hits; Time from Spill [10 us];",100,0,5000);
+  TH1D *GTrigTime_cat4 = new TH1D("GTrigTime_cat4","GTrigTime of monitor hits; Time from Spill [10 us];",100,0,5000);
+
+
+
+  //------------------------------
+  //THStack cat 1.1, 1.2, 3.1, 3.2--------
+  //------------------------------
+  THStack * hs_GTrigTime_cat1_1 = new THStack ("hs","");
+  THStack * hs_GTrigTime_cat1_2 = new THStack ("hs","");
+  THStack * hs_GTrigTime_cat3_1 = new THStack ("hs","");
+  THStack * hs_GTrigTime_cat3_2 = new THStack ("hs","");
+  
+  
+  
+  //////////////////////////////
+  ////Timing within a GTrig cat 1.1, 1.2, 3.1, 3.2////
+  /////////////////////////////
+
+  TH1D *GTrigHit_cat1_1 = new TH1D("GTrigHit_cat1_1","Hit timing with respect to GTrig assigned**; hitTimefromSpill - GTrigTime [us];  ",100,-10e-6,10e-6);
+  TH1D *GTrigHit_cat1_2 = new TH1D("GTrigHit_cat1_2","Hit timing with respect to GTrig assigned**; hitTimefromSpill - GTrigTime [us];  ",100,-10e-6,10e-6);
+  TH1D *GTrigHit_cat3_1 = new TH1D("GTrigHit_cat3_1","Hit timing with respect to GTrig assigned**; hitTimefromSpill - GTrigTime [us];  ",100,-10e-6,10e-6);
+  TH1D *GTrigHit_cat3_2 = new TH1D("GTrigHit_cat3_2","Hit timing with respect to GTrig assigned**; hitTimefromSpill - GTrigTime [us];  ",100,-10e-6,10e-6);
+
+
+  TH1D *hHitTimefromSpill_cat1_1 = new TH1D("hHitTimefromSpill","Hit timing with respect to spill beginning; hitTimefromSpill ;  ",100,0,122000);
+  TH1D *hHitTimefromSpill_cat1_2 = new TH1D("hHitTimefromSpill","Hit timing with respect to spill beginning; hitTimefromSpill   ",100,0,120000);
+  TH1D *hHitTimefromSpill_cat3_1 = new TH1D("hHitTimefromSpill","Hit timing with respect to spill beginning; hitTimefromSpill  ",100,0,120000);
+  TH1D *hHitTimefromSpill_cat3_2 = new TH1D("hHitTimefromSpill","Hit timing with respect to spill beginning; hitTimefromSpill  ",100,0,120000);
+
+
+  //////////////////////////////
+  ////Timing between two monitor hits
+  /////////////////////////////
+
+  
+  TH1D *hMonitorT_cat1_1 = new TH1D("hMonitorT_cat1_1","The time difference between two monitor hits [2.5ns]  ",1000,-10e6,10e6);
+  TH1D *hMonitorT_cat1_2 = new TH1D("hMonitorT_cat1_2","The time difference between two monitor hits [2.5ns]  ",1000,-10e6,10e6);
+  TH1D *hMonitorT_cat3_1 = new TH1D("hMonitorT_cat3_1","The time difference between two monitor hits [2.5ns]  ",1000,-10e6,10e6);
+  TH1D *hMonitorT_cat3_2 = new TH1D("hMonitorT_cat3_2","The time difference between two monitor hits [2.5ns]  ",1000,-10e6,10e6);
+  
+  TH2D *hTimefromSpill_ToT = new TH2D("hTimefromSpill_ToT", "ToT vs hitTimefromSpill; Hit Time From Spill [2.5ns]; Time over Treshold [2.5ns]", 1000, 0, 12e6, 100, 0 ,50);
+  TH2D *hMonitorT_GTrTime = new TH2D("hMonitorT_GTrTime","The time difference between two monitor hits vs the GTrigTime of the later monitor hit; Time Difference [2.5ns]; GTrigTime[10us]  ",100,0,450e3, 1000,0,3000);
+  
+
+  
+  TCanvas *c1 = new TCanvas("c1","c1", 2000, 900);
+  TCanvas *c1_cat1 = new TCanvas("c1_cat1","c1", 2000, 900);
+  TCanvas *c1_cat2 = new TCanvas("c1_cat2","c1", 2000, 900);
+  TCanvas *c1_cat3 = new TCanvas("c1_cat3","c1", 2000, 900);
+  TCanvas *c1_cat4 = new TCanvas("c1_cat4","c1", 2000, 900);
+  TCanvas *c1_LG = new TCanvas("c1_LG","c1_LG", 2000, 900);
+  TCanvas *c2 = new TCanvas("c2","c2", 800, 600);
+  TCanvas *cMonitorT = new TCanvas ("cMonitorT", "", 2000, 900);
+  
+  //---------------------------------
+  //cat 1.1, 1.2, 3.1,3.2 ToTs
+  //---------------------------------
+
+
+  TH1D * hToT_cat1_1 = new TH1D("ToT_cat1_1",";Time over Treshold [2.5ns];", 50,0,50);
+  TH1D * hToT_cat1_2 = new TH1D("ToT_cat1_2",";Time over Treshold [2.5ns];", 50,0,50);
+  TH1D * hToT_cat3_1 = new TH1D("ToT_cat3_1",";Time over Treshold [2.5ns];", 50,0,50);
+  TH1D * hToT_cat3_2 = new TH1D("ToT_cat3_2",";Time over Treshold [2.5ns];", 50,0,50);
+  //__________________________________________________________________________________________________
+
+  string foutDir;
+  string createFolder;
+  ostringstream foutPNGnum;
+  ostringstream foutBunchnum;
+  string foutPNG;
+  //string rootFileOutput=GetLocation(sFileName.c_str());
+  //rootFileOutput+="_ButterflyPlots.root";
+  
+  //TFile wfile(rootFileOutput.c_str(), "recreate");
+  //cout<<rootFileOutput<<endl;
+  
+  // Specify directory for output Event Display PNG
+  foutDir = GetDir(sFileName) + "/Baseline_noise_2/";
+  createFolder ="mkdir -p ";
+  createFolder +=  foutDir.c_str();
+  system(createFolder.c_str());
+
+  Double_t bothZero(0.), oneZero(0.);
+  for (vector<string>::iterator itFileName=vFileNames.begin(); itFileName != vFileNames.end(); itFileName++){
+    sFileName = *itFileName;
+    TFile *FileInput=new TFile(sFileName.c_str(),"read");
+    cout<<"Reading "<<sFileName<<endl;
+
+    /*
+    GTrigTime_cat1 -> Reset("ICESM");
+    GTrigTime_cat1_1 -> Reset("ICESM"); 
+    GTrigTime_cat1_2-> Reset("ICESM");
+    GTrigTime_cat2 -> Reset("ICESM");
+    GTrigTime_cat3 -> Reset("ICESM");
+    GTrigTime_cat3_1 -> Reset("ICESM");
+    GTrigTime_cat3_2 -> Reset("ICESM");
+    GTrigTime_cat4 -> Reset("ICESM");
+    */
+    spill_hit->Reset("ICESM");
+    hTimefromSpill_ToT->Reset("ICESM");
+
+    vectorsTree FEB;
+
+    FEB.FEBSN=0;
+    FEB.SpillTag=0;
+    FEB.hitsChannel=0;
+    FEB.hitAmpl=0;
+    FEB.hitLeadTime=0;
+    FEB.GTrigTag=0;
+    FEB.GTrigTime=0;
+    FEB.hitLGAmpl=0;
+    FEB.hitTrailTime=0;
+    FEB.hitTimeDif=0;
+    FEB.SpillTime=0;
+    FEB.SpillTimeGTrig=0;
+    FEB.hitTimefromSpill=0;
+    FEB.SpillTrailTime=0;
+    FEB.AsicTemperature=0;
+    FEB.FPGATemperature=0;
+    FEB.GlobalHV=0;
+    FEB.BoardTemperature=0;
+    FEB.BoardHumidity=0;
+
+
+    string sFEB = "FEB_1";
+    TTree *FEBtree = (TTree*)FileInput->Get(sFEB.c_str());
+
+    FEBtree->SetBranchAddress((sFEB+"_SN").c_str(),&FEB.FEBSN);
+    FEBtree->SetBranchAddress((sFEB+"_SpillTag").c_str(),&FEB.SpillTag);
+    FEBtree->SetBranchAddress((sFEB+"_GTrigTag").c_str(),&FEB.GTrigTag);
+    FEBtree->SetBranchAddress((sFEB+"_GTrigTime").c_str(),&FEB.GTrigTime);
+    FEBtree->SetBranchAddress((sFEB+"_hitsChannel").c_str(),&FEB.hitsChannel);
+    FEBtree->SetBranchAddress((sFEB+"_hitAmpl").c_str(),&FEB.hitAmpl);
+    FEBtree->SetBranchAddress((sFEB+"_hitLGAmpl").c_str(),&FEB.hitLGAmpl);
+    FEBtree->SetBranchAddress((sFEB+"_hitLeadTime").c_str(),&FEB.hitLeadTime);
+    FEBtree->SetBranchAddress((sFEB+"_hitTrailTime").c_str(),&FEB.hitTrailTime);
+    FEBtree->SetBranchAddress((sFEB+"_hitTimeDif").c_str(),&FEB.hitTimeDif);
+    FEBtree->SetBranchAddress((sFEB+"_SpillTime").c_str(),&FEB.SpillTime);
+    FEBtree->SetBranchAddress((sFEB+"_SpillTimeGTrig").c_str(),&FEB.SpillTimeGTrig);
+    FEBtree->SetBranchAddress((sFEB+"_hitTimefromSpill").c_str(),&FEB.hitTimefromSpill);
+    FEBtree->SetBranchAddress((sFEB+"_SpillTrailTime").c_str(),&FEB.SpillTrailTime);
+    FEBtree->SetBranchAddress((sFEB+"_AsicTemperature").c_str(),&FEB.AsicTemperature);
+    FEBtree->SetBranchAddress((sFEB+"_FPGATemperature").c_str(),&FEB.FPGATemperature);
+    FEBtree->SetBranchAddress((sFEB+"_GlobalHV").c_str(),&FEB.GlobalHV);
+    FEBtree->SetBranchAddress((sFEB+"_BoardTemperature").c_str(),&FEB.BoardTemperature);
+    FEBtree->SetBranchAddress((sFEB+"_BoardHumidity").c_str(),&FEB.BoardHumidity);
+
+    //cout<< "Number of Spills "<< FEBtree->GetEntries() <<endl;
+
+
+
+
+    //loop over spills
+    /*
+    TH1 * hDataQ = new TH1F("hDataQ", "ntuple", 1000,0.5, 1000.5);
+    for(int i(0); i<FEB.SpillTag->GetSize(); i++){
+      if (FEB.hitsChannel[i] == 65)	{
+	//	cout << " size " << myFEB_1_SpillTag.GetSize() << " Tag or Spill Numba "<<  myFEB_1_SpillTag[i] << endl;
+	  hDataQ->Fill(FEB.SpillTag[i]);  
+	  
+	}
+    */
+    
+    for (Int_t Spill = 0; Spill<FEBtree->GetEntries(); Spill++){
+      FEBtree->GetEntry(Spill);
+      
+      if(FEB.SpillTag->empty()){
+	cout<<"EMPTY SPILL"<<endl;
+	continue;
+      }
+      
+      Int_t Spilltag = FEB.SpillTag->back();
+      Int_t SpillEntries = FEB.SpillTag->size();
+      //cout << "Spill # " << Spilltag  << " out of "<<FEBtree->GetEntries() <<" Spill Entries " << SpillEntries <<endl;
+      spill_hit->SetBinContent(Spilltag, SpillEntries); 
+      
+      //      cout << "Spill # " << Spilltag  << " of "<<FEBtree->GetEntries() <<" Spill Entries " << SpillEntries <<endl;
+      
+      int count_bl=0;
+      bool notmaximum =false;
+      
+      bool GoodSpill=false;
+      int numLaserHits=0;
+      for (Int_t hit = 0; hit<FEB.SpillTag->size(); hit++){
+	if (FEB.hitsChannel->at(hit)==LaserCh) numLaserHits++;
+      }
+      
+      if (width*freq - TMath::Sqrt(width*freq)   < numLaserHits && numLaserHits < width*freq + TMath::Sqrt(width*freq)) GoodSpill= true;
+      //loop over good spill hits to find the one with max amplitude
+
+      if (!GoodSpill) {
+	//cout << "!!Bad Spill!! numLaserHits: " << numLaserHits << endl;
+	continue;}
+      //if (FEB.SpillTag->size() >11) continue;
+      int dummy_hit = 0;
+      for (Int_t hit1 = 0; hit1<FEB.SpillTag->size(); hit1++){
+	
+	//if ( 25 > FEB.hitTimeDif->at(hit1) || FEB.hitTimeDif->at(hit1) > 50  ) continue;
+
+	//cuts for 100msP_30msW_1kHz_5_3.lisst
+	
+	bool ToT_low =  FEB.hitTimeDif->at(hit1)> -3 && FEB.hitTimeDif->at(hit1) < 18;
+	bool ToT_high = FEB.hitTimeDif->at(hit1) > 18 && FEB.hitTimeDif->at(hit1) < 50;
+	bool LG_low = FEB.hitLGAmpl->at(hit1) >-3 && FEB.hitLGAmpl->at(hit1) < 2000;
+	bool LG_high = FEB.hitLGAmpl->at(hit1) >2000 && FEB.hitLGAmpl->at(hit1)< 4000;
+	bool cat1 = false;
+	bool cat2 = false;
+	bool cat3 = false;
+	bool cat4 = false;
+	
+	bool cat1_1_A = FEB.hitTimeDif->at(hit1)> 18 && FEB.hitTimeDif->at(hit1) < 35;
+	bool cat1_1_B = FEB.hitLGAmpl->at(hit1) >-1 && FEB.hitLGAmpl->at(hit1) < 100;
+	bool cat1_1 = cat1_1_A && cat1_1_B ;
+	
+	
+
+	bool cat1_2_A = FEB.hitTimeDif->at(hit1)> 18 && FEB.hitTimeDif->at(hit1) < 35;
+	bool cat1_2_B = FEB.hitLGAmpl->at(hit1) >200 && FEB.hitLGAmpl->at(hit1) < 400;
+	bool cat1_2 =  cat1_2_A && cat1_2_B;
+
+
+	bool cat3_1 = FEB.hitTimeDif->at(hit1)> -3 && FEB.hitTimeDif->at(hit1) < 18 && FEB.hitLGAmpl->at(hit1) >=0 && FEB.hitLGAmpl->at(hit1) < 100;
+	bool cat3_2 = FEB.hitTimeDif->at(hit1)> -3 && FEB.hitTimeDif->at(hit1) < 18 && FEB.hitLGAmpl->at(hit1) >200 && FEB.hitLGAmpl->at(hit1) < 1000;
+	
+	
+	if (ToT_high && LG_low){
+	  LT_TT_1 -> Fill( FEB.hitLeadTime->at(hit1), FEB.hitTrailTime->at(hit1) - FEB.hitLeadTime->at(hit1));
+	  cat1 = true;
+	}else if(ToT_high && LG_high){
+	  LT_TT_2 -> Fill (FEB.hitLeadTime->at(hit1), FEB.hitTrailTime->at(hit1) - FEB.hitLeadTime->at(hit1));
+	  cat2 = true;
+	}else if (ToT_low && LG_low){
+	  LT_TT_3 -> Fill (FEB.hitLeadTime->at(hit1), FEB.hitTrailTime->at(hit1) - FEB.hitLeadTime->at(hit1));
+	  cat3 = true;
+	}else if (ToT_low && LG_high){
+	  LT_TT_4 -> Fill (FEB.hitLeadTime->at(hit1), FEB.hitTrailTime->at(hit1) - FEB.hitLeadTime->at(hit1));
+	  cat4 = true;
+	}
+
+
+
+	if (Spill == 24899){
+	  
+	  hTimefromSpill_ToT -> Fill (FEB.hitTimefromSpill->at(hit1),FEB.hitTimeDif->at(hit1));
+	  if (cat1_1){
+	    Printf("hitTimeFromSpill %f [us], ToT %f, LG = %f, HG = %f, Cat1_1", FEB.hitTimefromSpill->at(hit1)* 2.5e-3 , FEB.hitTimeDif->at(hit1), FEB.hitLGAmpl->at(hit1), FEB.hitAmpl->at(hit1));
+	  } else if (cat1_2){
+	    Printf("hitTimeFromSpill %f [us], ToT %f, LG = %f, HG = %f, Cat1_2", FEB.hitTimefromSpill->at(hit1)* 2.5e-3, FEB.hitTimeDif->at(hit1), FEB.hitLGAmpl->at(hit1), FEB.hitAmpl->at(hit1));
+	  } else if (cat3_1){
+	    Printf("hitTimeFromSpill %f [us], ToT %f, LG = %f, HG = %f, Cat3_1", FEB.hitTimefromSpill->at(hit1)* 2.5e-3, FEB.hitTimeDif->at(hit1), FEB.hitLGAmpl->at(hit1), FEB.hitAmpl->at(hit1));
+	  } else if (cat3_2) {
+	    Printf("hitTimeFromSpill %f [us], ToT %f, LG = %f, HG = %f, Cat3_2", FEB.hitTimefromSpill->at(hit1)* 2.5e-3, FEB.hitTimeDif->at(hit1), FEB.hitLGAmpl->at(hit1), FEB.hitAmpl->at(hit1));
+	  } else {
+	    Printf("hitTimeFromSpill %f [us], ToT %f, LG = %f, HG = %f, Other Cat", FEB.hitTimefromSpill->at(hit1) * 2.5e-3, FEB.hitTimeDif->at(hit1), FEB.hitLGAmpl->at(hit1), FEB.hitAmpl->at(hit1));
+	  }
+	}
+	
+	//if ( FEB.hitTimeDif->at(hit1) < 25 ) continue;
+	if ( FEB.hitTimeDif->at(hit1) >  50) continue;
+	
+	
+
+
+	
+	count_bl=0;
+	
+	//std::cout << "FEB.SpillTag->size() = " << FEB.SpillTag->size() << std::endl;
+		
+
+	ToT_LG_sec ->Fill(FEB.hitLGAmpl->at(hit1),FEB.hitTimeDif->at(hit1));
+	ToT_HG_sec ->Fill(FEB.hitAmpl->at(hit1),FEB.hitTimeDif->at(hit1)); 
+	LG_Amplitude_sec->Fill(FEB.hitLGAmpl->at(hit1));
+	HG_Amplitude_sec->Fill(FEB.hitAmpl->at(hit1));
+	
+	GTrigTime_sec->Fill(FEB.GTrigTime->at(hit1));
+
+	notmaximum = false;
+	//std::cout << "FEB.SpillTag->size() = " << FEB.SpillTag->size() << std::endl; 
+	//check if hit1 is maximum Amplitude on the ASIC
+	for (Int_t hit_check = 0; hit_check<FEB.SpillTag->size(); hit_check++){
+	  if (hit_check == hit1) continue;
+	  
+	  if (abs(FEB.hitTimefromSpill->at(hit_check)-FEB.hitTimefromSpill->at(hit1))<100 && FEB.hitTimeDif->at(hit_check)>FEB.hitTimeDif->at(hit1))    notmaximum = true;
+	   if ( FEB.hitsChannel->at(hit1) != LaserCh) notmaximum = true;
+	}
+	
+	if (notmaximum) continue;
+	 
+
+	
+	//Start of strange ToT vs LG values analysis. The idea is to have 4 categories. 
+	
+	// cat cuts for NuitSci + Yannick0_1
+	/*
+	bool ToT_low =  FEB.hitTimeDif->at(hit1)> -1 && FEB.hitTimeDif->at(hit1) < 20;
+	bool ToT_high = FEB.hitTimeDif->at(hit1) > 20 && FEB.hitTimeDif->at(hit1) < 50;
+	bool LG_low = FEB.hitLGAmpl->at(hit1) >-3 && FEB.hitLGAmpl->at(hit1) < 2000;
+	bool LG_high = FEB.hitLGAmpl->at(hit1) >2000 && FEB.hitLGAmpl->at(hit1)< 4000;
+	bool cat1 = false;
+	bool cat2 = false;
+	bool cat3 = false;
+	bool cat4 = false;
+
+	bool cat1_1_A = FEB.hitTimeDif->at(hit1)> 20 && FEB.hitTimeDif->at(hit1) < 35;
+	bool cat1_1_B = FEB.hitLGAmpl->at(hit1) >-1 && FEB.hitLGAmpl->at(hit1) < 100;
+	bool cat1_1 = cat1_1_A && cat1_1_B ;
+	
+	
+
+	bool cat1_2_A = FEB.hitTimeDif->at(hit1)> 20 && FEB.hitTimeDif->at(hit1) < 35;
+	bool cat1_2_B = FEB.hitLGAmpl->at(hit1) >200 && FEB.hitLGAmpl->at(hit1) < 400;
+	bool cat1_2 =  cat1_2_A && cat1_2_B;
+
+
+	bool cat3_1 = FEB.hitTimeDif->at(hit1)> -3 && FEB.hitTimeDif->at(hit1) < 20 && FEB.hitLGAmpl->at(hit1) >=0 && FEB.hitLGAmpl->at(hit1) < 100;
+	bool cat3_2 = FEB.hitTimeDif->at(hit1)> -1 && FEB.hitTimeDif->at(hit1) < 20 && FEB.hitLGAmpl->at(hit1) >200 && FEB.hitLGAmpl->at(hit1) < 1000;
+	*/
+
+	//cat cuts for Yannick 0_100
+	
+/*
+	bool ToT_low =  FEB.hitTimeDif->at(hit1)> -1 && FEB.hitTimeDif->at(hit1) < 20;
+	bool ToT_high = FEB.hitTimeDif->at(hit1) > 20 && FEB.hitTimeDif->at(hit1) < 50;
+	bool LG_low = FEB.hitLGAmpl->at(hit1) >-3 && FEB.hitLGAmpl->at(hit1) < 2000;
+	bool LG_high = FEB.hitLGAmpl->at(hit1) >2000 && FEB.hitLGAmpl->at(hit1)< 4000;
+	bool cat1 = false;
+	bool cat2 = false;
+	bool cat3 = false;
+	bool cat4 = false;
+	
+	bool cat1_1_A = FEB.hitTimeDif->at(hit1)> 20 && FEB.hitTimeDif->at(hit1) < 35;
+	bool cat1_1_B = FEB.hitLGAmpl->at(hit1) >-1 && FEB.hitLGAmpl->at(hit1) < 100;
+	bool cat1_1 = cat1_1_A && cat1_1_B ;
+	
+	
+
+	bool cat1_2_A = FEB.hitTimeDif->at(hit1)> 20 && FEB.hitTimeDif->at(hit1) < 35;
+	bool cat1_2_B = FEB.hitLGAmpl->at(hit1) >200 && FEB.hitLGAmpl->at(hit1) < 400;
+	bool cat1_2 =  cat1_2_A && cat1_2_B;
+
+
+	bool cat3_1 = FEB.hitTimeDif->at(hit1)> -3 && FEB.hitTimeDif->at(hit1) < 20 && FEB.hitLGAmpl->at(hit1) >=0 && FEB.hitLGAmpl->at(hit1) < 100;
+	bool cat3_2 = FEB.hitTimeDif->at(hit1)> -1 && FEB.hitTimeDif->at(hit1) < 20 && FEB.hitLGAmpl->at(hit1) >200 && FEB.hitLGAmpl->at(hit1) < 1000;
+	 
+*/
+	
+	
+	bool ma_ta = false;
+
+	//if (FEB.hitLGAmpl->at(hit1) == 0 || FEB.hitAmpl->at(hit1) == 0)  continue; //if ADC == 0 continue;
+ 	//if (FEB.hitAmpl->at(hit1) == 0 || FEB.hitLGAmpl->at(hit1) == 0) cout << "HG: " << FEB.hitAmpl->at(hit1) << " LG: " <<FEB.hitLGAmpl->at(hit1) << endl;
+	if (FEB.hitAmpl->at(hit1) == 0 && FEB.hitLGAmpl->at(hit1) == 0) {
+	  bothZero++;
+	} else if  (FEB.hitAmpl->at(hit1) == 0 && FEB.hitLGAmpl->at(hit1) != 0){
+	  oneZero++; 
+	} else if (FEB.hitAmpl->at(hit1) != 0 && FEB.hitLGAmpl->at(hit1) == 0){
+	  oneZero++;
+	}
+	//if (FEB.hitTimeDif->at(hit1) == 0) cout << "For ToT = 0, HG = " << FEB.hitAmpl << " LG = " << FEB.hitLGAmpl << endl;
+	//if (FEB.hitLGAmpl->at(hit1) == 0 && FEB.hitAmpl->at(hit1) == 0)  continue; //  This allows to pass all the cases where at least one amplitude is different than 0. But with this command there are going to be cases when either LG == 0 and HG !=0 and viceversa.
+	
+	//cout << " GTrigTag " << FEB.GTrigTag->at(hit1) << " hitTimefromSpill " << FEB.hitTimefromSpill->at(hit1) << " GTrigTime " << FEB.GTrigTime->at(hit1) << " SpillTimeGTrig " << FEB.SpillTimeGTrig->at(hit1) << endl;
+
+
+
+
+
+	ToT_LG ->Fill(FEB.hitLGAmpl->at(hit1),FEB.hitTimeDif->at(hit1));
+	ToT_HG ->Fill(FEB.hitAmpl->at(hit1),FEB.hitTimeDif->at(hit1)); 
+	LG_Amplitude->Fill(FEB.hitLGAmpl->at(hit1));
+	HG_Amplitude->Fill(FEB.hitAmpl->at(hit1));
+	
+	GTrigTime_Mon->Fill(FEB.GTrigTime->at(hit1));
+	if (cat1) {
+	  GTrigTime_cat1->Fill(FEB.GTrigTime->at(hit1));
+	  if (cat1_1){
+	    GTrigTime_cat1_1->Fill(FEB.GTrigTime->at(hit1));
+	    GTrigHit_cat1_1->Fill(FEB.hitTimefromSpill->at(hit1) );
+	    hHitTimefromSpill_cat1_1->Fill(FEB.hitTimefromSpill->at(hit1)) ; 
+	    GTrigHit_cat1_1->Fill(FEB.hitTimefromSpill->at(hit1)*2.5e-9 - FEB.GTrigTime->at(hit1)*10e-6 );
+	    
+	    hToT_cat1_1->Fill(FEB.hitTimeDif->at(hit1));
+
+	    
+
+	    if (hit1>0 && hit1!=dummy_hit) {
+	      hMonitorT_cat1_1->Fill(FEB.hitTimefromSpill->at(hit1) - FEB.hitTimefromSpill->at(dummy_hit));
+	      hMonitorT_GTrTime->Fill(FEB.hitTimefromSpill->at(hit1) - FEB.hitTimefromSpill->at(dummy_hit), FEB.GTrigTime->at(hit1));
+	      if (FEB.hitTimefromSpill->at(hit1) - FEB.hitTimefromSpill->at(dummy_hit) < 20e3 ) GTrigTime_Aft->Fill(FEB.GTrigTime->at(hit1));
+	    }
+
+
+	      //if (525 -25 < FEB.GTrigTime->at(hit1) && FEB.GTrigTime->at(hit1) < 525 + 25) cout << " hit @ " <<  FEB.hitLeadTime->at(hit1) << endl;
+
+	  }
+	  if (cat1_2){
+	    GTrigTime_cat1_2->Fill(FEB.GTrigTime->at(hit1));
+	    GTrigHit_cat1_2->Fill(FEB.hitTimefromSpill->at(hit1)*2.5e-9 - FEB.GTrigTime->at(hit1)*10e-6 );
+	    hHitTimefromSpill_cat1_2->Fill(FEB.hitTimefromSpill->at(hit1)) ; 
+	    hToT_cat1_2->Fill(FEB.hitTimeDif->at(hit1));
+	    if (hit1>0) hMonitorT_cat1_2->Fill(FEB.hitTimefromSpill->at(hit1) - FEB.hitTimefromSpill->at(dummy_hit));
+
+	  }
+
+	}else if (cat2){
+	  GTrigTime_cat2->Fill(FEB.GTrigTime->at(hit1));
+	}else if (cat3 ){
+	  GTrigTime_cat3->Fill(FEB.GTrigTime->at(hit1));
+	  if (cat3_1 ){
+	    GTrigTime_cat3_1->Fill(FEB.GTrigTime->at(hit1));
+	    GTrigHit_cat3_1->Fill(FEB.hitTimefromSpill->at(hit1)*2.5e-9 - FEB.GTrigTime->at(hit1)*10e-6 );
+	    hHitTimefromSpill_cat3_1->Fill(FEB.hitTimefromSpill->at(hit1)); 
+	    hToT_cat3_1->Fill(FEB.hitTimeDif->at(hit1));
+	    if (hit1>0) hMonitorT_cat3_1->Fill(FEB.hitTimefromSpill->at(hit1) - FEB.hitTimefromSpill->at(dummy_hit));
+	  }
+	  if (cat3_2){
+	    GTrigTime_cat3_2->Fill(FEB.GTrigTime->at(hit1));
+	    GTrigHit_cat3_2->Fill(FEB.hitTimefromSpill->at(hit1)*2.5e-9 - FEB.GTrigTime->at(hit1)*10e-6 );
+	    hToT_cat3_2->Fill(FEB.hitTimeDif->at(hit1));
+	    hHitTimefromSpill_cat3_2->Fill(FEB.hitTimefromSpill->at(hit1)); 
+	    if (hit1>0) hMonitorT_cat3_2->Fill(FEB.hitTimefromSpill->at(hit1) - FEB.hitTimefromSpill->at(dummy_hit));
+	  }
+	  }else if (cat4){
+	  GTrigTime_cat4->Fill(FEB.GTrigTime->at(hit1));
+	}
+	  
+	dummy_hit = hit1;
+	for(int hit2=0; hit2<FEB.SpillTag->size(); hit2++){
+	  if (hit2 == hit1) continue;
+	  
+	  
+	  if (FEB.hitTimefromSpill->at(hit2)-FEB.hitTimefromSpill->at(hit1)>=0 && FEB.hitTimefromSpill->at(hit2)-FEB.hitTimefromSpill->at(hit1)<100){
+	    count_bl ++;
+
+	    
+
+	    
+	    LGAmplitude_proximity->Fill(FEB.hitsChannel->at(hit2)-FEB.hitsChannel->at(hit1),FEB.hitLGAmpl->at(hit2)/FEB.hitLGAmpl->at(hit1));
+	    
+	    Amplitude_proximity->Fill(FEB.hitsChannel->at(hit2)-FEB.hitsChannel->at(hit1),FEB.hitTimeDif->at(hit2)/FEB.hitTimeDif->at(hit1));
+	    time_proximity->Fill(FEB.hitsChannel->at(hit2)-FEB.hitsChannel->at(hit1),FEB.hitTimefromSpill->at(hit2)-FEB.hitTimefromSpill->at(hit1));
+	    proximity->Fill(FEB.hitsChannel->at(hit2)-FEB.hitsChannel->at(hit1));
+	    
+	    
+
+	    if (cat1) {
+	      Amplitude_proximity_cat1->Fill(FEB.hitsChannel->at(hit2)-FEB.hitsChannel->at(hit1),FEB.hitTimeDif->at(hit2)/FEB.hitTimeDif->at(hit1));
+	      time_proximity_cat1->Fill(FEB.hitsChannel->at(hit2)-FEB.hitsChannel->at(hit1),FEB.hitTimefromSpill->at(hit2)-FEB.hitTimefromSpill->at(hit1));
+	      proximity_cat1->Fill(FEB.hitsChannel->at(hit2)-FEB.hitsChannel->at(hit1));
+
+	      
+	    } else if (cat2){
+	      Amplitude_proximity_cat2->Fill(FEB.hitsChannel->at(hit2)-FEB.hitsChannel->at(hit1),FEB.hitTimeDif->at(hit2)/FEB.hitTimeDif->at(hit1));
+	      time_proximity_cat2->Fill(FEB.hitsChannel->at(hit2)-FEB.hitsChannel->at(hit1),FEB.hitTimefromSpill->at(hit2)-FEB.hitTimefromSpill->at(hit1));
+	      proximity_cat2->Fill(FEB.hitsChannel->at(hit2)-FEB.hitsChannel->at(hit1));
+
+	    } else if (cat3){
+	      Amplitude_proximity_cat3->Fill(FEB.hitsChannel->at(hit2)-FEB.hitsChannel->at(hit1),FEB.hitTimeDif->at(hit2)/FEB.hitTimeDif->at(hit1));
+	      time_proximity_cat3->Fill(FEB.hitsChannel->at(hit2)-FEB.hitsChannel->at(hit1),FEB.hitTimefromSpill->at(hit2)-FEB.hitTimefromSpill->at(hit1));
+	      proximity_cat3->Fill(FEB.hitsChannel->at(hit2)-FEB.hitsChannel->at(hit1));
+
+	    }else if (cat4){
+	      Amplitude_proximity_cat4->Fill(FEB.hitsChannel->at(hit2)-FEB.hitsChannel->at(hit1),FEB.hitTimeDif->at(hit2)/FEB.hitTimeDif->at(hit1));
+	      time_proximity_cat4->Fill(FEB.hitsChannel->at(hit2)-FEB.hitsChannel->at(hit1),FEB.hitTimefromSpill->at(hit2)-FEB.hitTimefromSpill->at(hit1));
+	      proximity_cat4->Fill(FEB.hitsChannel->at(hit2)-FEB.hitsChannel->at(hit1));
+	    }
+	    
+	    if (FEB.hitTimeDif->at(hit2)/FEB.hitTimeDif->at(hit1) >1 ) cout << "Noise has bigger time amplitude than signal (laser hit): " << FEB.hitTimeDif->at(hit2)/FEB.hitTimeDif->at(hit1) <<" Channel of hit2: " << FEB.hitsChannel->at(hit2)<<  endl;	    
+	    proximity_norm->Fill(abs(FEB.hitsChannel->at(hit2)-FEB.hitsChannel->at(hit1)));
+	    Channels->Fill(FEB.hitsChannel->at(hit1),FEB.hitsChannel->at(hit2));
+	    if(FEB.hitsChannel->at(hit2)-FEB.hitsChannel->at(hit1)==0){
+	      Ch0_behaviour->Fill(FEB.hitTimefromSpill->at(hit2)-FEB.hitTimefromSpill->at(hit1),FEB.hitTimeDif->at(hit2));
+	    }
+	  }
+	}
+
+	bl_LGAmplitude->Fill(FEB.hitLGAmpl->at(hit1),count_bl);
+	
+	Amplitude->Fill(FEB.hitTimeDif->at(hit1));
+	baseline->Fill(count_bl);//count_bl is the number of hits happening during the time coincidence of 100ticks (250ns)...
+	bl_Amplitude->Fill(FEB.hitTimeDif->at(hit1),count_bl);
+
+	if (cat1) {
+	  Amplitude_cat1->Fill(FEB.hitTimeDif->at(hit1));
+	  baseline_cat1->Fill(count_bl);//count_bl is the number of hits happening during the time coincidence of 100ticks (250ns)...
+	  bl_Amplitude_cat1->Fill(FEB.hitTimeDif->at(hit1),count_bl);
+
+	  
+	} else if (cat2){  
+	  Amplitude_cat2->Fill(FEB.hitTimeDif->at(hit1));
+	  baseline_cat2->Fill(count_bl);//count_bl is the number of hits happening during the time coincidence of 100ticks (250ns)...
+	  bl_Amplitude_cat2->Fill(FEB.hitTimeDif->at(hit1),count_bl);
+
+	  
+	} else if (cat3){
+	  Amplitude_cat3->Fill(FEB.hitTimeDif->at(hit1));
+	  baseline_cat3->Fill(count_bl);//count_bl is the number of hits happening during the time coincidence of 100ticks (250ns)...
+	  bl_Amplitude_cat3->Fill(FEB.hitTimeDif->at(hit1),count_bl);
+	  // cout <<  FEB.hitTimeDif->at(hit1) << "  " << FEB.hitLGAmpl->at(hit1) << endl; 
+	} else if (cat4){
+	  Amplitude_cat4->Fill(FEB.hitTimeDif->at(hit1));
+	  baseline_cat4->Fill(count_bl);//count_bl is the number of hits happening during the time coincidence of 100ticks (250ns)...
+	  bl_Amplitude_cat4->Fill(FEB.hitTimeDif->at(hit1),count_bl);
+	}
+      }
+    }
+    hs_GTrigTime_cat1_1 -> Add(GTrigTime_cat1_1);
+    FileInput->Close();
+  }
+
+
+  //  cout << bothZero/(bothZero+oneZero) << " of the hits with at least HG or LG zero, have both HG and LG 0 " << endl; 
+  
+//analysis for the periodicity between each structure:
+//
+//GTrigTime_cat1_1->GetBinContent(bin);
+//cout << "n_bins in GTrigTime " << n_bins << " first bin has  " <<GTrigTime_cat1_1->GetBinContent(1)<<  " entries " << endl;
+/*
+  for (Int_t i(1); i <= GTrigTime_cat1_1->GetNbinsX(); i++){
+   cout << " bin content " <<GTrigTime_cat1_1->GetBinContent(i) << " bin center " << GTrigTime_cat1_1->GetBinCenter(i) <<endl;
+   
+ }
+*/
+ 
+  proximity_norm->Scale(1/Amplitude->GetEntries());
+  c2->cd();
+  //proximity_norm->Draw("hist");
+  //time_proximity->Draw("colz");
+  Channels->Draw("colz");
+  gPad -> SetLogz();
+  //Ch0_behaviour->Draw("colz");
+
+  TCanvas * c_LG_Amplitude = new TCanvas(" LG Amplitude","", 1000, 600);
+  gStyle->SetOptStat(111111);
+  c_LG_Amplitude->Divide(2,2);
+  c_LG_Amplitude->cd(1);
+  LG_Amplitude ->Draw();
+  c_LG_Amplitude->cd(2);
+  HG_Amplitude->Draw();
+  c_LG_Amplitude -> cd(3);
+  ToT_LG ->Draw("colz");
+  c_LG_Amplitude -> cd(4);
+  ToT_HG ->Draw("colz");
+    
+    
+    
+    
+  TCanvas * c_LG_Amplitude_sec = new TCanvas(" LG Amplitude All","", 1000, 600);
+  gStyle->SetOptStat(111111);
+  c_LG_Amplitude_sec->Divide(2,2);
+  c_LG_Amplitude_sec->cd(1);
+  LG_Amplitude_sec ->Draw();
+  c_LG_Amplitude_sec->cd(2);
+  HG_Amplitude_sec->Draw();
+  c_LG_Amplitude_sec -> cd(3);
+  ToT_LG_sec ->Draw("colz");
+  c_LG_Amplitude_sec -> cd(4);
+  ToT_HG_sec ->Draw("colz");
+  
+  c1->Divide(3,2);
+  
+  c1->cd(1);
+  Amplitude->Draw("hist");
+  gPad -> SetLogy();
+  c1->cd(2);
+  baseline->Draw("hist");// y-axis: spills. x-axis: hit1-hit2_time < 2.5 ns
+  gPad -> SetLogy();
+  c1->cd(3);
+  bl_Amplitude->Draw("colz");// the time difference for maximum amplitude hit vs
+  gPad -> SetLogz();
+  c1->cd(4);
+  gStyle->SetOptStat(111111);
+  Amplitude_proximity->Draw("colz");
+  gPad -> SetLogz();
+  c1->cd(5);
+  time_proximity->Draw("colz");
+  gPad -> SetLogz();
+  c1->cd(6);
+  proximity->Draw("hist");
+
+
+  c1_cat1->Divide(3,2);
+  
+  c1_cat1->cd(1);
+  Amplitude_cat1->Draw("hist");
+  gPad -> SetLogy();
+  c1_cat1->cd(2);
+  baseline_cat1->Draw("hist");// y-axis: spills. x-axis: hit1-hit2_time < 2.5 ns
+  gPad -> SetLogy();
+  c1_cat1->cd(3);
+  bl_Amplitude_cat1->Draw("colz");// the time difference for maximum amplitude hit vs
+  gPad -> SetLogz();
+  c1_cat1->cd(4);
+  gStyle->SetOptStat(111111);
+  Amplitude_proximity_cat1->Draw("colz");
+  gPad -> SetLogz();
+  c1_cat1->cd(5);
+  time_proximity_cat1->Draw("colz");
+  gPad -> SetLogz();
+  c1_cat1->cd(6);
+  proximity_cat1->Draw("hist");
+  
+
+  c1_cat2->Divide(3,2);
+  
+  c1_cat2->cd(1);
+  Amplitude_cat2->Draw("hist");
+  gPad -> SetLogy();
+  c1_cat2->cd(2);
+  baseline_cat2->Draw("hist");// y-axis: spills. x-axis: hit1-hit2_time < 2.5 ns
+  gPad -> SetLogy();
+  c1_cat2->cd(3);
+  bl_Amplitude_cat2->Draw("colz");// the time difference for maximum amplitude hit vs
+  gPad -> SetLogz();
+  c1_cat2->cd(4);
+  gStyle->SetOptStat(111111);
+  Amplitude_proximity_cat2->Draw("colz");
+  gPad -> SetLogz();
+  c1_cat2->cd(5);
+  time_proximity_cat2->Draw("colz");
+  gPad -> SetLogz();
+  c1_cat2->cd(6);
+  proximity_cat2->Draw("hist");
+  
+
+  c1_cat3->Divide(3,2);
+  
+  c1_cat3->cd(1);
+  Amplitude_cat3->Draw("hist");
+  gPad -> SetLogy();
+  c1_cat3->cd(2);
+  baseline_cat3->Draw("hist");// y-axis: spills. x-axis: hit1-hit2_time < 2.5 ns
+  gPad -> SetLogy();
+  c1_cat3->cd(3);
+  bl_Amplitude_cat3->Draw("colz");// the time difference for maximum amplitude hit vs
+  gPad -> SetLogz();
+  c1_cat3->cd(4);
+  gStyle->SetOptStat(111111);
+  Amplitude_proximity_cat3->Draw("colz");
+  gPad -> SetLogz();
+  c1_cat3->cd(5);
+  time_proximity_cat3->Draw("colz");
+  gPad -> SetLogz();
+  c1_cat3->cd(6);
+  proximity_cat3->Draw("hist");
+  
+
+  
+  c1_cat4->Divide(3,2);
+  
+  c1_cat4->cd(1);
+  Amplitude_cat4->Draw("hist");
+  gPad -> SetLogy();
+  c1_cat4->cd(2);
+  baseline_cat4->Draw("hist");// y-axis: spills. x-axis: hit1-hit2_time < 2.5 ns
+  gPad -> SetLogy();
+  c1_cat4->cd(3);
+  bl_Amplitude_cat4->Draw("colz");// the time difference for maximum amplitude hit vs
+  gPad -> SetLogz();
+  c1_cat4->cd(4);
+  gStyle->SetOptStat(111111);
+  Amplitude_proximity_cat4->Draw("colz");
+  gPad -> SetLogz();
+  c1_cat4->cd(5);
+  time_proximity_cat4->Draw("colz");
+  gPad -> SetLogz();
+  c1_cat4->cd(6);
+  proximity_cat4->Draw("hist");
+  
+
+
+  c1_LG->Divide(3,2);
+  
+  c1_LG->cd(1);
+  gPad -> SetLogy();
+  LG_Amplitude ->Draw();
+  c1_LG->cd(2);
+  baseline->Draw("hist");// y-axis: spills. x-axis: hit1-hit2_time < 2.5 ns
+  gPad -> SetLogy();
+  c1_LG->cd(3);
+  bl_LGAmplitude->Draw("colz");// the time difference for maximum amplitude hit vs
+  gPad -> SetLogz();
+  c1_LG->cd(4);
+  gStyle->SetOptStat(111111);
+  LGAmplitude_proximity->Draw("colz");
+  gPad -> SetLogz();
+  c1_LG->cd(5);
+  time_proximity->Draw("colz");
+  gPad -> SetLogz();
+  c1_LG->cd(6);
+  proximity->Draw("hist");
+
+  TCanvas *c_LT_TT = new TCanvas("c_LT_TT","", 1000,600);
+  c_LT_TT ->Divide (2,2);
+  c_LT_TT ->cd(1);
+  LT_TT_1->Draw("colz");
+  c_LT_TT ->cd(2);
+  LT_TT_2->Draw("colz");
+  c_LT_TT ->cd(3);
+  LT_TT_3->Draw("colz");
+  c_LT_TT ->cd(4);
+  LT_TT_4->Draw("colz");
+
+  TCanvas * c_GTrigTime_cat = new TCanvas("c_GTrigTime_cat", "", 1000, 600);
+  c_GTrigTime_cat -> Divide(2,2);
+  c_GTrigTime_cat-> cd(1);
+  GTrigTime_cat1_1 ->Draw();
+  c_GTrigTime_cat-> cd(2);
+  GTrigTime_cat1_2 ->Draw();
+  c_GTrigTime_cat-> cd(3);
+  GTrigTime_cat3_1 ->Draw();
+  c_GTrigTime_cat-> cd(4);
+  GTrigTime_cat3_2 ->Draw();
+  
+  TCanvas *cToT_cat = new TCanvas ("cToT_cat", " ",1000,600);
+  cToT_cat->Divide(2,2);
+  cToT_cat->cd(1);
+  hToT_cat1_1->Draw();
+  cToT_cat->cd(2);
+  hToT_cat1_2->Draw();
+  cToT_cat->cd(3);
+  hToT_cat3_1->Draw();
+  cToT_cat->cd(4);
+  hToT_cat3_2->Draw();
+
+
+  TCanvas *cGTrig_hit = new TCanvas ("cGTrig_hit", " ",1000,600);
+  cGTrig_hit->Divide(2,2);
+  cGTrig_hit->cd(1);
+  GTrigHit_cat1_1->Draw();
+  cGTrig_hit->cd(2);
+  GTrigHit_cat1_2->Draw();
+  cGTrig_hit->cd(3);
+  GTrigHit_cat3_1->Draw();
+  cGTrig_hit->cd(4);
+  GTrigHit_cat3_2->Draw();
+
+  TCanvas * chs_GTrigTime = new TCanvas ("chs_GTrigTime", "", 1000, 600);
+  chs_GTrigTime ->Divide(2,2);
+  hs_GTrigTime_cat1_1 -> Draw();
+
+  TCanvas * cHitTimefromSpill = new TCanvas("cHitTimefromSpill","",1000,600);
+  cHitTimefromSpill ->Divide(2,2);
+  cHitTimefromSpill -> cd(1);
+  hHitTimefromSpill_cat1_1 ->Draw();
+  cHitTimefromSpill -> cd(2);
+  hHitTimefromSpill_cat1_2 ->Draw();
+  cHitTimefromSpill -> cd(3);
+  hHitTimefromSpill_cat3_1 ->Draw();
+  cHitTimefromSpill -> cd(4);
+  hHitTimefromSpill_cat3_2 ->Draw();
+  foutPNG = foutDir+"graphs.root";
+
+  
+
+  TFile* f = TFile::Open(foutPNG.c_str(),"RECREATE");
+  Printf("\n Graphs stored here: %s \n",foutPNG.c_str());
+  TCanvas *cMonitorT_GTrigTime = new TCanvas("cMonitorT_GTrigTime","",1000, 600);
+  hMonitorT_GTrTime->Draw("colz");
+  cMonitorT_GTrigTime->Write();
+  TCanvas *cTimefromSpill_ToT = new TCanvas("cTimefromSpill_ToT","",1000, 600);
+  hTimefromSpill_ToT->Draw("colz");
+  cTimefromSpill_ToT-> Write();
+  
+  GTrigTime_Aft->Write();
+
+  
+  cMonitorT ->Divide(2,2);
+  cMonitorT -> cd(1);
+  hMonitorT_cat1_1 -> Draw();
+  cMonitorT ->cd (2);
+  hMonitorT_cat1_2 -> Draw();
+  cMonitorT ->cd (3);
+  hMonitorT_cat3_1 -> Draw();
+  cMonitorT ->cd (4);
+  hMonitorT_cat3_2 -> Draw();
+  cMonitorT ->Write();
+  
+  cHitTimefromSpill ->Write();
+  foutPNG = foutDir + "LG_Ampl.png";
+  c_LG_Amplitude->SaveAs(foutPNG.c_str());
+  c_LG_Amplitude->Write();
+
+  spill_hit-> Write();
+  GTrigTime_Mon->Write();
+  GTrigTime_sec->Write();
+
+  
+  foutPNG = foutDir + "LG_Ampl_sec.png";
+  c_LG_Amplitude_sec->SaveAs(foutPNG.c_str());
+  c_LG_Amplitude_sec->Write();
+  
+  foutPNG = foutDir + "crosstalk_all_ver_above300pe_All_LG.png";
+  c1_LG->SaveAs(foutPNG.c_str());
+
+  foutPNG = foutDir + "crosstalk_all_ver_above300pe_All.png";
+  c1->SaveAs(foutPNG.c_str());
+
+  foutPNG = foutDir + "crosstalk_all_ver_above300pe_All_cat1.png";
+  c1_cat1->SaveAs(foutPNG.c_str());
+
+  foutPNG = foutDir + "crosstalk_all_ver_above300pe_All_cat2.png";
+  c1_cat2->SaveAs(foutPNG.c_str());
+
+  foutPNG = foutDir + "crosstalk_all_ver_above300pe_All_cat3.png";
+  c1_cat3->SaveAs(foutPNG.c_str());
+  
+  foutPNG = foutDir + "crosstalk_all_ver_above300pe_All_cat4.png";
+  c1_cat4->SaveAs(foutPNG.c_str());
+  
+  
+  foutPNG = foutDir + "crosstalk_all_ver_above300pe_channel_map.png";
+  c2->SaveAs(foutPNG.c_str());
+  foutPNG = foutDir + "crosstalk_all_ver_above300pe_channel_map.C";
+  c2->SaveAs(foutPNG.c_str());
+  
+  foutPNG = foutDir + "LT_TT.png";
+  c_LT_TT->SaveAs(foutPNG.c_str());
+  
+  foutPNG = foutDir + "c_GTrigTime_cat.png";
+  c_GTrigTime_cat->SaveAs(foutPNG.c_str());
+  c_GTrigTime_cat->Write();
+  
+  foutPNG = foutDir + "cToT2_cat.png";
+  cToT_cat->SaveAs(foutPNG.c_str());
+  cToT_cat->Write();
+  
+  foutPNG = foutDir + "cGTrig_hit.png";
+  cGTrig_hit->SaveAs(foutPNG.c_str());
+  cGTrig_hit->Write();
+  
+  foutPNG = foutDir +"chs_GTrigTime_cat.png";
+  chs_GTrigTime->SaveAs(foutPNG.c_str());
+  chs_GTrigTime->Write();
+  
+  cout<<"_Plotting 100% done"<<endl;
+  
+
+  return 0;
+
+}
